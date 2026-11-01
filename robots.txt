@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /tools/
+Disallow: /gen/
+Disallow: /shots/
+Host: dn-russia.ru
+Sitemap: https://dn-russia.ru/sitemap.xml
