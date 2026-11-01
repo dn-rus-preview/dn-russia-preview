@@ -1,0 +1,269 @@
+#header .logo .dealer-tag{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-size:10px;line-height:1;color:#555;white-space:nowrap;letter-spacing:-.2px;pointer-events:none}
+#header .util{display:flex;align-items:center}#header .util .dealer-phone{font-weight:700;margin-right:20px;color:inherit;font-size:15px;white-space:nowrap}
+@media(max-width:1280px){.dealer-tag{display:none}}
+.cnbadge{display:none}
+#header .pro-spec .list-product.small{max-height:340px;overflow:auto}
+#header .pro-spec .list-area > .tit{font-size:16px}
+.cnbadge.unc{background:#e89200}
+.todo{border:2px dashed #e89200;background:#fff8e6;padding:12px 16px;margin:16px 0;color:#7a4b00;font-size:14px}
+.dealer-block{max-width:1400px;margin:60px auto;padding:0 40px}
+.dealer-area{background:#0b1a3a;color:#fff;display:flex;align-items:center}
+.dealer-area .inner{max-width:1100px;margin:0 auto;padding:0 40px}.dealer-area h2{font-size:48px;margin-bottom:24px}
+.dealer-area p{font-size:18px;margin:12px 0}.dealer-area a{color:#fff;text-decoration:underline}
+.filter{margin:20px 0}.filter button{padding:8px 16px;border:1px solid #ccc;margin-right:6px;background:#fff;cursor:pointer}.filter button.on{background:#0055a5;color:#fff}
+.btn-pro.off{opacity:.5;cursor:default}
+body,input,button,select,textarea{font-family:'Noto Sans KR','Noto Sans','Segoe UI',Arial,sans-serif}
+.dealer-block #request{background:#f4f6f9;padding:50px 40px;border-radius:8px}
+.dealer-block .split{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.dealer-block h2{font-size:32px;font-weight:700;margin-bottom:16px}.dealer-block .lead{font-size:17px;margin-bottom:16px;color:#444}
+.dealer-block p{line-height:1.7}.dealer-block a{color:#0055a5}
+form.req{display:grid;gap:10px}form.req input,form.req textarea,form.req select{border:1px solid #ccd;padding:12px;font-size:15px;width:100%;box-sizing:border-box;background:#fff}
+form.req textarea{min-height:110px}form.req button{background:#0055a5;color:#fff;border:0;padding:14px;font-size:16px;cursor:pointer}
+form.req small,form.req .note{font-size:12px;color:#777}
+@media(max-width:900px){.dealer-block .split{grid-template-columns:1fr}.dealer-block{padding:0 16px}.dealer-block #request{padding:30px 16px}}
+.dealer-page{padding-top:100px}
+table.stock{width:100%;border-collapse:collapse;margin:20px 0 8px;font-size:15px}
+table.stock th,table.stock td{border-bottom:1px solid #e2e6ee;text-align:left;padding:10px 8px;vertical-align:top}
+table.stock th{font-size:13px;color:#5c6b7a}
+@media(max-width:700px){table.stock{font-size:13px}table.stock th:nth-child(3),table.stock td:nth-child(3){display:none}}
+
+#wrap:not(.micro) #header .logo::after{
+  background-image:url("../img/dn-russia-logo.svg") !important;
+  background-size:168px auto !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  width:168px !important;
+  height:36px !important;
+  top:40% !important;
+}
+#wrap:not(.micro) #header .logo{width:180px !important}
+#wrap:not(.micro) #footer .logo{
+  background-image:url("../img/dn-russia-logo.svg") !important;
+  background-position:left center !important;
+  background-size:168px auto !important;
+  width:168px !important;
+  height:34px !important;
+}
+.stock-badge{display:inline-block;background:#0d7a3f;color:#fff;font-size:12px;font-weight:700;letter-spacing:.02em;padding:3px 8px;margin:0 8px 8px 0;vertical-align:middle}
+.dn-offer{display:block;margin-top:16px;background:#fff;color:#0b1f3a;padding:12px 14px;max-width:100%}
+.dn-price{font-size:26px;font-weight:700;color:#0b1f3a;margin:6px 0 4px;line-height:1.2}
+.dn-price-note{font-size:13px;color:#5c6b7a;line-height:1.45;max-width:34em}
+.dn-card-price{margin-top:8px}
+.dn-card-price .dn-price{font-size:18px;margin:4px 0 0}
+.dn-card-price .stock-badge{margin-bottom:0}
+
+@media(max-width:1024px){
+  html,body{overflow-x:hidden}
+  #wrap{zoom:1 !important;min-width:0 !important}
+  #header,.popupallmenu{margin-left:0 !important}
+  #wrap:not(.micro) #header > .inner,
+  #wrap:not(.micro) #header .gnb-etc ul,
+  #wrap:not(.micro) #footer .inner,
+  .popup.popupallmenu .menu-list.inner{
+    min-width:0 !important;
+    width:100% !important;
+    max-width:100% !important;
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+  #wrap:not(.micro) #header .gnb-list{display:none !important}
+  #wrap:not(.micro) #header .util .dealer-phone{font-size:14px;margin-right:8px}
+  #header .logo .dealer-tag{display:none}
+  .home .section-swiper .swiper-slide{
+    height:100vh !important;
+    height:100dvh !important;
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+  }
+  .home .section.visual-area .visual-swiper,
+  .home .section.visual-area .visual-swiper .swiper,
+  .home .section.visual-area .visual-swiper .swiper-slide,
+  .home .section.visual-area .visual-swiper .swiper-slide a,
+  .home .section.visual-area .visual-swiper .swiper-slide .video{
+    min-height:100%;
+  }
+  .home .section.visual-area .visual-swiper video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .home .section.visual-area .txt,
+  .home .section.visual-area .txt.inner{
+    left:20px !important;
+    right:20px !important;
+    top:auto !important;
+    bottom:16% !important;
+    transform:none !important;
+    margin-top:0 !important;
+    width:auto !important;
+    padding:0 !important;
+    max-width:none !important;
+  }
+  .home .section.visual-area .txt strong,
+  .home .visual-area .txt strong{
+    font-size:clamp(22px, 7.4vw, 40px) !important;
+    line-height:1.15 !important;
+  }
+  .home .section.visual-area .txt strong .keep{white-space:nowrap !important}
+  .home .section.visual-area .txt p{font-size:15px !important;line-height:1.4 !important;padding-right:0 !important;margin-top:10px}
+  .home .section.visual-area .txt h1,
+  .home .section.visual-area .txt strong{
+    font-size:clamp(17px, 4.7vw, 32px) !important;
+    letter-spacing:-0.035em !important;
+    max-width:100% !important;
+  }
+  .home .lineup-area .inner,
+  .home .machine,
+  .home .tit-area{min-width:0 !important;width:100% !important;max-width:100% !important}
+  .product.series .visual-area{
+    display:block !important;
+    height:auto !important;
+    min-width:0 !important;
+  }
+  .product.series .visual-area .propic,
+  .product.series .visual-area .proinfo{
+    width:100% !important;
+    height:auto !important;
+  }
+  .product.series .visual-area .proinfo{padding:24px 16px 40px !important}
+  .product.series .visual-area .propic .propic-swiper,
+  .product.series .visual-area .propic figure img{max-width:100% !important;height:auto !important}
+  .product.category .list-product ul,
+  .list-product ul{display:block !important}
+  .product.category.medium .product-area .result .list-product ul li,
+  .list-product ul li{width:100% !important;max-width:100% !important}
+  .list-product figure,.list-product img{width:100% !important;height:auto !important;max-width:100% !important}
+  .spec-area,.spec-table{overflow-x:auto;max-width:100%}
+  .popup.popupallmenu .menu-list .dep1{
+    display:block !important;
+  }
+  .popup.popupallmenu .menu-list .dep1 > li{
+    width:100% !important;
+    padding:20px 16px !important;
+    border-left:0 !important;
+    border-top:1px solid #efefef;
+  }
+  .popup.popupallmenu .contents.scrollbar > .scroll-content{
+    max-height:calc(100dvh - 72px) !important;
+    overflow:auto !important;
+  }
+  .popup.popupallmenu > .inner{padding-top:72px !important}
+  #wrap:not(.micro) #footer{height:auto !important;padding-bottom:28px}
+  .dn-price{font-size:22px}
+  .page-head,.page-head .wrap{max-width:100%;min-width:0}
+  .page-head h1,.dealer-page h1{
+    font-size:clamp(24px, 6.2vw, 32px) !important;
+    line-height:1.2 !important;
+    white-space:normal !important;
+    overflow-wrap:break-word;
+    max-width:100%;
+  }
+  #aside{display:none !important}
+  img{max-width:100%;height:auto}
+}
+@media(min-width:1025px){
+.home .section.visual-area .visual-swiper .swiper-slide .txt strong{
+  font-size:64px !important;
+  line-height:1.05 !important;
+  letter-spacing:-0.02em;
+}
+}
+.home .section.visual-area .visual-swiper .swiper-slide .txt strong .keep,
+.home .section.visual-area .visual-swiper .swiper-slide .txt h1 .keep{
+  white-space:nowrap !important;
+  display:inline-block;
+}
+.home .section.visual-area .txt h1{
+  font-size:64px;
+  line-height:1.05;
+  font-weight:700;
+  margin:0;
+  color:#fff;
+}
+.proinfo h1.tit{margin:0;font-size:inherit;line-height:inherit;font-weight:inherit}
+.product.series .visual-area .proinfo .btns{
+  position:static !important;left:auto !important;right:auto !important;bottom:auto !important;
+  width:auto;margin-top:28px;
+}
+.product.series .visual-area .proinfo .btns .btn{width:min(100%,280px);height:auto;white-space:normal}
+.dn-crumbs{font-size:13px;margin:0 0 12px;color:#5c6b7a}
+.dn-crumbs a{color:#0055a5}
+.dn-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.dn-consent{display:flex;gap:8px;align-items:flex-start;font-size:14px;line-height:1.4}
+.dn-consent input{width:22px;height:22px;margin-top:2px;flex:none}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.home .hero-actions .btn.line{background:#fff;color:#0b1f3a}
+@media(min-width:1025px){
+  .product.series .visual-area .proinfo .spec dl dt{width:150px}
+}
+.hero-actions .btn{min-height:44px}
+.spec-table,.scroll-con{overflow-x:auto;-webkit-overflow-scrolling:touch}
+form.req input,form.req textarea,form.req button,.btn{min-height:44px}
+img,video,svg{max-width:100%}
+.swiper-slide-duplicate{visibility:inherit}
+@media(max-width:1024px){
+  .home .section.visual-area .txt h1,
+  .home .section.visual-area .txt h1 .keep{
+    font-size:clamp(15px, 4.15vw, 28px) !important;
+    letter-spacing:-0.045em !important;
+    line-height:1.12 !important;
+  }
+  #wrap:not(.micro) #header .logo::after{
+    width:112px !important;
+    height:28px !important;
+    background-size:112px auto !important;
+    background-position:left center !important;
+    left:0 !important;
+    top:50% !important;
+    transform:translate(0,-50%) !important;
+  }
+  .home .section.visual-area .txt,
+  .home .section.visual-area .txt.inner{bottom:24% !important}
+  .dn-crumbs,.dn-crumbs *{white-space:normal !important}
+  #wrap,#container,#contents,.product.series,.product.series .visual-area,.product.series .visual-area .proinfo{
+    width:100% !important;max-width:100vw !important;min-width:0 !important;box-sizing:border-box !important;
+  }
+  #wrap:not(.micro) #header{background:#fff !important}
+  #wrap:not(.micro) #header > .inner{display:flex !important;align-items:center;justify-content:space-between;gap:8px}
+  #wrap:not(.micro) #header .util{margin-right:0 !important;height:auto}
+  #wrap:not(.micro) #header .util .btn-search,
+  #wrap:not(.micro) #header .util .btn-lang{display:none !important}
+  #wrap:not(.micro) #header .util{
+    position:absolute !important;right:8px !important;top:0 !important;height:64px !important;
+    margin:0 !important;background:#fff;z-index:3;align-items:center;
+  }
+  #wrap:not(.micro) #header .dealer-phone{color:#111 !important}
+  #wrap:not(.micro) #header .util .btn-gnb > span:not(.blind){background:#111 !important}
+  .dn-crumbs{display:block !important;width:100% !important;max-width:100% !important;white-space:normal !important;overflow-wrap:anywhere !important}
+  .home .section.visual-area .txt p{color:#fff !important}
+  .product.series .visual-area .proinfo .spec label{display:flex !important;margin:0 0 8px !important;white-space:normal !important}
+  .dn-crumbs{display:block !important;max-width:100%;overflow-wrap:anywhere}
+  .product.series .info-area{display:block !important}
+  .product.series .info-area .tit{width:auto !important;font-size:clamp(28px,8vw,40px) !important;line-height:1.15 !important;padding-right:0 !important}
+  .popupallmenu .dep2,.popupallmenu .dep3{display:none}
+  .popupallmenu li.open > .dep2,.popupallmenu li.open > .dep3,.popupallmenu li.open > ul{display:block}
+  .floating, .btn-floating, .quick-menu, .fix-btn{bottom:12px !important}
+  #wrap:not(.micro) #header .logo{width:118px !important}
+  #header .logo::after{display:block !important;width:108px !important;background-size:108px auto !important}
+  #wrap:not(.micro) #header .util .dealer-phone{font-size:13px;margin-right:6px}
+  table.stock,table.stock tbody,table.stock tr,table.stock td{display:block;width:100%}
+  table.stock th{display:none}
+  table.stock tr{border:1px solid #e2e6ee;margin:0 0 12px;padding:10px;background:#fff}
+  table.stock td{white-space:normal !important;overflow-wrap:anywhere}
+  table.stock td:nth-child(3){display:block !important}
+  table.stock td::before{content:"";display:block;font-size:12px;color:#5c6b7a;margin-bottom:2px}
+  table.stock td:nth-child(1)::before{content:"Модель"}
+  table.stock td:nth-child(2)::before{content:"Штук"}
+  table.stock td:nth-child(3)::before{content:"Комплектация"}
+  table.stock td:nth-child(4)::before{content:"Цена"}
+  .product.series .visual-area{height:auto !important}
+  .product.series .visual-area .proinfo .btns{
+    position:static !important;left:auto !important;bottom:auto !important;width:100% !important;margin-top:20px;
+  }
+  .product.series .visual-area .proinfo .btns .btn{width:100% !important;height:auto !important;white-space:normal}
+  .product.series .visual-area .proinfo .spec dl{align-items:flex-start}
+  .product.series .visual-area .proinfo .spec dl dt{width:46% !important;white-space:normal}
+  .product.series .visual-area .proinfo .spec dl dd{width:50%;margin-left:0 !important;white-space:normal}
+  .dn-crumbs{white-space:normal;line-height:1.4}
+  .proinfo .spec label{white-space:normal}
+}
