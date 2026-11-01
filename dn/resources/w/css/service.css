@@ -1,0 +1,2468 @@
+/**
+* --------------------------------
+* Service CSS
+* --------------------------------
+*/
+.service.serviceinfo#contents {
+  padding-bottom: 0; }
+.service.serviceinfo .subvisual-area {
+  background: #eff3ff url("../../../resources/w/images/service/serviceinfo_visual.jpg") center top no-repeat; }
+  .service.serviceinfo .subvisual-area .inner {
+    padding-right: 400px; }
+  .service.serviceinfo .subvisual-area .tit {
+    margin-bottom: 24px;
+    color: #1142b6; }
+  .service.serviceinfo .subvisual-area p {
+    color: #767676; }
+.service.serviceinfo .totalcallcenter-area {
+  padding: 80px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 0%, #F4F6FB 100%);
+  overflow: hidden; }
+  .service.serviceinfo .totalcallcenter-area .tit {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all .4s ease-in-out; }
+    .service.serviceinfo .totalcallcenter-area .tit em {
+      display: inline-block;
+      margin-left: 20px;
+      color: #0b50f2;
+      font-family: "Poppins";
+      font-size: 72px;
+      font-weight: 600;
+      vertical-align: middle; }
+  .service.serviceinfo .totalcallcenter-area p {
+    margin-top: 48px;
+    color: #444444;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all .4s ease-in-out .2s; }
+  .service.serviceinfo .totalcallcenter-area ul {
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 460px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all .4s ease-in-out .4s; }
+    .service.serviceinfo .totalcallcenter-area ul li {
+      position: relative;
+      padding: 20px 0 20px 40px;
+      width: 240px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 32px; }
+      .service.serviceinfo .totalcallcenter-area ul li::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../../resources/w/images/common/icon.png");
+        display: inline-block;
+        background-position: -150px 0;
+        background-repeat: no-repeat;
+        content: '';
+        width: 50px;
+        height: 50px; }
+      .service.serviceinfo .totalcallcenter-area ul li::before {
+        top: 10px;
+        left: -10px;
+        transform: translate(0, 0);
+        background-image: url("../../../resources/w/images/service/service.png"); }
+      .service.serviceinfo .totalcallcenter-area ul li:nth-of-type(2n) {
+        width: 220px; }
+      .service.serviceinfo .totalcallcenter-area ul li:nth-of-type(2)::before {
+        background-position: -200px 0; }
+      .service.serviceinfo .totalcallcenter-area ul li:nth-of-type(3)::before {
+        background-position: -250px 0; }
+      .service.serviceinfo .totalcallcenter-area ul li:nth-of-type(4)::before {
+        background-position: -300px 0; }
+      .service.serviceinfo .totalcallcenter-area ul li:nth-of-type(5)::before {
+        background-position: -350px 0; }
+  .service.serviceinfo .totalcallcenter-area .procedure {
+    margin-top: 90px;
+    padding: 76px 0 0;
+    border-top: 1px solid #d4d4d4; }
+    .service.serviceinfo .totalcallcenter-area .procedure .tit {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 36px;
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all .4s ease-in-out .2s; }
+    .service.serviceinfo .totalcallcenter-area .procedure ol {
+      margin-top: 100px;
+      display: flex; }
+      .service.serviceinfo .totalcallcenter-area .procedure ol li {
+        position: relative;
+        padding: 20px 0 0 50px;
+        width: 230px;
+        text-align: center;
+        color: #1142b6;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        z-index: 1;
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: all .4s ease-in-out .4s; }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li span {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          margin-bottom: 20px;
+          padding: 10px;
+          width: 180px;
+          height: 180px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.08); }
+          .service.serviceinfo .totalcallcenter-area .procedure ol li span em {
+            display: block;
+            width: 100%;
+            padding-bottom: 12px;
+            color: #a9a9a9;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px; }
+          .service.serviceinfo .totalcallcenter-area .procedure ol li span strong {
+            position: relative;
+            display: block;
+            width: 100%;
+            color: #111111;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px; }
+          .service.serviceinfo .totalcallcenter-area .procedure ol li span .icon-arrow {
+            margin: -20px 0 10px;
+            width: 100%; }
+            .service.serviceinfo .totalcallcenter-area .procedure ol li span .icon-arrow:after {
+              background-position: -350px -50px;
+              background-image: url("../../../resources/w/images/service/service.png"); }
+          .service.serviceinfo .totalcallcenter-area .procedure ol li span.finish {
+            background: #0b50f2; }
+            .service.serviceinfo .totalcallcenter-area .procedure ol li span.finish strong {
+              color: #ffffff;
+              font-size: 20px; }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -400px 0;
+          background-repeat: no-repeat;
+          content: '';
+          width: 50px;
+          height: 50px; }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li::before {
+          top: 85px;
+          left: 0;
+          transform: translate(0, 0);
+          background-image: url("../../../resources/w/images/service/service.png");
+          opacity: .5; }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li::after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -450px 0;
+          background-repeat: no-repeat;
+          content: '';
+          width: 50px;
+          height: 50px; }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li::after {
+          top: 85px;
+          left: 26px;
+          transform: translate(0, 0) rotate(-90deg);
+          background-image: url("../../../resources/w/images/service/service.png"); }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li:first-of-type {
+          padding-left: 0;
+          width: 180px;
+          transition-delay: .4s; }
+          .service.serviceinfo .totalcallcenter-area .procedure ol li:first-of-type::before {
+            display: none; }
+          .service.serviceinfo .totalcallcenter-area .procedure ol li:first-of-type::after {
+            display: none; }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li:nth-of-type(2) {
+          transition-delay: .5s; }
+          .service.serviceinfo .totalcallcenter-area .procedure ol li:nth-of-type(2) .finish {
+            position: relative;
+            margin: 48px 0 0 0;
+            background: rgba(11, 80, 242, 0.8); }
+            .service.serviceinfo .totalcallcenter-area .procedure ol li:nth-of-type(2) .finish::before {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-image: url("../../../resources/w/images/common/icon.png");
+              display: inline-block;
+              background-position: -400px 0;
+              background-repeat: no-repeat;
+              content: '';
+              width: 50px;
+              height: 50px; }
+            .service.serviceinfo .totalcallcenter-area .procedure ol li:nth-of-type(2) .finish::before {
+              top: -52px;
+              left: 72px;
+              width: 36px;
+              transform: translate(0, 0) rotate(90deg);
+              background-image: url("../../../resources/w/images/service/service.png"); }
+            .service.serviceinfo .totalcallcenter-area .procedure ol li:nth-of-type(2) .finish::after {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-image: url("../../../resources/w/images/common/icon.png");
+              display: inline-block;
+              background-position: -450px 0;
+              background-repeat: no-repeat;
+              content: '';
+              width: 50px;
+              height: 50px; }
+            .service.serviceinfo .totalcallcenter-area .procedure ol li:nth-of-type(2) .finish::after {
+              top: -34px;
+              left: 65px;
+              transform: translate(0, 0);
+              background-image: url("../../../resources/w/images/service/service.png"); }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li:nth-of-type(3) {
+          transition-delay: .6s; }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li:nth-of-type(4) {
+          transition-delay: .7s; }
+        .service.serviceinfo .totalcallcenter-area .procedure ol li:last-of-type {
+          padding: 0 0 0 57px;
+          width: 277px;
+          z-index: 0;
+          transition-delay: .8s; }
+          .service.serviceinfo .totalcallcenter-area .procedure ol li:last-of-type .finish {
+            width: 220px;
+            height: 220px;
+            position: relative; }
+            .service.serviceinfo .totalcallcenter-area .procedure ol li:last-of-type .finish::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              content: '';
+              width: 452px;
+              height: 452px;
+              background-color: #0b50f2;
+              vertical-align: top; }
+            .service.serviceinfo .totalcallcenter-area .procedure ol li:last-of-type .finish::before {
+              top: -116px;
+              left: -116px;
+              opacity: .1;
+              border-radius: 50%; }
+  .service.serviceinfo .totalcallcenter-area.active .tit, .service.serviceinfo .totalcallcenter-area.active p, .service.serviceinfo .totalcallcenter-area.active ul {
+    opacity: 1;
+    transform: translateX(0); }
+  .service.serviceinfo .totalcallcenter-area.active .procedure .tit {
+    opacity: 1;
+    transform: translateX(0); }
+  .service.serviceinfo .totalcallcenter-area.active .procedure ol li {
+    opacity: 1;
+    transform: translateX(0); }
+.service.serviceinfo .as-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px 0 0; }
+  .service.serviceinfo .as-area > div {
+    position: relative;
+    padding: 44px;
+    width: 618px;
+    height: 368px;
+    background-color: #f4f4f4;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all .4s ease-in-out .2s; }
+    .service.serviceinfo .as-area > div::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("../../../resources/w/images/common/icon.png");
+      display: inline-block;
+      background-position: 0 -200px;
+      background-repeat: no-repeat;
+      content: '';
+      width: 50px;
+      height: 50px; }
+    .service.serviceinfo .as-area > div::before {
+      top: 44px;
+      left: auto;
+      right: 44px;
+      width: 60px;
+      height: 60px;
+      transform: translate(0, 0);
+      background-image: url("../../../resources/w/images/service/service.png"); }
+    .service.serviceinfo .as-area > div .tit {
+      font-size: 32px;
+      line-height: 48px; }
+    .service.serviceinfo .as-area > div p {
+      padding-top: 20px;
+      color: #767676;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 32px; }
+    .service.serviceinfo .as-area > div .btn-detail {
+      margin-top: 50px;
+      padding: 0;
+      color: #111111;
+      background-color: transparent;
+      border: 0; }
+      .service.serviceinfo .as-area > div .btn-detail .icon-arrow {
+        margin-top: -1px; }
+        .service.serviceinfo .as-area > div .btn-detail .icon-arrow::after {
+          background-position: -100px -100px;
+          background-image: url("../../../resources/w/images/common/btn.png"); }
+    .service.serviceinfo .as-area > div:last-of-type {
+      transform: translateX(-100px); }
+      .service.serviceinfo .as-area > div:last-of-type::before {
+        background-position: -100px -200px; }
+  .service.serviceinfo .as-area.active > div {
+    opacity: 1;
+    transform: translateX(0); }
+.service.serviceinfo .receptioncounter-area {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid #d4d4d4; }
+  .service.serviceinfo .receptioncounter-area .tit {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out; }
+    .service.serviceinfo .receptioncounter-area .tit p {
+      position: absolute;
+      top: 0;
+      right: 80px;
+      color: #444444;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px; }
+  .service.serviceinfo .receptioncounter-area ul {
+    margin-top: 80px;
+    display: flex; }
+    .service.serviceinfo .receptioncounter-area ul li {
+      margin-left: 28px;
+      width: 299px;
+      height: 400px;
+      padding: 44px;
+      border: 1px solid #d4d4d4;
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all .4s ease-in-out .2s; }
+      .service.serviceinfo .receptioncounter-area ul li:first-of-type {
+        margin-left: 0; }
+      .service.serviceinfo .receptioncounter-area ul li:nth-of-type(2) {
+        transition-delay: .2s; }
+      .service.serviceinfo .receptioncounter-area ul li:nth-of-type(3) {
+        transition-delay: .4s; }
+      .service.serviceinfo .receptioncounter-area ul li:nth-of-type(4) {
+        transition-delay: .6s; }
+    .service.serviceinfo .receptioncounter-area ul strong {
+      display: block;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 44px; }
+    .service.serviceinfo .receptioncounter-area ul em {
+      margin-top: 2px;
+      display: block;
+      color: #0b50f2;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px; }
+    .service.serviceinfo .receptioncounter-area ul p {
+      margin-top: 32px;
+      height: 156px;
+      color: #444444;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px; }
+    .service.serviceinfo .receptioncounter-area ul .btn-go {
+      margin-top: 18px;
+      padding: 0;
+      color: #111111;
+      background-color: transparent;
+      border: 0; }
+      .service.serviceinfo .receptioncounter-area ul .btn-go .icon-arrow {
+        margin-top: -1px; }
+        .service.serviceinfo .receptioncounter-area ul .btn-go .icon-arrow::after {
+          background-position: -100px -100px;
+          background-image: url("../../../resources/w/images/common/btn.png"); }
+  .service.serviceinfo .receptioncounter-area.active .tit {
+    opacity: 1;
+    transform: translateY(0); }
+  .service.serviceinfo .receptioncounter-area.active ul li {
+    opacity: 1;
+    transform: translateX(0); }
+.service.serviceinfo .centersearch-area {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 342px;
+  background: url("../../../resources/w/images/service/serviceinfo_centersearch.jpg") center top no-repeat; }
+  .service.serviceinfo .centersearch-area .tit {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out; }
+    .service.serviceinfo .centersearch-area .tit p {
+      margin-top: 6px;
+      color: #f4f4f4;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px; }
+  .service.serviceinfo .centersearch-area .btn {
+    margin-top: 40px;
+    width: 200px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out .2s; }
+  .service.serviceinfo .centersearch-area.active .tit, .service.serviceinfo .centersearch-area.active .btn {
+    opacity: 1;
+    transform: translateY(0); }
+.service.education section {
+  margin-top: 80px; }
+.service.education section.title-area {
+  margin-top: 0; }
+.service.education .tabs.slide {
+  margin-top: 60px; }
+.service.education .edu-area {
+  margin-top: 60px !important; }
+  .service.education .edu-area .calendar {
+    margin-top: 60px; }
+    .service.education .edu-area .calendar .header {
+      position: relative;
+      text-align: center; }
+      .service.education .edu-area .calendar .header .month {
+        line-height: 60px;
+        font-size: 40px;
+        font-weight: 700; }
+      .service.education .edu-area .calendar .header .indicator {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        width: 361px; }
+        .service.education .edu-area .calendar .header .indicator button {
+          position: relative;
+          display: inline-block;
+          width: 48px;
+          height: 48px; }
+          .service.education .edu-area .calendar .header .indicator button::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("../../../resources/w/images/common/btn.png");
+            display: inline-block;
+            background-position: -250px -50px;
+            background-repeat: no-repeat;
+            content: '';
+            width: 50px;
+            height: 50px; }
+          .service.education .edu-area .calendar .header .indicator button.btn-prev {
+            transform: rotate(180deg); }
+    .service.education .edu-area .calendar table {
+      margin-top: 32px; }
+      .service.education .edu-area .calendar table thead {
+        height: 54px;
+        border-top: 2px solid #111111; }
+        .service.education .edu-area .calendar table thead th {
+          color: #0b50f2;
+          font-size: 20px;
+          font-weight: 700;
+          text-align: center;
+          border-left: 1px solid #d4d4d4;
+          border-right: 1px solid #d4d4d4; }
+      .service.education .edu-area .calendar table tr {
+        position: relative; }
+        .service.education .edu-area .calendar table tr td:first-child .date, .service.education .edu-area .calendar table tr td:last-child .date {
+          color: #a9a9a9; }
+      .service.education .edu-area .calendar table td {
+        padding-bottom: 10px;
+        height: 160px;
+        vertical-align: top;
+        border: 1px solid #d4d4d4; }
+        .service.education .edu-area .calendar table td .date {
+          display: block;
+          padding: 15px 15px 10px;
+          line-height: 24px;
+          font-weight: 500; }
+        .service.education .edu-area .calendar table td .event {
+          display: block;
+          margin-left: -1px;
+          line-height: 30px;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 700; }
+          .service.education .edu-area .calendar table td .event span {
+            opacity: 0; }
+          .service.education .edu-area .calendar table td .event + .event {
+            margin-top: 5px; }
+          .service.education .edu-area .calendar table td .event.seoul {
+            background-color: rgba(11, 80, 242, 0.6); }
+          .service.education .edu-area .calendar table td .event.changwon {
+            background-color: rgba(35, 174, 195, 0.6); }
+          .service.education .edu-area .calendar table td .event.start {
+            margin-left: 15px;
+            padding-left: 24px; }
+            .service.education .edu-area .calendar table td .event.start span {
+              white-space: nowrap;
+              opacity: 1; }
+            .service.education .edu-area .calendar table td .event.start.end {
+              padding: 0 10px;
+              text-align: center; }
+          .service.education .edu-area .calendar table td .event.end {
+            margin-right: 15px; }
+    .service.education .edu-area .calendar .txt {
+      margin-top: 20px;
+      line-height: 24px;
+      color: #767676; }
+      .service.education .edu-area .calendar .txt span {
+        padding-left: 25px; }
+  .service.education .edu-area .info {
+    margin-top: 60px;
+    line-height: 24px; }
+    .service.education .edu-area .info .tit {
+      line-height: 32px;
+      font-size: 20px; }
+    .service.education .edu-area .info p {
+      margin-top: 8px; }
+      .service.education .edu-area .info p + p {
+        margin-top: 28px; }
+      .service.education .edu-area .info p span {
+        display: block;
+        color: #ff0000;
+        text-decoration: underline; }
+.service.education .map-area .tabs {
+  margin-top: 20px; }
+  .service.education .map-area .tabs:not(.tabs:has(a:nth-child(2))) a {
+    width: 100%; }
+    .service.education .map-area .tabs:not(.tabs:has(a:nth-child(2))) a:last-child {
+      border-left: 1px solid #d9d9d9; }
+      .service.education .map-area .tabs:not(.tabs:has(a:nth-child(2))) a:last-child.active {
+        border-color: #111111; }
+.service.education .map-area .tab-contents {
+  margin-top: 32px;
+  position: relative; }
+  .service.education .map-area .tab-contents .maker {
+    position: absolute;
+    top: 172px;
+    left: 666px;
+    padding: 18px 18px 0 18px;
+    width: auto;
+    height: 176px;
+    border: 2px solid #0b50f2;
+    background-color: #ffffff; }
+    .service.education .map-area .tab-contents .maker::before, .service.education .map-area .tab-contents .maker::after {
+      position: absolute;
+      top: 83px;
+      left: -68px;
+      content: '';
+      width: 66px;
+      height: 2px;
+      background-color: #0b50f2; }
+    .service.education .map-area .tab-contents .maker::after {
+      top: 107px;
+      left: -116px;
+      width: 60px;
+      transform: rotate(128deg); }
+    .service.education .map-area .tab-contents .maker .icon-ripple {
+      position: absolute;
+      top: 117px;
+      left: -115px; }
+    .service.education .map-area .tab-contents .maker strong {
+      line-height: 32px;
+      color: #0b50f2;
+      font-size: 20px; }
+    .service.education .map-area .tab-contents .maker ul li {
+      margin-top: 12px;
+      line-height: 24px; }
+      .service.education .map-area .tab-contents .maker ul li .icon-addr {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: top;
+        overflow: hidden; }
+        .service.education .map-area .tab-contents .maker ul li .icon-addr::after {
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: 0 -50px;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: '';
+          width: 50px;
+          height: 50px; }
+      .service.education .map-area .tab-contents .maker ul li .icon-tel {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: top;
+        overflow: hidden; }
+        .service.education .map-area .tab-contents .maker ul li .icon-tel::after {
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -50px -50px;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: '';
+          width: 50px;
+          height: 50px; }
+      .service.education .map-area .tab-contents .maker ul li .icon {
+        margin-right: 16px;
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        overflow: hidden; }
+.service.education .inquire-area .table {
+  margin-top: 24px; }
+  .service.education .inquire-area .table colgroup {
+    display: table-column-group; }
+    .service.education .inquire-area .table colgroup col:nth-child(1) {
+      width: 743px; }
+    .service.education .inquire-area .table colgroup col:nth-child(2) {
+      width: auto; }
+  .service.education .inquire-area .table th {
+    line-height: 40px;
+    font-size: 28px; }
+  .service.education .inquire-area .table td {
+    padding: 32px 0;
+    text-align: left; }
+    .service.education .inquire-area .table td ul li {
+      line-height: 24px; }
+      .service.education .inquire-area .table td ul li + li {
+        margin-top: 16px; }
+      .service.education .inquire-area .table td ul li .icon-person {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: top;
+        overflow: hidden; }
+        .service.education .inquire-area .table td ul li .icon-person::after {
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -100px -50px;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: '';
+          width: 50px;
+          height: 50px; }
+      .service.education .inquire-area .table td ul li .icon-tel {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: top;
+        overflow: hidden; }
+        .service.education .inquire-area .table td ul li .icon-tel::after {
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -150px -50px;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: '';
+          width: 50px;
+          height: 50px; }
+      .service.education .inquire-area .table td ul li .icon-fax {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: top;
+        overflow: hidden; }
+        .service.education .inquire-area .table td ul li .icon-fax::after {
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -200px -50px;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: '';
+          width: 50px;
+          height: 50px; }
+      .service.education .inquire-area .table td ul li .icon-email {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: top;
+        overflow: hidden; }
+        .service.education .inquire-area .table td ul li .icon-email::after {
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -250px -50px;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: '';
+          width: 50px;
+          height: 50px; }
+      .service.education .inquire-area .table td ul li .icon {
+        width: 60px;
+        height: 24px;
+        vertical-align: middle;
+        overflow: hidden; }
+        .service.education .inquire-area .table td ul li .icon::after {
+          margin-top: -1px; }
+        .service.education .inquire-area .table td ul li .icon.icon-person::after {
+          margin-top: -2px; }
+.service.education .video-area {
+  position: relative; }
+  .service.education .video-area .noti {
+    position: absolute;
+    top: 25px;
+    left: auto;
+    right: 0; }
+  .service.education .video-area .tabs {
+    margin-top: 24px; }
+  .service.education .video-area .video-swiper {
+    position: relative; }
+    .service.education .video-area .video-swiper > .tit {
+      display: block;
+      margin-top: 32px; }
+    .service.education .video-area .video-swiper .list-thumb {
+      margin-top: 20px; }
+      .service.education .video-area .video-swiper .list-thumb li a .info .tit {
+        height: 63px; }
+      .service.education .video-area .video-swiper .list-thumb li .video-id {
+        display: none; }
+    .service.education .video-area .video-swiper .swiper-button-prev,
+    .service.education .video-area .video-swiper .swiper-button-next {
+      top: 171px;
+      margin-top: 0;
+      width: 48px;
+      height: 48px;
+      transition: left 0.5s, right 0.5s; }
+    .service.education .video-area .video-swiper .swiper-button-prev {
+      left: -88px; }
+    .service.education .video-area .video-swiper .swiper-button-next {
+      right: -88px; }
+  .service.education .video-area .lecture {
+    margin-top: 80px; }
+    .service.education .video-area .lecture .tit {
+      display: block; }
+    .service.education .video-area .lecture .btn-download {
+      margin-top: 24px; }
+    .service.education .video-area .lecture .table {
+      margin-top: 24px; }
+      .service.education .video-area .lecture .table colgroup {
+        display: table-column-group; }
+        .service.education .video-area .lecture .table colgroup col:nth-child(1) {
+          width: 188px; }
+        .service.education .video-area .lecture .table colgroup col:nth-child(2) {
+          width: auto; }
+      .service.education .video-area .lecture .table td {
+        position: relative;
+        padding: 32px 0;
+        text-align: left; }
+        .service.education .video-area .lecture .table td .btn-video {
+          position: absolute;
+          top: 50%;
+          left: auto;
+          right: 32px;
+          transform: translateY(-50%);
+          width: 48px;
+          height: 48px; }
+          .service.education .video-area .lecture .table td .btn-video::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("../../../resources/w/images/common/btn.png");
+            display: inline-block;
+            background-position: -300px -50px;
+            background-repeat: no-repeat;
+            content: '';
+            width: 50px;
+            height: 50px; }
+.service.education .form-area .form-group + .form-group {
+  padding-bottom: 12px; }
+.service.education.complete .complete-area {
+  margin-top: 60px; }
+  .service.education.complete .complete-area .infotxt {
+    padding-bottom: 160px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9; }
+.service.faq .faq-area.inner {
+  margin-top: 60px; }
+.service.faq .manual-wrapper {
+  padding: 60px;
+  text-align: center;
+  background-color: #f8f8f8; }
+  .service.faq .manual-wrapper p {
+    margin-top: 16px;
+    color: #767676;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400; }
+  .service.faq .manual-wrapper .form-area {
+    margin-top: 40px; }
+    .service.faq .manual-wrapper .form-area label + label {
+      margin-left: 24px; }
+    .service.faq .manual-wrapper .form-area .form-btn {
+      margin: 24px auto 0;
+      max-width: 632px; }
+      .service.faq .manual-wrapper .form-area .form-btn input {
+        width: calc(100% - 216px);
+        height: 56px; }
+      .service.faq .manual-wrapper .form-area .form-btn .btn {
+        margin-left: 16px;
+        width: 200px; }
+.service.faq .form-filter {
+  margin-top: 60px;
+  font-size: 18px;
+  height: 42px; }
+  .service.faq .form-filter .total {
+    height: 42px;
+    line-height: 26px; }
+  .service.faq .form-filter.manual-txt {
+    height: 64px; }
+    .service.faq .form-filter.manual-txt .total {
+      line-height: 40px;
+      font-size: 28px; }
+.service.faq .list-accordion.barcode .accordion-ti::before {
+  background-position: -50px -200px; }
+.service.faq .list-accordion.barcode .accordion-cont::before {
+  content: none; }
+.service.faq .list-accordion.barcode .accordion-cont .scroll-content {
+  padding: 32px; }
+.service.faq .view-wrapper {
+  padding: 60px;
+  text-align: center;
+  background-color: #f8f8f8; }
+  .service.faq .view-wrapper .form-btn {
+    margin: 0 auto;
+    max-width: 632px; }
+    .service.faq .view-wrapper .form-btn input {
+      width: calc(100% - 216px);
+      height: 56px; }
+    .service.faq .view-wrapper .form-btn .btn {
+      margin-left: 16px;
+      width: 200px;
+      height: 56px; }
+.service.faq .viewlist-txt {
+  margin-top: 60px;
+  font-size: 28px;
+  line-height: 40px; }
+.service.inquiry .subvisual-area {
+  background-image: url("../../../resources/w/images/service/inquiry_visual.jpg");
+  background-position: center center; }
+  .service.inquiry .subvisual-area .inner p {
+    line-height: 48px;
+    font-size: 32px; }
+.service.inquiry .inquiry-area {
+  margin-top: 60px; }
+  .service.inquiry .inquiry-area .guidetxt {
+    margin-top: 16px; }
+  .service.inquiry .inquiry-area .form-area {
+    margin-top: 80px; }
+  .service.inquiry .inquiry-area .form-entry .input-info span {
+    color: #767676; }
+.service.servicecenter .list-area, .service.warranty .list-area {
+  padding-top: 0;
+  border-top: 0; }
+  .service.servicecenter .list-area .list-office, .service.warranty .list-area .list-office {
+    margin-top: 24px; }
+    .service.servicecenter .list-area .list-office ul, .service.warranty .list-area .list-office ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: -28px; }
+      .service.servicecenter .list-area .list-office ul li, .service.warranty .list-area .list-office ul li {
+        margin-top: 28px;
+        width: 626px;
+        min-height: 344px; }
+        .service.servicecenter .list-area .list-office ul li dl dt, .service.warranty .list-area .list-office ul li dl dt {
+          padding-bottom: 12px;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 40px; }
+        .service.servicecenter .list-area .list-office ul li dl dd, .service.warranty .list-area .list-office ul li dl dd {
+          display: flex;
+          padding-top: 12px;
+          color: #111111;
+          font-size: 20px;
+          line-height: 32px; }
+          .service.servicecenter .list-area .list-office ul li dl dd > .icon, .service.warranty .list-area .list-office ul li dl dd > .icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px; }
+          .service.servicecenter .list-area .list-office ul li dl dd > span, .service.warranty .list-area .list-office ul li dl dd > span {
+            flex-grow: 1;
+            padding: 3px 0 0 16px; }
+.service.servicecenter .subvisual-area {
+  background-image: url("../../../resources/w/images/service/servicecenter_visual.jpg"); }
+.service.servicecenter .map-area {
+  margin-top: 74px; }
+  .service.servicecenter .map-area .form-filter {
+    display: flex;
+    margin-top: 24px;
+    padding: 16px 427px 0 0;
+    height: auto;
+    border-top: 2px solid #111111; }
+    .service.servicecenter .map-area .form-filter .select {
+      margin-right: 8px;
+      flex: 1 1 25%; }
+    .service.servicecenter .map-area .form-filter .form-search {
+      top: 16px;
+      width: 427px; }
+  .service.servicecenter .map-area .map-content {
+    margin-top: 34px; }
+.service.servicecenter .list-area {
+  margin-top: 82px; }
+  .service.servicecenter .list-area .form-filter .total {
+    font-size: 32px; }
+  .service.servicecenter .list-area .list-office ul li {
+    position: relative; }
+    .service.servicecenter .list-area .list-office ul li a {
+      display: block;
+      padding: 55px;
+      height: 100%;
+      border: 1px solid #d4d4d4; }
+      .service.servicecenter .list-area .list-office ul li a.active {
+        border-color: #0b50f2; }
+    .service.servicecenter .list-area .list-office ul li .btn-download {
+      position: absolute;
+      top: 56px;
+      left: auto;
+      right: 56px; }
+  .service.servicecenter .list-area .infotxt.nodata {
+    margin-top: 24px;
+    padding: 159px 0;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4; }
+.service.servicecenter .info-area {
+  margin-top: 120px; }
+  .service.servicecenter .info-area ol {
+    display: flex; }
+    .service.servicecenter .info-area ol li {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateY(50px);
+      position: relative;
+      padding: 44px;
+      width: 408px;
+      min-height: 299px;
+      background-color: #f4f4f4; }
+      .service.servicecenter .info-area ol li:nth-child(1) {
+        transition-delay: 0.3s; }
+      .service.servicecenter .info-area ol li:nth-child(2) {
+        transition-delay: 0.4s; }
+      .service.servicecenter .info-area ol li:nth-child(3) {
+        transition-delay: 0.5s; }
+      .service.servicecenter .info-area ol li::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../../resources/w/images/common/icon.png");
+        display: inline-block;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        content: '';
+        width: 50px;
+        height: 50px; }
+      .service.servicecenter .info-area ol li::before {
+        top: 44px;
+        left: auto;
+        right: 34px;
+        transform: translate(0);
+        background-image: url("../../../resources/w/images/service/service.png"); }
+      .service.servicecenter .info-area ol li:nth-child(1)::before {
+        background-position: 0 0; }
+      .service.servicecenter .info-area ol li:nth-child(2)::before {
+        background-position: -50px 0; }
+      .service.servicecenter .info-area ol li:nth-child(3)::before {
+        background-position: -100px 0; }
+      .service.servicecenter .info-area ol li + li {
+        margin-left: 28px; }
+      .service.servicecenter .info-area ol li strong {
+        line-height: 48px;
+        font-size: 32px; }
+      .service.servicecenter .info-area ol li p {
+        margin-top: 32px;
+        line-height: 26px;
+        color: #444444;
+        font-size: 18px;
+        font-weight: 500; }
+  .service.servicecenter .info-area.active ol li {
+    opacity: 1;
+    transform: translate(0, 0); }
+.service.servicecenter .centermap-area {
+  margin-top: 18px; }
+  .service.servicecenter .centermap-area .tit {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 96px;
+    border-bottom: 2px solid #111111; }
+  .service.servicecenter .centermap-area .centerlist {
+    position: relative;
+    margin-top: 60px;
+    height: 1061px;
+    background: url("../../../resources/w/images/service/servicecenter_map_cn.png") 0 0 no-repeat; }
+    .service.servicecenter .centermap-area .centerlist > div {
+      position: relative;
+      position: relative;
+      position: absolute;
+      top: 0;
+      left: 40px;
+      padding: 18px 10px 18px 20px;
+      width: 300px;
+      background-color: #ffffff;
+      border: 2px solid #0b50f2;
+      opacity: 0;
+      transition: opacity .4s ease-in-out; }
+      .service.servicecenter .centermap-area .centerlist > div::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 2px;
+        height: 100px;
+        background-color: #0b50f2;
+        vertical-align: top; }
+      .service.servicecenter .centermap-area .centerlist > div::after {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+        content: '';
+        width: 100px;
+        height: 2px;
+        background-color: #0b50f2;
+        vertical-align: top; }
+      .service.servicecenter .centermap-area .centerlist > div .icon-ripple {
+        position: absolute; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(1) {
+        top: 137px;
+        transition-delay: 1.5s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(1) .icon-ripple {
+          top: 354px;
+          left: 537px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(1)::before {
+          top: 117px;
+          left: calc(100% + 131px);
+          height: 250px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(1)::after {
+          top: 365px;
+          right: -241px;
+          width: 110px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(1) dl {
+          position: relative;
+          position: static; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(1) dl::after {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+            content: '';
+            width: 131px;
+            height: 2px;
+            background-color: #0b50f2;
+            vertical-align: top; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(1) dl::after {
+            top: 117px;
+            right: -131px; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(2) {
+        top: 457px;
+        transition-delay: .2s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(2) .icon-ripple {
+          top: 80px;
+          right: -340px; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(2) .icon-ripple::before, .service.servicecenter .centermap-area .centerlist > div:nth-of-type(2) .icon-ripple::after {
+            animation-delay: .5s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(2)::before {
+          display: none; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(2)::after {
+          top: 91px;
+          right: -320px;
+          width: 320px; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(3) {
+        top: auto;
+        bottom: 40px;
+        transition-delay: .1s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(3) .icon-ripple {
+          top: -51px;
+          right: -348px; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(3) .icon-ripple::before, .service.servicecenter .centermap-area .centerlist > div:nth-of-type(3) .icon-ripple::after {
+            animation-delay: 1s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(3)::before {
+          top: -40px;
+          left: 147px;
+          height: 40px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(3)::after {
+          top: -40px;
+          right: auto;
+          left: 147px;
+          width: 478px; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4) {
+        top: auto;
+        bottom: 40px;
+        left: 440px;
+        transition-delay: .8s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4) .icon-ripple {
+          top: -185px;
+          left: 356px; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4) .icon-ripple::before, .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4) .icon-ripple::after {
+            animation-delay: .5s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4)::before {
+          top: -174px;
+          left: 320px;
+          height: 332px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4)::after {
+          top: -174px;
+          right: auto;
+          left: 320px;
+          width: 50px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4) dl {
+          position: relative;
+          position: static; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4) dl::after {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+            content: '';
+            width: 26px;
+            height: 2px;
+            background-color: #0b50f2;
+            vertical-align: top; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(4) dl::after {
+            top: 157px;
+            right: -26px; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(5) {
+        top: auto;
+        bottom: 64px;
+        left: 860px;
+        transition-delay: .8s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(5) .icon-ripple {
+          top: -210px;
+          left: -53px; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(5) .icon-ripple::before, .service.servicecenter .centermap-area .centerlist > div:nth-of-type(5) .icon-ripple::after {
+            animation-delay: .1s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(5)::before {
+          top: -197px;
+          left: 29px;
+          height: 197px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(5)::after {
+          top: -197px;
+          right: auto;
+          left: -29px;
+          width: 60px; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(6) {
+        top: 482px;
+        left: 940px;
+        transition-delay: .5s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(6) .icon-ripple {
+          display: none; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(6)::before {
+          top: -30px;
+          left: 135px;
+          height: 30px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(6)::after {
+          display: none; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(7) {
+        top: 270px;
+        left: 940px;
+        transition-delay: .2s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(7) .icon-ripple {
+          top: 184px;
+          left: -155px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(7)::before {
+          top: 91px;
+          left: -77px;
+          height: 108px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(7)::after {
+          top: 197px;
+          right: auto;
+          left: -135px;
+          width: 60px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(7) dl {
+          position: relative;
+          position: static; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(7) dl::after {
+            position: absolute;
+            top: 0;
+            left: auto;
+            right: 0;
+            content: '';
+            width: 26px;
+            height: 2px;
+            background-color: #0b50f2;
+            vertical-align: top; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(7) dl::after {
+            top: 91px;
+            right: auto;
+            left: -76px;
+            width: 76px; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(8) {
+        top: 40px;
+        left: 491px;
+        transition-delay: .6s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(8) .icon-ripple {
+          top: 379px;
+          left: 204px; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(8) .icon-ripple::before, .service.servicecenter .centermap-area .centerlist > div:nth-of-type(8) .icon-ripple::after {
+            animation-delay: 1.5s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(8)::before {
+          top: auto;
+          bottom: -132px;
+          left: 147px;
+          height: 132px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(8)::after {
+          top: auto;
+          bottom: -132px;
+          right: auto;
+          left: 147px;
+          width: 60px; }
+      .service.servicecenter .centermap-area .centerlist > div:nth-of-type(9) {
+        top: 40px;
+        left: 940px;
+        transition-delay: .2s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(9) .icon-ripple {
+          top: 315px;
+          left: -120px; }
+          .service.servicecenter .centermap-area .centerlist > div:nth-of-type(9) .icon-ripple::before, .service.servicecenter .centermap-area .centerlist > div:nth-of-type(9) .icon-ripple::after {
+            animation-delay: .8s; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(9)::before {
+          top: 99px;
+          left: -109px;
+          height: 220px; }
+        .service.servicecenter .centermap-area .centerlist > div:nth-of-type(9)::after {
+          top: 99px;
+          right: auto;
+          left: -109px;
+          width: 108px; }
+      .service.servicecenter .centermap-area .centerlist > div dl dt {
+        display: block;
+        padding-bottom: 4px;
+        color: #0b50f2;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px; }
+      .service.servicecenter .centermap-area .centerlist > div dl dd {
+        display: flex;
+        align-items: center;
+        padding: 12px 0 0;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; }
+        .service.servicecenter .centermap-area .centerlist > div dl dd .icon {
+          flex-shrink: 0;
+          width: 40px;
+          height: 40px; }
+        .service.servicecenter .centermap-area .centerlist > div dl dd span {
+          flex-grow: 1;
+          width: 204px;
+          padding: 0 0 0 16px; }
+  .service.servicecenter .centermap-area.active .centerlist > div {
+    opacity: 1; }
+.service.warranty .subvisual-area {
+  background-image: url("../../../resources/w/images/service/warranty_visual.jpg");
+  background-position: center top; }
+  .service.warranty .subvisual-area ul {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translate(0, -50%);
+    right: 0; }
+    .service.warranty .subvisual-area ul li {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateY(50px);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      line-height: 32px;
+      color: #ffffff;
+      font-size: 20px;
+      text-align: center;
+      vertical-align: top;
+      border-radius: 200px; }
+      .service.warranty .subvisual-area ul li + li {
+        margin-left: 20px; }
+      .service.warranty .subvisual-area ul li:nth-child(1) {
+        transition-delay: 0.8s;
+        background-color: #0b50f2; }
+      .service.warranty .subvisual-area ul li:nth-child(2) {
+        transition-delay: 1.0s;
+        background-color: #1142b6; }
+      .service.warranty .subvisual-area ul li:nth-child(3) {
+        transition-delay: 1.2s;
+        background-color: #444444; }
+  .service.warranty .subvisual-area.active ul li {
+    opacity: 1;
+    transform: translate(0, 0); }
+.service.warranty .feature-area {
+  padding-top: 68px; }
+  .service.warranty .feature-area .tit {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-50px); }
+  .service.warranty .feature-area .tit-sub {
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(50px);
+    padding-left: 240px;
+    color: #444444; }
+    .service.warranty .feature-area .tit-sub small {
+      display: block;
+      margin-top: 14px;
+      line-height: 20px;
+      color: #0b50f2;
+      font-size: 14px;
+      font-weight: 500; }
+  .service.warranty .feature-area ul {
+    display: flex;
+    margin-top: 40px; }
+    .service.warranty .feature-area ul li {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateY(50px);
+      position: relative;
+      flex: 1 1 0;
+      padding: 44px;
+      height: 344px;
+      background-color: #f4f4f4; }
+      .service.warranty .feature-area ul li:nth-child(1) {
+        transition-delay: 0.3s; }
+      .service.warranty .feature-area ul li:nth-child(2) {
+        transition-delay: 0.4s; }
+      .service.warranty .feature-area ul li:nth-child(3) {
+        transition-delay: 0.5s; }
+      .service.warranty .feature-area ul li + li {
+        margin-left: 28px; }
+      .service.warranty .feature-area ul li strong {
+        line-height: 44px;
+        font-size: 28px;
+        font-weight: 500; }
+      .service.warranty .feature-area ul li p {
+        margin-top: 32px;
+        line-height: 26px;
+        font-size: 18px;
+        font-weight: 500; }
+      .service.warranty .feature-area ul li::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../../resources/w/images/common/icon.png");
+        display: inline-block;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        content: '';
+        width: 50px;
+        height: 50px; }
+      .service.warranty .feature-area ul li:after {
+        top: auto;
+        left: auto;
+        right: 44px;
+        bottom: 44px;
+        transform: translate(0, 0);
+        width: 64px;
+        height: 64px;
+        background-image: url("../../../resources/w/images/service/service.png"); }
+      .service.warranty .feature-area ul li:nth-child(1):after {
+        background-position: 0 -50px; }
+      .service.warranty .feature-area ul li:nth-child(2):after {
+        background-position: -64px -50px; }
+      .service.warranty .feature-area ul li:nth-child(3):after {
+        background-position: -128px -50px; }
+  .service.warranty .feature-area + .feature-area {
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #d4d4d4; }
+    .service.warranty .feature-area + .feature-area .tit {
+      top: 40px; }
+    .service.warranty .feature-area + .feature-area ul {
+      margin-top: 60px; }
+      .service.warranty .feature-area + .feature-area ul li {
+        height: 329px; }
+        .service.warranty .feature-area + .feature-area ul li em {
+          display: block;
+          margin-top: 12px;
+          line-height: 80px;
+          font-size: 64px; }
+        .service.warranty .feature-area + .feature-area ul li:nth-child(1):after {
+          background-position: -192px -50px; }
+        .service.warranty .feature-area + .feature-area ul li:nth-child(2):after {
+          background-position: -256px -50px; }
+  .service.warranty .feature-area.active .tit,
+  .service.warranty .feature-area.active .tit-sub {
+    opacity: 1;
+    transform: translate(0, 0); }
+  .service.warranty .feature-area.active ul li {
+    opacity: 1;
+    transform: translate(0, 0); }
+.service.warranty .list-area {
+  margin-top: 76px; }
+  .service.warranty .list-area .tit,
+  .service.warranty .list-area .list-office {
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(50px); }
+  .service.warranty .list-area .list-office {
+    transition-delay: 0.2s; }
+    .service.warranty .list-area .list-office ul li {
+      padding: 56px;
+      border: 1px solid #d4d4d4; }
+  .service.warranty .list-area.active .tit,
+  .service.warranty .list-area.active .list-office {
+    opacity: 1;
+    transform: translate(0, 0); }
+.service.warranty .servicedetail-area {
+  padding-top: 120px;
+  overflow: hidden; }
+  .service.warranty .servicedetail-area li {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .service.warranty .servicedetail-area li:first-of-type {
+      padding-top: 0; }
+    .service.warranty .servicedetail-area li figure {
+      width: 626px;
+      order: 1;
+      opacity: 0;
+      transform: translateX(100px);
+      transition: all .4s ease-in-out; }
+    .service.warranty .servicedetail-area li .info {
+      width: 570px;
+      order: 2;
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: all .4s ease-in-out; }
+      .service.warranty .servicedetail-area li .info strong {
+        display: block;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px; }
+      .service.warranty .servicedetail-area li .info p {
+        padding-top: 20px;
+        color: #767676;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px; }
+    .service.warranty .servicedetail-area li:nth-of-type(2n) figure {
+      order: 2; }
+    .service.warranty .servicedetail-area li:nth-of-type(2n) .info {
+      order: 1; }
+    .service.warranty .servicedetail-area li.active figure, .service.warranty .servicedetail-area li.active .info {
+      opacity: 1;
+      transform: translateX(0); }
+.service.warranty .phoneservice-area {
+  margin-top: 120px;
+  padding: 120px 0;
+  background-color: rgba(11, 80, 242, 0.04); }
+  .service.warranty .phoneservice-area .tit {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all .4s ease-in-out; }
+  .service.warranty .phoneservice-area .tit-sub {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    margin-top: 0;
+    color: #767676;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all .4s ease-in-out; }
+  .service.warranty .phoneservice-area ul {
+    position: relative;
+    margin: 60px auto 0;
+    width: 968px;
+    height: 608px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .6s ease-in-out .4s; }
+    .service.warranty .phoneservice-area ul::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: calc(50% - 295px);
+      width: 590px;
+      height: 590px;
+      border-radius: 50%;
+      border: 2px solid rgba(11, 80, 242, 0.2); }
+  .service.warranty .phoneservice-area li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 194px;
+    width: 300px; }
+    .service.warranty .phoneservice-area li span {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 70px 10px 10px;
+      width: 200px;
+      height: 200px;
+      background-color: #ffffff;
+      border-radius: 50%; }
+      .service.warranty .phoneservice-area li span::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../../resources/w/images/common/icon.png");
+        display: inline-block;
+        background-position: -100px -150px;
+        background-repeat: no-repeat;
+        content: '';
+        width: 50px;
+        height: 50px; }
+      .service.warranty .phoneservice-area li span::before {
+        top: 53px;
+        transform: translate(-50%, 0);
+        background-image: url("../../../resources/w/images/service/service.png"); }
+      .service.warranty .phoneservice-area li span strong {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px; }
+    .service.warranty .phoneservice-area li p {
+      margin-top: 16px;
+      color: #1142b6;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+    .service.warranty .phoneservice-area li:nth-of-type(2), .service.warranty .phoneservice-area li:nth-of-type(4) {
+      left: 243px;
+      padding-top: 312px;
+      width: 130px;
+      text-align: center; }
+      .service.warranty .phoneservice-area li:nth-of-type(2)::before, .service.warranty .phoneservice-area li:nth-of-type(4)::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../../resources/w/images/common/icon.png");
+        display: inline-block;
+        background-position: -450px 0;
+        background-repeat: no-repeat;
+        content: '';
+        width: 50px;
+        height: 50px; }
+      .service.warranty .phoneservice-area li:nth-of-type(2)::before, .service.warranty .phoneservice-area li:nth-of-type(4)::before {
+        top: 270px;
+        left: -20px;
+        transform: translate(0, 0) rotate(90deg);
+        background-image: url("../../../resources/w/images/service/service.png"); }
+      .service.warranty .phoneservice-area li:nth-of-type(2)::after, .service.warranty .phoneservice-area li:nth-of-type(4)::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../../resources/w/images/common/icon.png");
+        display: inline-block;
+        background-position: -450px 0;
+        background-repeat: no-repeat;
+        content: '';
+        width: 50px;
+        height: 50px; }
+      .service.warranty .phoneservice-area li:nth-of-type(2)::after, .service.warranty .phoneservice-area li:nth-of-type(4)::after {
+        top: 270px;
+        left: auto;
+        right: -20px;
+        transform: translate(0, 0) rotate(-90deg);
+        background-image: url("../../../resources/w/images/service/service.png"); }
+      .service.warranty .phoneservice-area li:nth-of-type(2) .icon-arrow, .service.warranty .phoneservice-area li:nth-of-type(4) .icon-arrow {
+        width: 46px;
+        height: 46px;
+        background-color: rgba(11, 80, 242, 0.8);
+        border-radius: 50%; }
+        .service.warranty .phoneservice-area li:nth-of-type(2) .icon-arrow::after, .service.warranty .phoneservice-area li:nth-of-type(4) .icon-arrow::after {
+          background: url("../../../resources/w/images/service/service.png") -250px -150px no-repeat; }
+      .service.warranty .phoneservice-area li:nth-of-type(2) p::before, .service.warranty .phoneservice-area li:nth-of-type(4) p::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url("../../../resources/w/images/common/icon.png");
+        display: inline-block;
+        background-position: -300px -150px;
+        background-repeat: no-repeat;
+        content: '';
+        width: 50px;
+        height: 50px; }
+      .service.warranty .phoneservice-area li:nth-of-type(2) p::before, .service.warranty .phoneservice-area li:nth-of-type(4) p::before {
+        top: 270px;
+        left: 0;
+        transform: translate(0, 0);
+        width: 200px;
+        background-image: url("../../../resources/w/images/service/service.png"); }
+    .service.warranty .phoneservice-area li:nth-of-type(4) {
+      left: 597px; }
+    .service.warranty .phoneservice-area li:nth-of-type(3) {
+      left: 374px;
+      padding-top: 185px;
+      width: 220px;
+      z-index: 1;
+      position: relative; }
+      .service.warranty .phoneservice-area li:nth-of-type(3) span {
+        width: 220px;
+        height: 220px;
+        background-color: #0b50f2; }
+        .service.warranty .phoneservice-area li:nth-of-type(3) span::before {
+          background-position: -150px -150px; }
+        .service.warranty .phoneservice-area li:nth-of-type(3) span strong {
+          color: #ffffff;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 40px; }
+      .service.warranty .phoneservice-area li:nth-of-type(3) .txt-totalservice {
+        position: relative;
+        margin: 147px auto 0;
+        padding: 16px 0;
+        width: 192px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        background-color: #ffffff;
+        box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, 0.08); }
+        .service.warranty .phoneservice-area li:nth-of-type(3) .txt-totalservice::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -450px 0;
+          background-repeat: no-repeat;
+          content: '';
+          width: 50px;
+          height: 50px; }
+        .service.warranty .phoneservice-area li:nth-of-type(3) .txt-totalservice::before {
+          top: -195px;
+          left: -212px;
+          transform: translate(0, 0) rotate(36deg);
+          background-image: url("../../../resources/w/images/service/service.png"); }
+        .service.warranty .phoneservice-area li:nth-of-type(3) .txt-totalservice::after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-image: url("../../../resources/w/images/common/icon.png");
+          display: inline-block;
+          background-position: -450px 0;
+          background-repeat: no-repeat;
+          content: '';
+          width: 50px;
+          height: 50px; }
+        .service.warranty .phoneservice-area li:nth-of-type(3) .txt-totalservice::after {
+          top: -200px;
+          left: auto;
+          right: -214px;
+          transform: translate(0, 0) rotate(-42deg);
+          background-image: url("../../../resources/w/images/service/service.png"); }
+      .service.warranty .phoneservice-area li:nth-of-type(3)::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 372px;
+        height: 372px;
+        background-color: #d4d4d4;
+        vertical-align: top; }
+      .service.warranty .phoneservice-area li:nth-of-type(3)::before {
+        top: 104px;
+        left: -76px;
+        background-color: rgba(11, 80, 242, 0.1);
+        border-radius: 50%; }
+    .service.warranty .phoneservice-area li:nth-of-type(5) {
+      left: 680px; }
+      .service.warranty .phoneservice-area li:nth-of-type(5) span::before {
+        background-position: -200px -150px; }
+  .service.warranty .phoneservice-area.active .tit, .service.warranty .phoneservice-area.active .tit-sub {
+    opacity: 1;
+    transform: translateX(0); }
+  .service.warranty .phoneservice-area.active ul {
+    opacity: 1;
+    transform: translateY(0); }
+.service.warranty .feature-area {
+  padding-top: 120px; }
+  .service.warranty .feature-area .tit {
+    top: 120px; }
+  .service.warranty .feature-area .tit-sub {
+    margin-top: 0; }
+  .service.warranty .feature-area ul {
+    margin-top: 60px; }
+.service.warranty .worldservice-area {
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+  padding: 0 60px;
+  height: 320px;
+  background-image: url("../../../resources/w/images/service/warranty_visual.jpg"); }
+  .service.warranty .worldservice-area .tit {
+    display: block;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out; }
+  .service.warranty .worldservice-area p {
+    padding-top: 20px;
+    width: 480px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out .2s; }
+  .service.warranty .worldservice-area ul {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    transform: translate(0, -50%);
+    right: 0; }
+    .service.warranty .worldservice-area ul li {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateY(50px);
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 200px;
+      height: 200px;
+      line-height: 32px;
+      color: #ffffff;
+      font-size: 20px;
+      text-align: center;
+      vertical-align: top;
+      border-radius: 200px; }
+      .service.warranty .worldservice-area ul li strong {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 200px;
+        height: 52px; }
+      .service.warranty .worldservice-area ul li em {
+        display: block;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 52px; }
+      .service.warranty .worldservice-area ul li + li {
+        margin-left: 20px; }
+      .service.warranty .worldservice-area ul li:nth-child(1) {
+        transition-delay: 0.8s;
+        background-color: #0b50f2; }
+      .service.warranty .worldservice-area ul li:nth-child(2) {
+        transition-delay: 1.0s;
+        background-color: #1142b6; }
+      .service.warranty .worldservice-area ul li:nth-child(3) {
+        transition-delay: 1.2s;
+        background-color: #444444; }
+  .service.warranty .worldservice-area.active .tit, .service.warranty .worldservice-area.active p {
+    opacity: 1;
+    transform: translateY(0); }
+  .service.warranty .worldservice-area.active ul li {
+    opacity: 1;
+    transform: translate(0, 0); }
+.service.warranty .mapservice-area {
+  margin-top: 120px;
+  padding: 80px 0;
+  background-color: rgba(11, 80, 242, 0.17); }
+  .service.warranty .mapservice-area .inner {
+    position: relative;
+    height: 621px;
+    background: url("../../../resources/w/images/service/warranty_mapservice_cn.png") 0 0 no-repeat;
+    overflow: hidden; }
+    .service.warranty .mapservice-area .inner li {
+      position: absolute;
+      transform: scale(0);
+      transition: all .4s ease-in-out; }
+      .service.warranty .mapservice-area .inner li .icon-ripple {
+        margin-top: 3px; }
+        .service.warranty .mapservice-area .inner li .icon-ripple::before, .service.warranty .mapservice-area .inner li .icon-ripple::after {
+          animation-delay: .5s; }
+      .service.warranty .mapservice-area .inner li span {
+        margin-left: 35px;
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 50px;
+        background-color: #0b50f2;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        position: relative; }
+        .service.warranty .mapservice-area .inner li span::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: '';
+          width: 39px;
+          height: 2px;
+          background-color: #5484F6;
+          vertical-align: top; }
+        .service.warranty .mapservice-area .inner li span::before {
+          top: 14px;
+          left: -39px; }
+      .service.warranty .mapservice-area .inner li:nth-of-type(1) {
+        top: 223px;
+        left: 313px;
+        transition-delay: .1s; }
+      .service.warranty .mapservice-area .inner li:nth-of-type(2) {
+        top: 194px;
+        left: 618px;
+        transition-delay: .6s; }
+        .service.warranty .mapservice-area .inner li:nth-of-type(2) .icon-ripple::before, .service.warranty .mapservice-area .inner li:nth-of-type(2) .icon-ripple::after {
+          animation-delay: .1s; }
+      .service.warranty .mapservice-area .inner li:nth-of-type(3) {
+        top: 328px;
+        left: 866px;
+        transition-delay: .2s; }
+      .service.warranty .mapservice-area .inner li:nth-of-type(4) {
+        top: 237px;
+        left: auto;
+        right: 325px;
+        transition-delay: .5s; }
+        .service.warranty .mapservice-area .inner li:nth-of-type(4) .icon-ripple {
+          position: absolute;
+          top: 0;
+          right: -63px; }
+          .service.warranty .mapservice-area .inner li:nth-of-type(4) .icon-ripple::before, .service.warranty .mapservice-area .inner li:nth-of-type(4) .icon-ripple::after {
+            animation-delay: 1s; }
+        .service.warranty .mapservice-area .inner li:nth-of-type(4) span {
+          margin-left: 0; }
+          .service.warranty .mapservice-area .inner li:nth-of-type(4) span::before {
+            left: 100%; }
+      .service.warranty .mapservice-area .inner li:nth-of-type(5) {
+        top: 276px;
+        left: auto;
+        right: 310px;
+        transition-delay: .4s; }
+        .service.warranty .mapservice-area .inner li:nth-of-type(5) .icon-ripple {
+          position: absolute;
+          top: 0;
+          right: -53px; }
+          .service.warranty .mapservice-area .inner li:nth-of-type(5) .icon-ripple::before, .service.warranty .mapservice-area .inner li:nth-of-type(5) .icon-ripple::after {
+            animation-delay: 1.5s; }
+        .service.warranty .mapservice-area .inner li:nth-of-type(5) span {
+          margin-left: 0; }
+          .service.warranty .mapservice-area .inner li:nth-of-type(5) span::before {
+            left: 100%;
+            width: 29px; }
+      .service.warranty .mapservice-area .inner li:nth-of-type(6) {
+        top: 219px;
+        left: 1039px;
+        transition-delay: .3s; }
+        .service.warranty .mapservice-area .inner li:nth-of-type(6) .icon-ripple::before, .service.warranty .mapservice-area .inner li:nth-of-type(6) .icon-ripple::after {
+          animation-delay: 3s; }
+      .service.warranty .mapservice-area .inner li:nth-of-type(7) {
+        top: 253px;
+        left: 1039px; }
+        .service.warranty .mapservice-area .inner li:nth-of-type(7) span {
+          margin-left: 24px; }
+          .service.warranty .mapservice-area .inner li:nth-of-type(7) span::before {
+            left: -27px;
+            width: 29px; }
+  .service.warranty .mapservice-area.active .inner li {
+    transform: scale(1); }
+.service.warranty .centersearch-area {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 342px;
+  background: url("../../../resources/w/images/service/serviceinfo_centersearch.jpg") center top no-repeat; }
+  .service.warranty .centersearch-area .tit {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out; }
+    .service.warranty .centersearch-area .tit p {
+      margin-top: 6px;
+      color: #f4f4f4;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px; }
+  .service.warranty .centersearch-area .btn {
+    margin-top: 40px;
+    width: 200px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out .2s; }
+  .service.warranty .centersearch-area.active .tit, .service.warranty .centersearch-area.active .btn {
+    opacity: 1;
+    transform: translateY(0); }
+.service.excellence .subvisual-area {
+  background-position: center center; }
+  .service.excellence .subvisual-area .inner p {
+    line-height: 48px;
+    font-size: 32px; }
+.service.excellence .servicedetail-area {
+  margin-top: 120px; }
+  .service.excellence .servicedetail-area:not(.inner) {
+    background-color: #f4f4f4; }
+    .service.excellence .servicedetail-area:not(.inner) > .inner {
+      padding: 120px 0; }
+  .service.excellence .servicedetail-area .scont {
+    display: flex; }
+    .service.excellence .servicedetail-area .scont + .scont {
+      margin-top: 60px; }
+    .service.excellence .servicedetail-area .scont.line {
+      padding-top: 60px;
+      border-top: 1px solid #d4d4d4; }
+      .service.excellence .servicedetail-area .scont.line h4.tit {
+        line-height: 36px;
+        font-size: 24px; }
+    .service.excellence .servicedetail-area .scont.solution {
+      margin: -40px 0; }
+    .service.excellence .servicedetail-area .scont > .tit {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateX(-50px);
+      width: 400px; }
+    .service.excellence .servicedetail-area .scont .guidetxt {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateX(50px);
+      width: calc(100% - 400px); }
+      .service.excellence .servicedetail-area .scont .guidetxt > strong {
+        display: block;
+        line-height: 32px;
+        font-size: 20px;
+        font-weight: 500; }
+        .service.excellence .servicedetail-area .scont .guidetxt > strong:not(:first-child) {
+          margin-top: 28px; }
+      .service.excellence .servicedetail-area .scont .guidetxt p:not(:first-child) {
+        margin-top: 16px; }
+      .service.excellence .servicedetail-area .scont .guidetxt p:not(.noti) {
+        line-height: 24px;
+        color: #767676;
+        font-size: 18px; }
+      .service.excellence .servicedetail-area .scont .guidetxt p.tit-sub {
+        margin-top: 0;
+        line-height: 32px;
+        color: #444444;
+        font-size: 20px;
+        letter-spacing: -0.1px;
+        word-break: break-all; }
+      .service.excellence .servicedetail-area .scont .guidetxt p.note.em03 + ul.note.em03 {
+        margin: 8px 0 0 16px; }
+      .service.excellence .servicedetail-area .scont .guidetxt.dot ul {
+        display: flex;
+        flex-wrap: wrap; }
+        .service.excellence .servicedetail-area .scont .guidetxt.dot ul li {
+          padding-right: 10px;
+          width: 52%;
+          line-height: 26px;
+          color: #111111;
+          font-size: 18px;
+          font-weight: 500; }
+          .service.excellence .servicedetail-area .scont .guidetxt.dot ul li + li {
+            margin-top: 20px; }
+          .service.excellence .servicedetail-area .scont .guidetxt.dot ul li::before {
+            margin: 12px 9px 0 0;
+            background-color: #111111; }
+          .service.excellence .servicedetail-area .scont .guidetxt.dot ul li:nth-child(2) {
+            margin-top: 0; }
+          .service.excellence .servicedetail-area .scont .guidetxt.dot ul li:nth-child(2n) {
+            width: 48%; }
+    .service.excellence .servicedetail-area .scont.active > .tit,
+    .service.excellence .servicedetail-area .scont.active .guidetxt {
+      opacity: 1;
+      transform: translate(0, 0); }
+.service.excellence .sidedetail-area h3 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 60px; }
+.service.excellence .sidedetail-area p {
+  font-size: 18px;
+  line-height: 26px; }
+  .service.excellence .sidedetail-area p + p {
+    margin-top: 12px; }
+.service.excellence .sidedetail-area .btnL {
+  margin-top: 80px; }
+.service.excellence .catalogue-area {
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transform: translateY(50px);
+  margin-top: 120px; }
+  .service.excellence .catalogue-area.active {
+    opacity: 1;
+    transform: translate(0, 0); }
+.service.excellence .warranty-area {
+  margin-top: 120px; }
+  .service.excellence .warranty-area .scont {
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(50px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px;
+    background: url("../../../resources/w/images//service/spindle_warranty_bg1_eu.jpg") center top/cover no-repeat; }
+    .service.excellence .warranty-area .scont > strong {
+      flex-grow: 1;
+      width: 480px;
+      font-size: 28px;
+      line-height: 40px;
+      color: #ffffff; }
+    .service.excellence .warranty-area .scont ul {
+      flex-grow: 1;
+      display: flex;
+      width: 680px; }
+      .service.excellence .warranty-area .scont ul li {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: #111111;
+        color: #ffffff; }
+        .service.excellence .warranty-area .scont ul li + li {
+          margin-left: 40px; }
+        .service.excellence .warranty-area .scont ul li strong {
+          display: block;
+          font-size: 24px;
+          line-height: 36px; }
+        .service.excellence .warranty-area .scont ul li p {
+          margin-top: 4px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 32px; }
+    .service.excellence .warranty-area .scont p.noti {
+      width: 100%;
+      margin-top: 20px;
+      color: #fff;
+      flex: none; }
+    .service.excellence .warranty-area .scont.active {
+      opacity: 1;
+      transform: translate(0, 0); }
+.service.excellence .inquiry-area {
+  margin-top: 120px;
+  font-size: 0; }
+  .service.excellence .inquiry-area > .tit {
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: translateY(50px); }
+  .service.excellence .inquiry-area > div {
+    opacity: 0;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-50px);
+    position: relative;
+    display: inline-block;
+    margin-top: 28px;
+    padding: 44px;
+    width: 626px;
+    height: 348px;
+    vertical-align: top;
+    background-color: #f4f4f4; }
+    .service.excellence .inquiry-area > div::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("../../../resources/w/images/common/icon.png");
+      display: inline-block;
+      background-position: 0 -200px;
+      background-repeat: no-repeat;
+      content: '';
+      width: 50px;
+      height: 50px; }
+    .service.excellence .inquiry-area > div::before {
+      top: 44px;
+      left: auto;
+      right: 53px;
+      width: 64px;
+      height: 64px;
+      transform: translate(0, 0);
+      background-image: url("../../../resources/w/images/service/service.png"); }
+    .service.excellence .inquiry-area > div .tit {
+      line-height: 64px;
+      font-size: 32px; }
+    .service.excellence .inquiry-area > div p {
+      padding-top: 20px;
+      color: #767676;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 32px; }
+      .service.excellence .inquiry-area > div p span {
+        display: block;
+        padding-top: 4px;
+        color: #111111; }
+    .service.excellence .inquiry-area > div .btn {
+      position: absolute;
+      top: auto;
+      left: 44px;
+      right: auto;
+      bottom: 44px;
+      width: 200px; }
+    .service.excellence .inquiry-area > div:last-of-type {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateX(50px); }
+      .service.excellence .inquiry-area > div:last-of-type:not(:only-of-type) {
+        margin-left: 28px; }
+        .service.excellence .inquiry-area > div:last-of-type:not(:only-of-type)::before {
+          background-position: -200px -200px; }
+    .service.excellence .inquiry-area > div:only-of-type {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateX(-50px);
+      width: 100%; }
+  .service.excellence .inquiry-area.active > .tit,
+  .service.excellence .inquiry-area.active > div {
+    opacity: 1;
+    transform: translate(0, 0); }
+.service.excellence .item-area {
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transform: translateY(50px);
+  margin-top: 120px; }
+  .service.excellence .item-area h3 {
+    font-size: 40px;
+    line-height: 60px; }
+  .service.excellence .item-area ul {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px; }
+    .service.excellence .item-area ul li {
+      opacity: 0;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-in-out;
+      transform: translateY(50px);
+      position: relative;
+      height: 436px;
+      padding: 44px 42px;
+      background-color: #f4f4f4; }
+      .service.excellence .item-area ul li:nth-child(1) {
+        transition-delay: 0.3s; }
+      .service.excellence .item-area ul li:nth-child(2) {
+        transition-delay: 0.4s; }
+      .service.excellence .item-area ul li:nth-child(3) {
+        transition-delay: 0.5s; }
+      .service.excellence .item-area ul li:nth-child(4) {
+        transition-delay: 0.6s; }
+      .service.excellence .item-area ul li:nth-child(5) {
+        transition-delay: 0.7s; }
+      .service.excellence .item-area ul li:nth-child(6) {
+        transition-delay: 0.8s; }
+      .service.excellence .item-area ul li strong {
+        font-size: 28px;
+        line-height: 44px;
+        font-weight: 500; }
+        .service.excellence .item-area ul li strong sup {
+          font-size: 70%; }
+      .service.excellence .item-area ul li p {
+        margin-top: 32px;
+        font-size: 18px;
+        color: #444;
+        line-height: 26px;
+        font-weight: 500; }
+      .service.excellence .item-area ul li::after {
+        position: absolute;
+        right: 42px;
+        bottom: 40px;
+        width: 80px;
+        height: 80px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: ''; }
+  .service.excellence .item-area .note {
+    margin-top: 28px; }
+  .service.excellence .item-area.active {
+    opacity: 1;
+    transform: translate(0, 0); }
+    .service.excellence .item-area.active ul li {
+      opacity: 1;
+      transform: translate(0, 0); }
+.service.excellence.spindle .subvisual-area {
+  background-image: url("../../../resources/w/images/service/spindle_visual.jpg"); }
+.service.excellence.maintenance .subvisual-area {
+  background-image: url("../../../resources/w/images/service/maintenance_visual.jpg"); }
+.service.excellence.maintenance .tit.btm-line {
+  margin-bottom: 60px; }
+.service.excellence.maintenance .guidetxt .scont.line {
+  margin-top: 60px; }
+  .service.excellence.maintenance .guidetxt .scont.line .guidetxt.dot {
+    width: 100%; }
+    .service.excellence.maintenance .guidetxt .scont.line .guidetxt.dot ul li p.noti {
+      margin-top: 4px;
+      text-indent: 0; }
+    .service.excellence.maintenance .guidetxt .scont.line .guidetxt.dot ul + .note {
+      margin-top: 20px; }
+.service.excellence.maintenance .guidetxt table.info + .note {
+  margin-top: 28px; }
+.service.excellence.maintenance .guidetxt .note + .list03 {
+  margin-top: 16px; }
+.service.excellence.maintenance table.info + table.info {
+  margin-top: 40px; }
+.service.excellence.maintenance table.info .grade {
+  color: #fff; }
+  .service.excellence.maintenance table.info .grade.basic {
+    background: #79a3dc; }
+  .service.excellence.maintenance table.info .grade.plus {
+    background: #0b50f2; }
+  .service.excellence.maintenance table.info .grade.premium {
+    background: #001230; }
+.service.excellence.myDN .subvisual-area {
+  background-image: url("../../../resources/w/images/service/my_visual.jpg"); }
+  .service.excellence.myDN .subvisual-area .tit {
+    margin-bottom: 12px;
+    font-size: 32px;
+    line-height: 48px; }
+.service.excellence.myDN .sidedetail-area figure > span {
+  flex-shrink: 0;
+  width: 626px; }
+.service.excellence.myDN .sidedetail-area figure figcaption {
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1; }
+.service.excellence.myDN .sidedetail-area .btnL .btn {
+  width: 240px; }
+.service.excellence.myDN .item-area ul li:nth-child(1)::after {
+  background-image: url("../../../resources/w/images/service/my_benefit01.png"); }
+.service.excellence.myDN .item-area ul li:nth-child(2)::after {
+  background-image: url("../../../resources/w/images/service/my_benefit02.png"); }
+.service.excellence.myDN .item-area ul li:nth-child(3)::after {
+  background-image: url("../../../resources/w/images/service/my_benefit03.png"); }
+.service.excellence.myDN .item-area ul li:nth-child(4)::after {
+  background-image: url("../../../resources/w/images/service/my_benefit04.png"); }
+.service.excellence.myDN .item-area ul li:nth-child(5)::after {
+  background-image: url("../../../resources/w/images/service/my_benefit05.png"); }
+.service.excellence.myDN .item-area ul li:nth-child(6)::after {
+  background-image: url("../../../resources/w/images/service/my_benefit06.png"); }
+.service.excellence.myDN .item-area .note {
+  color: #111111; }
+.service.excellence.myDN h3 {
+  font-size: 40px;
+  line-height: 60px; }
+.service.excellence.myDN .tit em, .service.excellence.myDN h3 em, .service.excellence.myDN p i {
+  font-style: italic; }
+.service.excellence.myDN .banner-area {
+  position: relative;
+  margin-top: 120px;
+  height: 340px;
+  text-align: center;
+  background: url("../../../resources/w/images/service/my_banner.jpg") center center/cover no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .service.excellence.myDN .banner-area .inner {
+    color: #ffffff; }
+  .service.excellence.myDN .banner-area .tit {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out .2s;
+    display: block; }
+  .service.excellence.myDN .banner-area p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out .4s; }
+  .service.excellence.myDN .banner-area .btn {
+    width: 240px;
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all .4s ease-in-out .6s; }
+  .service.excellence.myDN .banner-area.active .tit, .service.excellence.myDN .banner-area.active p, .service.excellence.myDN .banner-area.active .btn {
+    opacity: 1;
+    transform: translateY(0); }
+
+html:lang(zh) .service.serviceinfo .totalcallcenter-area .tit em {
+  font-family: "Noto Sans SC";
+  font-weight: 700; }
+html:lang(zh) .service.serviceinfo .totalcallcenter-area ul {
+  width: 410px; }
+  html:lang(zh) .service.serviceinfo .totalcallcenter-area ul li {
+    width: 180px; }
+    html:lang(zh) .service.serviceinfo .totalcallcenter-area ul li:nth-of-type(2n) {
+      width: 230px; }
+html:lang(zh) .service.serviceinfo .centersearch-area {
+  margin-top: 0; }
+html:lang(zh) .service.warranty#contents {
+  padding-bottom: 0; }
+html:lang(zh) .service.warranty .subvisual-area {
+  background-image: url("../../../resources/w/images/service/warranty_visual_cn.jpg"); }
+html:lang(zh) .service.warranty .worldservice-area {
+  background-image: url("../../../resources/w/images/service/warranty_worldservice_cn.jpg"); }
+
+html:lang(en) .service.serviceinfo .totalcallcenter-area .tit {
+  font-size: 56px; }
+  html:lang(en) .service.serviceinfo .totalcallcenter-area .tit em {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+    font-family: "Noto Sans KR";
+    font-weight: 700; }
+html:lang(en) .service.serviceinfo .totalcallcenter-area ul {
+  display: block;
+  width: 400px; }
+  html:lang(en) .service.serviceinfo .totalcallcenter-area ul li {
+    padding-bottom: 10px;
+    width: auto; }
+html:lang(en) .service.serviceinfo .totalcallcenter-area .procedure {
+  margin-top: 120px; }
+html:lang(en) .service.serviceinfo .centersearch-area {
+  margin-top: 0; }
+html:lang(en) .service.warranty#contents {
+  padding-bottom: 0; }
+html:lang(en) .service.warranty .subvisual-area {
+  background-image: url("../../../resources/w/images/service/warranty_visual_cn.jpg"); }
+html:lang(en) .service.warranty .worldservice-area {
+  background-image: url("../../../resources/w/images/service/warranty_worldservice_cn.jpg"); }
+html:lang(en) .service.warranty .phoneservice-area ul {
+  margin-top: 90px; }
+html:lang(en) .service.warranty .phoneservice-area li:nth-of-type(1) p, html:lang(en) .service.warranty .phoneservice-area li:nth-of-type(5) p {
+  margin-top: 32px; }
+html:lang(en) .service.warranty .phoneservice-area li:nth-of-type(1) span strong, html:lang(en) .service.warranty .phoneservice-area li:nth-of-type(5) span strong {
+  line-height: 26px;
+  text-align: center; }
+html:lang(en) .service.warranty .feature-area .btns .btn {
+  width: auto; }
+html:lang(en) .service.warranty .worldservice-area ul li strong {
+  height: 78px; }
+html:lang(en) .service.warranty .centersearch-area .btn {
+  padding: 0 20px;
+  width: auto; }
+html:lang(en) .service.spindle .inquiry-area > div .btn {
+  width: 240px; }
+
+html:lang(de) .service.serviceinfo .totalcallcenter-area .tit {
+  font-size: 56px; }
+  html:lang(de) .service.serviceinfo .totalcallcenter-area .tit em {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+    font-family: "Noto Sans";
+    font-weight: 700; }
+html:lang(de) .service.serviceinfo .totalcallcenter-area ul {
+  display: block;
+  width: 400px; }
+  html:lang(de) .service.serviceinfo .totalcallcenter-area ul li {
+    padding-bottom: 0;
+    width: auto; }
+html:lang(de) .service.serviceinfo .totalcallcenter-area .procedure ol {
+  margin-top: 180px; }
+  html:lang(de) .service.serviceinfo .totalcallcenter-area .procedure ol li span strong {
+    line-height: 22px;
+    font-size: 16px; }
+html:lang(de) .service.serviceinfo .centersearch-area {
+  margin-top: 0; }
+  html:lang(de) .service.serviceinfo .centersearch-area .btn {
+    padding: 0 20px;
+    width: auto; }
+html:lang(de) .service.warranty#contents {
+  padding-bottom: 0; }
+html:lang(de) .service.warranty .subvisual-area {
+  background-image: url("../../../resources/w/images/service/warranty_visual_cn.jpg"); }
+html:lang(de) .service.warranty .worldservice-area {
+  background-image: url("../../../resources/w/images/service/warranty_worldservice_cn.jpg"); }
+html:lang(de) .service.warranty .phoneservice-area ul {
+  margin-top: 90px; }
+html:lang(de) .service.warranty .phoneservice-area li:nth-of-type(1) p, html:lang(de) .service.warranty .phoneservice-area li:nth-of-type(5) p {
+  margin-top: 32px; }
+html:lang(de) .service.warranty .phoneservice-area li:nth-of-type(1) span strong, html:lang(de) .service.warranty .phoneservice-area li:nth-of-type(5) span strong {
+  line-height: 26px;
+  text-align: center; }
+html:lang(de) .service.warranty .worldservice-area ul li strong {
+  line-height: 24px;
+  font-size: 18px;
+  height: 78px; }
+html:lang(de) .service.warranty .centersearch-area .btn {
+  padding: 0 20px;
+  width: auto; }
+
+@media screen and (max-width: calc(1280px + 90px + 90px + 20px)) {
+  .service.education .video-area .video-swiper .swiper ~ .swiper-button-prev {
+    left: 10px; }
+  .service.education .video-area .video-swiper .swiper ~ .swiper-button-next {
+    right: 10px; } }

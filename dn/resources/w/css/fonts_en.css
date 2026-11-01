@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  src: local("Pretendard Regular"), url("../../../resources/w/fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../../../resources/w/fonts/NotoSansKR-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  src: local("Noto Sans KR Medium"), url("../../../resources/w/fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../../../resources/w/fonts/NotoSansKR-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+  src: local("Noto Sans KR Bold"), url("../../../resources/w/fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../../../resources/w/fonts/NotoSansKR-Bold.woff") format("woff");
+  font-display: swap;
+}
+/*# sourceMappingURL=scssMaps/fonts_en.css.map */
