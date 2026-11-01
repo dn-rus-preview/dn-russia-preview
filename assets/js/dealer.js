@@ -131,6 +131,37 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("click", function (e) {
+  if (window.innerWidth > 1024) return;
+  var btn = e.target.closest("#header .btn-gnb");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  var popup = document.getElementById("popupAllMenu");
+  if (!popup) return;
+  var open = popup.classList.toggle("active");
+  btn.classList.toggle("active", open);
+  document.body.classList.toggle("fixed", open);
+}, true);
+
+document.addEventListener("click", function (e) {
+  if (window.innerWidth > 1024) return;
+  var a = e.target.closest("#header .gnb-list .dep1 > li > a");
+  if (!a) return;
+  e.preventDefault();
+  e.stopPropagation();
+  var label = (a.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+  var logo = document.querySelector("#header .logo a");
+  var base = logo ? (logo.getAttribute("href") || "").replace(/index\.html$/, "") : "";
+  var pages = {
+    "станки": "product/summary.html",
+    "решения": "solution/overview.html",
+    "сервис": "service/policy.html",
+    "компания": "company/about.html"
+  };
+  if (pages[label]) location.href = base + pages[label];
+}, true);
+
 document.querySelectorAll(".btn-help, .btn-fav, .btn-top, .skip").forEach(function (el) {
   var t = (el.getAttribute("aria-label") || el.textContent || "").trim();
   if (/help/i.test(t)) el.setAttribute("aria-label", "Задать вопрос");
