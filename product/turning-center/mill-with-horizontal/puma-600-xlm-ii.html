@@ -1,0 +1,3559 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head><title>PUMA 600XLM II — Токарно-фрезерные | ДН-Рус</title>
+<!-- TODO(Дмитрий): Яндекс.Метрика ID и yandex-verification -->
+<meta charset="utf-8"/>
+<meta content="PUMA 600XLM II — Токарно-фрезерные DN Solutions. 18″, 900 мм, 5050 мм. Цена и поставка в России — ДН-Рус." name="description"/>
+
+
+
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/javascript" http-equiv="Content-Script-Type"/>
+<meta content="text/css" http-equiv="Content-Style-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="No-Cache" http-equiv="Cache-Control"/>
+<meta content="No-Cache" http-equiv="Pragma"/>
+<meta content="telephone=no, email=no, address=no" name="format-detection"/>
+
+<link href="../../../dn/resources/w/images/common/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="../../../dn/resources/w/css/lib/jquery-ui.min.css" rel="stylesheet"/>
+<link href="../../../dn/resources/w/css/lib/swiper-bundle.min.css" rel="stylesheet"/>
+<link href="../../../dn/resources/w/css/fonts_en.css" rel="stylesheet"/>
+
+<link href="../../../dn/resources/w/css/common.css" rel="stylesheet"/>
+
+
+<script src="../../../dn/resources/w/js/lib/jquery-3.6.4.min.js"></script>
+<script src="../../../dn/resources/w/js/lib/jquery-ui.min.js"></script>
+<script src="../../../dn/resources/w/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="../../../dn/resources/w/js/lib/jquery-ui.multidatespicker.js"></script>
+<script src="../../../dn/resources/w/js/lib/swiper-bundle.min.js"></script>
+<script src="../../../dn/resources/w/js/lib/gsap.min.js"></script>
+<script src="../../../dn/resources/w/js/lib/ScrollTrigger.min.js"></script>
+<script src="../../../dn/resources/w/js/lib/jquery.marquee.min.js"></script>
+<script src="../../../dn/resources/w/js/function.ui.js"></script>
+<script src="../../../dn/resources/w/js/common.ui.js"></script>
+<script src="../../../dn/js/commonScript.js"></script>
+<script>
+
+        $(document).on("click", ".btn-download, .btn[data-filename]", function (e) {
+            e.preventDefault();
+
+            var filename = $(this).data("filename");
+            if (filename) {
+                filename = encodeURI(encodeURIComponent(filename));
+                location.href = "/common/etcFile.do?filename=" + filename;
+            } else {
+                var url = $(this).attr("href");
+                var target = $(this).attr("target");
+
+                if (target === "_blank") window.open("about:blank").location.href = url;
+                else location.href = url;
+            }
+        });
+
+        // $(document).ready(function () {
+        //     // CMS 파일 다운로드
+        //     $(".btn-download, .btn[data-filename]").click(function (e) {
+        //         e.preventDefault();
+        //
+        //         var filename = $(this).data("filename");
+        //         if (typeof filename != "undefined" && filename != null && filename != "") {
+        //             filename = encodeURI(encodeURIComponent(filename));
+        //
+        //             location.href = "/common/etcFile.do?filename=" + filename;
+        //         } else {
+        //             var url = $(this).attr("href");
+        //             var target = $(this).attr("target");
+        //
+        //             if (target == "_blank") {
+        //                 window.open("about:blank").location.href = url;
+        //             } else {
+        //                 location.href = url;
+        //             }
+        //         }
+        //     });
+        // });
+    </script>
+
+<meta content="web.main" name="decorator"/>
+
+
+<link href="../../../dn/resources/w/css/media.css" rel="stylesheet"/>
+<script src="../../../dn/resources/w/js/sub.ui.js"></script>
+<link href="../../../dn/resources/w/css/product.css" rel="stylesheet"/>
+<script>
+	var isAuthCaptcha = false;	
+
+	$(document).ready(function(){
+		
+		// 대표시방 metric / imperial
+		$(document).on("change", "input[name='specType']:radio", function(){
+			var type = $(this).val();
+			if(type == 'A'){ 
+				$(".specType1").css("display", "");
+				$(".specType2").css("display", "none");
+			}else if(type == 'B'){ 
+				$(".specType1").css("display", "none");
+				$(".specType2").css("display", "");
+			}
+			fn.specTableActive('.spec-area .spec-table');
+		});
+		
+		// 표 metric / imperial
+		$(document).on("change", "input[name='specListType']:radio", function(){
+			var type = $(this).val();
+			if(type == 'A'){ 
+				$(".specListType1").css("display", "");
+				$(".specListType2").css("display", "none");
+			}else if(type == 'B'){ 
+				$(".specListType1").css("display", "none");
+				$(".specListType2").css("display", "");
+			}
+			fn.specTableActive('.spec-area .spec-table');
+		});
+		
+		// 팝업 metric / imperial
+		$("input[name='specPopType']:radio").change(function(){
+			var type = $(this).val();
+			if(type == 'A'){ 
+				$(".specPopType1").css("display", "");
+				$(".specPopType2").css("display", "none");
+			}else if(type == 'B'){ 
+				$(".specPopType1").css("display", "none");
+				$(".specPopType2").css("display", "");
+			}
+			fn.specTableActive('.spec-area .spec-table');
+		});
+		
+		
+		$(".btn_reset_captcha").on("click",function(){
+			if (!isAuthCaptcha)
+			{
+				isAuthCaptcha = true;
+
+				var imageCaptcha = jQuery("#imageCaptcha");
+
+				imageCaptcha.attr("src", "/auth/captcha.do?agnet=" + new Date().getTime());
+
+				setTimeout(function(){
+					isAuthCaptcha = false;
+				}, 4000);
+			}
+		});
+		
+		
+		$(".btn_listen_captcha").on("click",function(){
+			if (!isAuthCaptcha)
+			{
+					isAuthCaptcha = true;
+
+					var uAgent = navigator.userAgent;
+					var soundUrl = "/auth/audio?agnet=" + new Date().getTime();
+
+					if (uAgent.indexOf("Trident") > -1 || uAgent.indexOf("MSIE") > -1)
+					{
+							winPlayer(soundUrl + "agent=" + new Date().getTime());
+					}
+					else if (!!document.createElement("audio").canPlayType)
+					{
+							try { new Audio(soundUrl).play(); } catch(e) { winPlayer(soundUrl); }
+					}
+					else
+					{
+							window.open(soundUrl, "", "width=1,height=1");
+					}
+
+					setTimeout(function(){
+							isAuthCaptcha = false;
+					}, 4000);
+			}
+		});
+		
+		$("#htel, #captchaTxt").on("keyup",function(){
+			$(this).val($(this).val().replace(/[^0-9]/g,""));
+		});
+		
+		
+		$("#addrSrchTxtUser").on("keydown",function(e){
+			if(e.keyCode == 13)
+			{
+				event.preventDefault();
+				jQuery("#addSrhBt").trigger("click");
+			}
+		});
+		
+		
+		$("#addSrhBt").on("click",function(){
+			if($.trim($("#addrSrchTxtUser").val()) == ""){
+				$("#alertText").text("검색어를 입력해주세요.");		
+				fn.popup('open', '#popupAlert');
+				return;
+			}
+		
+			// 페이지 초기화
+			jQuery("#currentPage").val(1);
+			jQuery("#addrSrchTxt").val( jQuery("#addrSrchTxtUser").val() );
+
+		  	jQuery("#countPerPage").val(10);
+			
+		  	searchAddr();
+		});
+		
+	
+		$("#popupAddress .btn-close").on("click",function(){
+			fn.popup('close', this);
+			
+			jQuery("#frm_search [name=currentPage]").val(1);
+			jQuery("#addrSrchTxt").val("");
+			jQuery("#addrSrchTxtUser").val("");
+
+			
+			$('.popupaddress .result-before').show();$('.popupaddress .result-after').hide();$('.popupaddress .result-nodata').hide();$('.popupaddress .form-filter').hide();
+
+		});
+	});
+	
+	
+	function searchAddr(){
+		$.ajax({
+			 url :"https://www.juso.go.kr/addrlink/addrLinkApiJsonp.do"  //인터넷망
+			,type:"post"
+			,data:$("#frm_search").serialize()
+			,dataType:"jsonp"
+			, async : true
+			,crossDomain:true
+			,success:function(jsonStr){
+
+				var errCode = jsonStr.results.common.errorCode,
+						errDesc = jsonStr.results.common.errorMessage;
+				if(errCode != "0"){
+					alert(errCode+"="+errDesc);
+				}else{
+					if(jsonStr != null){
+						var total = jsonStr.results.common.totalCount;
+
+							jQuery(".lyPopup [name=resList]").remove();
+
+						if( total == 0 ){
+							
+							$('.popupaddress .result-before').hide();$('.popupaddress .result-after').hide();$('.popupaddress .result-nodata').show();$('.popupaddress .form-filter').show();$('.popupaddress .form-filter em').html('0');
+						}else{
+							if(total >= 1000){
+								
+								$('.popupaddress .result-before').hide();$('.popupaddress .result-after').show();$('.popupaddress .result-after .tit').show();$('.popupaddress .result-nodata').hide();$('.popupaddress .form-filter').hide();
+							}else{
+								
+								$('.popupaddress .result-before').hide();$('.popupaddress .result-after').show();$('.popupaddress .result-after .tit').hide();$('.popupaddress .result-nodata').hide();$('.popupaddress .form-filter').show(); 
+							}
+							mkrAddrList(jsonStr.results);
+						}
+					}
+				}
+			}
+			,error: function(xhr,status, error){
+				alert("에러발생");		
+			}
+		});
+	}
+	
+	function mkrAddrList(results){
+		var total = results.common.totalCount,
+		list = results.juso;
+
+		$('.popupaddress .form-filter em').html(total);
+
+		var htmlStr = "";
+		
+		var idx = 0;
+		
+		$(list).each(function(){
+			htmlStr += "<li>";
+			htmlStr += "	<button type=\"button\" class=\"btn-addr\" onclick=\"selAddr(this);\">";
+			htmlStr += "		<div id=\""+this.zipNo+"_"+idx+"_kor\">";
+			htmlStr += "			<span class=\"post\" name=\"zipNo\">"+this.zipNo+"</span>";
+			htmlStr += "			<div class=\"address\"><span class=\"name\">도로명주소</span><span class=\"txt\" name=\"korRoad\">"+this.roadAddrPart1+"</span></div>";	
+			htmlStr += "			<div class=\"address\"><span class=\"name\">지번</span><span class=\"txt\">"+this.jibunAddr+"</span></div>";	
+			htmlStr += "		</div>";
+			htmlStr += "		<div id=\""+this.zipNo+"_"+idx+"_eng\" style=\"display:none;\">";
+			htmlStr += "			<span class=\"post\">"+this.zipNo+"</span>";
+			htmlStr += "			<div class=\"address\"><span class=\"name\">address</span><span class=\"txt\" name=\"engRoad\">"+this.engAddr+"</span></div>";
+			htmlStr += "		</div>";
+			htmlStr += "	</button>";
+			htmlStr += "	<button type=\"button\" id=\""+this.zipNo+"_"+idx+"_langBtn\" data-type=\"kor\" class=\"btn gray line small btn-lang\" onclick=\"showGlbAddr(this, '"+this.zipNo+"_"+idx+"');\">영문주소</button>";	
+			htmlStr += "</li>";
+			
+			++idx;
+		});
+
+		$("#popupAddress .list-result .scroll-content ul").html(htmlStr);
+		mkrAddrPgList(total);
+	}
+	
+	function mkrAddrPgList(total){
+		var resultDiv = jQuery(".addSrhResult"),
+		pageNum =  Number(jQuery("[name=currentPage]").val());
+
+		var countPerPage = Number(jQuery("#countPerPage").val());
+		var pageCount = 5;	
+		var totalPage = Math.ceil(total / countPerPage),
+
+				startPage = ((Math.floor((pageNum-1)/pageCount)) * pageCount +1 ),
+				endPage = totalPage < startPage +(pageCount-1) ? totalPage : startPage+(pageCount-1) ,
+				prePage = pageNum < (pageCount+1) ? 1 : ((Math.floor((pageNum-1)/pageCount)) * pageCount - (pageCount-1) ) ,
+				nePage = ((Math.floor((pageNum+(pageCount-1))/pageCount)) * pageCount +1 );
+	
+		var pageStr = "<div class=\"paginate\">";
+	
+		var event =  pageNum < (countPerPage+1) ? "":"pagination("+prePage+")";
+	
+		pageStr += "<a href=\"javascript:\" class=\"btn-first\" onclick=\"pagination(1)\"><span class=\"blind\">처음</span></a>";		
+		pageStr += "<a href=\"javascript:\" class=\"btn-prev\" onclick="+event+"><span class=\"blind\">이전</span></a>";	
+		pageStr += "<span class=\"num\">";
+		for(var i=startPage; i<= endPage; i++) {
+			var active = pageNum == i ? "active":"",
+				web = i  >= startPage+5 ? "onlyWeb" :"";
+				pageStr += "<a href=\"javascript:\" class=\"" + active +" "+ web+"\" onclick=\"pagination("+i+")\">"+i+"</a>";
+		}
+		pageStr += "</span>";
+		
+		event = nePage > totalPage ? "":"pagination("+nePage+")";
+	
+		pageStr += "<a href=\"javascript:\" class=\"btn-next\" onclick="+event+"><span class=\"blind\">다음</span></a>";	
+		pageStr += "<a href=\"javascript:\" class=\"btn-end\"  onclick=\"pagination("+totalPage+")\"><span class=\"blind\">끝</span></a></div>";	
+	
+		$("#popupAddress .result-after .paginate").remove();
+		$("#popupAddress .result-after .list-result").after(pageStr);
+	}
+	
+	function pagination(page){
+		jQuery("[name=currentPage]").val(page);
+		searchAddr();
+	}
+	
+	
+	function selAddr(list){
+		var txt ="";
+
+		if(jQuery(list).next().data("type")== "eng"){
+			txt = jQuery(list).find("[name=engRoad]").text();
+		}else{
+			txt = jQuery(list).find("[name=korRoad]").text();
+		}
+		jQuery("[name=zipcode]").val(jQuery(list).find("[name=zipNo]").text());
+		jQuery("[name=address]").val(txt);
+		$("#popupAddress .btn-close").trigger("click");
+	}
+	
+	
+	function showGlbAddr(btn, zipNo){
+		if(jQuery(btn).data("type") == "eng"){
+				$("#"+zipNo+"_eng").hide();
+				$("#"+zipNo+"_kor").show();
+				jQuery(btn).data("type", "kor");
+				jQuery(btn).html("한글주소");	
+		}else{
+				$("#"+zipNo+"_eng").show();
+				$("#"+zipNo+"_kor").hide();
+				jQuery(btn).data("type", "eng");
+				jQuery(btn).html("영문주소");	
+		}
+	}
+	
+	// 카탈로그 다운로드 focus 
+	function goCatal() {
+		
+		$("#catal").attr("tabindex", -1).focus();
+		
+
+	}
+	
+	// 해당 상품 데이터로 이동 
+	function goProduct(seq) {
+		fn.removeActive('.prolist-swiper .btn-pro');
+		$.ajax({
+			url: "/ajax/product/selectProductAjax.do",
+		 	data: {
+						"prdtSeq"	:	seq,
+						"srsSeq"	: '205'
+		 			 },
+		 	type: "post",	
+		 	async: false,
+		 	cache:false,
+		 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+		 	error: function(request, status, error){
+				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+			},
+			success: function(data){
+				// 슬라이드 이미지 변경
+				var tempTag = '';
+					for(var i = 0; i < data.imgList.length; i++) {
+						if(i == 0 && data.utbBtnList.length > 0) {
+							tempTag += '<div class="swiper-slide"><figure><img src="https://awsimg.dn-solutions.com'+encodeURI(data.imgList[i].webPath)+'" alt=""></figure>';
+							tempTag += '		<div class="plus-area">';
+							for(var b = 0; b < data.utbBtnList.length; b++) {
+								tempTag += '<button type="button" class="btn-more" data-top="'+data.utbBtnList[b].utbY+'" data-left="'+data.utbBtnList[b].utbX+'" onclick="fn.popup(\'open\', \'#popupSeriesViewVideo\', \''+data.utbBtnList[b].utbId+'\', \''+data.utbBtnList[b].utbTitl+'\');"><i class="icon icon-ripple"><span class="blind">+</span></i></button>';								
+							}
+							tempTag += '		</div>';
+							tempTag += '</div>';
+						} else {
+							tempTag += '<div class="swiper-slide"><figure><img src="https://awsimg.dn-solutions.com'+encodeURI(data.imgList[i].webPath)+'" alt=""></figure></div>';							
+						}
+					}
+				$("#actClass"+seq).addClass("active");
+				$('.propic-swiper .swiper-slide').remove();
+				$('.propic-swiper .swiper-wrapper').append(tempTag);
+				Subfn.propicSwiper();
+				
+				// 제품 상세 변경 
+				$("#prdtNm").text(data.prdtNm);
+				document.title = data.prdtNm + " - Products - DN Solutions"; 
+				$(".probtn").html('');
+				var html = '';
+				if(data.newDtmYn == 'Y' && data.newType == 'Y'){
+					html += '<span class="label">NEW</span>';
+				}
+				html += '<button type="button" class="btn-bookmark prdtFav'+data.prdtSeq;
+				var items = uiGetCookie('prdtFav');
+				if (items) {
+					var itemArray = items.split(',');
+					for(var  i = 0; i < itemArray.length; i++) {
+						if(itemArray[i] == data.prdtSeq) {
+							html +=	' active';							
+						}						
+					}
+				}
+				html += '	" onclick="saveCookie(this, '+data.prdtSeq+', event)"><span class="blind">Избранное</span></button>'; 
+				html += '<button type="button" class="btn-share" onclick=\"fn.popup("open", "#popupShare");"><span class="blind">Поделиться</span></button>';
+				$(".probtn").append(html);
+				
+				$(".spec").html('');
+				html = '';
+				html += '<label><input type="radio" name="specType" value="A" checked><span>Метрическая система</span></label>'; 
+				html += '<label><input type="radio" name="specType" value="B"><span>Дюймовая система</span></label>'; 
+				for(var i = 0; i < data.prdtSpecList.length; i++) {
+					html += '	<dl >';
+					html += '		<dt>'+data.prdtSpecList[i].prdtSpecNm+'</dt>';
+					if(data.prdtSpecList[i].prdtSpecStd != null && data.prdtSpecList[i].prdtSpecStd != '') {
+						html += '		<dd class="specType1">'+data.prdtSpecList[i].prdtSpecStd + ' '+ (data.prdtSpecList[i].prdtSpecUnit || '')+'</dd>';
+					} else if(data.prdtSpecList[i].prdtSpecOpt != null && data.prdtSpecList[i].prdtSpecOpt != '') {
+						html += '		<dd class="specType1">'+data.prdtSpecList[i].prdtSpecOpt + ' '+ (data.prdtSpecList[i].prdtSpecUnit || '')+'</dd>';
+					} else if(data.prdtSpecList[i].prdtSpecNml != null && data.prdtSpecList[i].prdtSpecNml != '') {
+						html += '		<dd class="specType1">'+data.prdtSpecList[i].prdtSpecNml + ' '+ (data.prdtSpecList[i].prdtSpecUnit || '')+'</dd>';
+					}
+					if(data.prdtSpecList[i].prdtSpecStd2 != null && data.prdtSpecList[i].prdtSpecStd2 != '') {
+						html += '		<dd class="specType2" style="display: none;"> '+data.prdtSpecList[i].prdtSpecStd2 + ' '+ (data.prdtSpecList[i].prdtSpecUnit2 || '')+'</dd>';
+					} else if(data.prdtSpecList[i].prdtSpecOpt2 != null && data.prdtSpecList[i].prdtSpecOpt2 != '') {
+						html += '		<dd class="specType2" style="display: none;"> '+data.prdtSpecList[i].prdtSpecOpt2 + ' '+ (data.prdtSpecList[i].prdtSpecUnit2 || '')+'</dd>';
+					} else if(data.prdtSpecList[i].prdtSpecNml2 != null && data.prdtSpecList[i].prdtSpecNml2 != '') {
+						html += '		<dd class="specType2" style="display: none;"> '+data.prdtSpecList[i].prdtSpecNml2 + ' '+ (data.prdtSpecList[i].prdtSpecUnit2 || '')+'</dd>';
+					}
+					html += '	</dl>';
+				}
+				$(".spec").append(html);
+			}
+		})
+	}
+	
+
+	
+	// 카탈로그 다운로드 저장
+	function goCatalSave(e) {
+		if($.trim($("#name").val()) == '') {
+			$("#name").focus();
+			$("#alertText").text("Enter your name.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		if($.trim($("#company").val()) == '') {
+			$("#company").focus();
+			$("#alertText").text("Enter your company name.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		if("2" == "2") {
+			if($("#address").val() == '') {
+				$("#address").focus();
+				$("#alertText").text("Please select a country/region.");	
+				fn.popup('open', '#popupAlert');
+				return false;
+			}
+			if($("#zipcode").val() == '') {
+				$("#address").focus();
+				$("#alertText").text("Please enter your Street.");	
+				fn.popup('open', '#popupAlert');
+				return false;
+			}
+			if($("#addressDetail").val() == '') {
+				$("#addressDetail").focus();
+				$("#alertText").text("Please enter your City.");	
+				fn.popup('open', '#popupAlert');
+				return false;
+			}			
+		} else {
+			if($("#address").val() == '') {
+				$("#address").focus();
+				$("#alertText").text("Enter your address.");	
+				fn.popup('open', '#popupAlert');
+				return false;
+			}
+			if($("#addressDetail").val() == '') {
+				$("#addressDetail").focus();
+				$("#alertText").text("Enter your detailed address.");	
+				fn.popup('open', '#popupAlert');
+				return false;
+			}	
+		}
+		if($.trim($("#htel").val()) == '') {
+			$("#htel").focus();
+			$("#alertText").text("Enter your contact information.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		if("2" === "1" && phoneCheck($.trim($("#htel").val())) == false) {
+			$("#htel").focus();
+			$("#alertText").text("Check your contact information.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		if("2" !== "1" && globalPhoneCheck($.trim($("#htel").val())) == false) {
+			$("#htel").focus();
+			$("#alertText").text("Check your contact information.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		if($.trim($("#email").val()) == '') {
+			$("#email").focus();
+			$("#alertText").text("Please enter your email address.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		// 이메일 유효성 체크
+		if(emailCheck($.trim($("#email").val())) == false){
+			$("#email").focus();
+			$("#alertText").text("Please check your email address.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		if(!$("input[name='takeYn']").is(":checked")) {
+			$("#takeYn").focus();
+			$("#alertText").text("Please select whether you have DN Solutions or not.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		
+		
+		// 자동등록방지 검사
+		var isOk = false;
+				
+ 	isOk= true;
+	 	if(!$("#checkNum").is(":checked")) {
+			$("#alertText").text("Only available for ages 14 and older.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+ 	
+		if(!$("#privacyYn").is(":checked")) {
+			$("#alertText").text("Please enter whether you consent to provide personal information to third parties.");	
+			fn.popup('open', '#popupAlert');
+			return false;	
+		}
+		if(isOk){
+			$.ajax({
+				url: "/ajax/product/insertCatalogAjax.do",
+			 	data: $("#catalForm").serialize(),
+			 	type: "post",	
+			 	async: false,
+			 	cache:false,
+			 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+			 	error: function(request, status, error){
+					alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+				},
+				success: function(data){
+					if(data.status == '200') {
+						$("#alertText").text("You are registered.");	
+						fn.popup('open', '#popupAlert');
+						if($("#catalogType").val() == '1') {
+							location.href = '/common/fileDown.do?fileDtlSeq='+$("#fileDtlSeq").val()+'&fileId='+$("#atchFileId").val();						
+						} else {
+							window.open($("#catalogLink").val());
+							// location.href = $("#catalogLink").val();
+						}
+						popupClose(e);
+					}
+				}
+			})
+		}
+	}
+	
+	// 이메일 체크
+	function checkEmailCatal(e) {
+		if($("#authEmail").val() == '') {
+			$("#alertText").text("Please enter your email address.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		}
+		// 이메일 유효성 체크
+		if(emailCheck($("#authEmail").val()) == false){
+			$("#alertText").text("Please check your email address.");	
+			fn.popup('open', '#popupAlert');
+			return false;
+		} 
+		$.ajax({
+			url: "/ajax/product/emailCheckCatalogAjax.do",
+		 	data: $("#catalForm").serialize(),
+		 	type: "post",	
+		 	async: false,
+		 	cache:false,
+		 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+		 	error: function(request, status, error){
+				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+			},
+			success: function(data){
+				if(data.status == '200') {
+					if($("#catalogType").val() == '1') {
+						location.href = '/common/fileDown.do?fileDtlSeq='+$("#fileDtlSeq").val()+'&fileId='+$("#atchFileId").val();						
+					} else {
+						window.open($("#catalogLink").val());
+						// location.href = $("#catalogLink").val();
+					}
+					popupClose(e);
+				} else {
+					$("#alertText").html("There is no registered email information.  </br>Please perform the personal information registration process.");	
+					fn.popup('open', '#popupAlert');
+				}
+			}
+		})
+	}
+	
+	// 카탈로그 열기
+	function openCatal(dtl, seq, nm) {
+		fn.popup('open', '#popupCatalogue');
+		$("#fileDtlSeq").val(dtl);
+		$("#atchFileId").val(seq);
+		$("#catalogType").val("1");
+		$("#catalogName").val(nm);
+	}
+	
+	// E-카달로그 열기
+	function openECatal(link) {
+		fn.popup('open', '#popupCatalogue');
+		$("#catalogType").val("2");
+		$("#catalogLink").val(link);
+	}
+	
+	// 카탈로그 팝업 닫기
+	function popupClose(e) {
+		$("#catalogType").val('');
+		$("#catalogLink").val('');
+		$("#fileDtlSeq").val('');
+		$("#atchFileId").val('');
+		$("#catalogName").val('');
+		fn.popup('close', e);
+	}
+	
+	// 공유하기
+	function goShare(type) {
+		var url = location.href;
+		var title = document.title;
+		var size = 'width=550 height=550';
+		var description = 'High Capacity, Heavy Duty HTC';
+		
+		if(window.location.hostname == 'www.dn-solutions.com'){
+			imageUrl ='https://www.dn-solutions.com/common/images/kakaoimg.jpg';
+		}else{
+			imageUrl ='https://www.dn-solutions.com/common/images/kakaoimg.jpg';
+			//imageUrl ='http://dev.doosanmachinetools.com/common/images/kakaoimg.jpg';
+		}
+		
+		if(type == "F"){
+			url = '//www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url)+'&t='+title;
+			window.open(url,'_blank', size);
+		} else if(type == "C"){
+			var textarea = document.createElement("textarea");
+			document.body.appendChild(textarea);
+			textarea.value = url;
+			textarea.select();
+			document.execCommand("copy");
+			document.body.removeChild(textarea);
+			$("#alertText").text("The link has been copied.");	
+			fn.popup('open', '#popupAlert');
+		} else if(type == "M"){
+			window.location.href = "mailto:?subject="+title+"&body="+url;
+		} else if(type == "L"){
+			url = 'http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent(url)+'&title='+title;
+			window.open(url,'_blank', size);
+		} else if(type == 'K') {
+			if("2" != "3") {
+				if(!Kakao.isInitialized()) {
+					Kakao.init('39ab438c594053e4e19461021fab58cb');
+				}
+				
+				Kakao.Link.createDefaultButton({
+					container: '.icon-kakao',
+					objectType: 'feed',
+					content: {
+						title: title,
+						description: description,
+						imageUrl: imageUrl,
+						link: {
+							mobileWebUrl: url,
+							webUrl: url
+						}
+					}
+				});
+			}
+		}
+	}
+	
+	// 즐겨찾기
+	function saveCookie(e, seq, event) {
+		var prdtItems = uiGetCookie('prdtFav');
+		var soluItems = uiGetCookie('soluFav');
+		var softItems = uiGetCookie('softFav');
+		var soluCount = 0;
+		var softCount = 0;
+		if(soluItems) {
+			soluCount = soluItems.split(',').length;
+		}
+		if(softItems) {
+			softCount = softItems.split(',').length;
+		}
+		var maxItemNum = 99;
+		var addFlag = true;
+		if (prdtItems) {
+			var itemArray = prdtItems.split(',');
+			for(var i = 0; i < itemArray.length; i++) {
+				if(itemArray[i] == seq) {
+					itemArray.splice(i, 1);
+					addFlag = false;
+				}
+			}
+			if(addFlag) {
+				itemArray.unshift(seq);
+				if (itemArray.length+soluCount+softCount > maxItemNum ) {
+				 return false;
+				} else {
+					prdtItems = itemArray.join(',');
+					uiSetCookie('prdtFav', prdtItems, '60');
+				}		    	 
+			} else {
+				if(itemArray.length < 1) {
+					document.cookie = "prdtFav = ; path=/; expires=Thu, 01 Jan 1999 00:00:10 GMT;";					
+				} else {
+					uiSetCookie('prdtFav', itemArray, '60');					
+				}
+			}
+		} else {
+			// 신규 값 저장하기
+			uiSetCookie('prdtFav', seq, '60');
+		}
+		fn.toggleActive(e);
+		var classList = event.target.classList+"";
+		if(classList.indexOf('active') != -1) {
+			$('.prdtFav'+seq).addClass('active');
+		} else {
+			$('.prdtFav'+seq).removeClass('active');
+		}
+	}
+	
+	// 제품 비교하기 팝업
+	function goSpecCompare() {
+		$.ajax({
+			url: "/ajax/product/selectSrsSpecListViewAjax.do",
+			data : {
+				"srsSeq" 			: '205'
+			},
+			type: "POST",
+			dataType: "html",
+			async: false,
+			contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+			error: function(request, status, error){ 
+				alert("An error occurred during processing.");
+				document.location.reload();			
+			 },
+			success: function(responseData){
+				$("#popupCompare").empty();
+				$("#popupCompare").append(responseData).trigger("create");
+			 }
+		});	 
+		fn.popup('open', '#popupCompare');fn.specTableSwiper('.popupcompare .spec-table');fn.specTableActive('.popupcompare .spec-table');
+	}
+	
+	// 문의하기
+	function goContactUs() {
+		location.href = "/" + "global".toLowerCase() + "/etc/contactus.do?formtype1=0&srsNm=PUMA 600/700/800 II series";
+	}
+</script>
+<link href="../../../assets/css/scoped.css" rel="stylesheet"/><link href="../../../assets/css/dealer.css?v=14" rel="stylesheet"/><script src="../../../assets/js/offline.js"></script><script src="../../../assets/js/dn-russia.js?v=8"></script><link rel="canonical" href="https://dn-russia.ru/product/turning-center/mill-with-horizontal/puma-600-xlm-ii.html"/>
+<meta property="og:title" content="PUMA 600XLM II — Токарно-фрезерные | ДН-Рус"/>
+<meta property="og:description" content="PUMA 600XLM II — Токарно-фрезерные DN Solutions. '+data.prdtSpecList[i].prdtSpecStd + ' '+ (data.prdtSpecList[i].prdtSpecUnit || '')+', '+data.prdtSpecList[i…"/>
+<meta property="og:image" content="https://dn-russia.ru/assets/img/dn/f6e325dfc37a6dbd.jpg"/>
+<link rel="icon" href="../../../assets/img/dn-russia-logo.svg"/>
+</head>
+<body>
+<div id="wrap">
+<a class="skip" href="#contents">Перейти к содержимому</a> <style>
+	.italic-text {
+		display: inline-block;
+		transform: skew(-10deg);
+	}
+</style>
+<script>
+	var gnbPrdtAddTxt = "Все модели";
+
+	//대표시방 metric / imperial
+	$(document).on("change", "input[name='gnbSpecType']:radio", function(){
+		var type = $(this).val();
+		if(type == 'A'){ 
+			$(".gnbSpecType1").css("display", "");
+			$(".gnbSpecType2").css("display", "none");
+		}else if(type == 'B'){
+			$(".gnbSpecType1").css("display", "none");
+			$(".gnbSpecType2").css("display", "");
+		}
+		fn.specTableActive('.spec-area .spec-table');
+	});
+
+	// metric check
+	$(document).on("click", "input[name='gnbChuckData']", function(){
+		var value = "";
+		var ctgry = $(this).data("chuckctgry");
+		$("input[name='gnbChuckData']:checked" ).each(function (){
+			value = value + $(this).val()+",";
+		});
+		value = value.substring(0,value.lastIndexOf(","));
+		// param
+		var newArr = new Array();
+		if(value != '') {
+			// 척사이즈용
+			var chuck = new Object();
+			chuck.chuckValue = value;
+			chuck.gnbSchSpecCd = ctgry;
+			newArr.push(chuck);
+		}
+		
+		// 슬라이드 데이터
+		var slideLength = $(".slideType1").length;
+		for(var i=0; i<slideLength; i++){
+			var obj2 = new Object();
+			if($(".slideType1").eq(i).prev().data("min") != null || $(".slideType1").eq(i).prev().data("max") != null) {
+				obj2.startValue = $(".slideType1").eq(i).prev().attr("data-min");
+				obj2.endValue = $(".slideType1").eq(i).prev().attr("data-max");
+			} else {
+				obj2.startValue = $(".slideType1").eq(i).next(".min").val();
+				obj2.endValue = $(".slideType1").eq(i).next().next(".max").val();				
+			}
+			obj2.gnbSchSpecCd = $(".slideType1").eq(i).data("gnbschspeccd");
+			newArr.push(obj2);
+		}
+		$.ajax({
+			url: "/ajax/search/selectGnbSchPrdtLIstAjax.do",
+		 	data: {
+						"gnbSchValueList"			: newArr,
+						"schCtgryCd1"				: $("#schCtgryCd1").val(),
+						"gnbSch3DeptType"		: $("#gnbSch3DeptType").val(),
+						"gnbSchSoluType"		: $("#gnbSchSoluType").val(),
+						"gnbSchType"				: "M"
+		 			 },
+		 	type: "post",	
+		 	async: false,
+		 	cache:false,
+		 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+		 	error: function(request, status, error){
+				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+			},
+			success: function(data){
+				console.log(data);
+				var html = "";
+				$("#gnbPrdtList").empty();
+				$('#gnbChuckDataAll').hide();
+				for(var p = 0; p < data.gnbPrdtList.length; p++) {
+					html += 	'<li>';
+					html += 		'<a href="/'+'global'.toLowerCase()+'/product/'+data.gnbPrdtList[p].ctgryPath1+'/'+data.gnbPrdtList[p].ctgryPath2+'/'+data.gnbPrdtList[p].prdtPath+'.do">';
+					html += 			'<figure><img src="https://awsimg.dn-solutions.com'+data.gnbPrdtList[p].imgFileWeb+'" alt=""></figure>';
+					html += 			'<div class="name">'+data.gnbPrdtList[p].prdtNm+'</div>';
+					html += 			'<div class="info">';
+					html += 				'<dl>';
+					if(data.gnbPrdtList[p].prdtSpecList != null) {
+						for(var s = 0; s < data.gnbPrdtList[p].prdtSpecList.length; s++) {
+							html += 					'<dt>'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecNm+'</dt>';
+							html += 					'<dd class="gnbSpecType1">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit+'</dd>';
+							html += 					'<dd class="gnbSpecType2" style="display : none;">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd2+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit2+'</dd>';
+						}						
+					}
+					html += 				'</dl>';
+					html += 			'</div>';
+					html += 		'</a>';
+					html += 	'</li>';
+				}
+				if(data.gnbPrdtList.length < 1) {
+					$(".gnbNodata").show();
+					$(".gnbSpecClass").hide();
+				} else {
+					$(".gnbNodata").hide();
+					$(".gnbSpecClass").show();
+					if (Number(data.gnbPrdtList[0].totalCnt) > 5) {
+						$('#gnbChuckDataAll').text(gnbPrdtAddTxt + " (5/" + data.gnbPrdtList[0].totalCnt + ")");
+						$('#gnbChuckDataAll').show();
+					}
+				}
+				$("#gnbPrdtList").append(html);
+			}
+		})
+	});
+	
+	// metric check
+	$(document).on("click", "input[name='gnbChuckData2']", function(){
+		var value = "";
+		var ctgry = $(this).data("chuckctgry");
+		$("input[name='gnbChuckData2']:checked" ).each(function (){
+			value = value + $(this).val()+",";
+		});
+		value = value.substring(0,value.lastIndexOf(","));
+		// param
+		var newArr = new Array();
+		if(value != '') {
+			// 척사이즈용
+			var chuck = new Object();
+			chuck.chuckValue = value;
+			chuck.gnbSchSpecCd = ctgry;
+			newArr.push(chuck);
+		}
+		
+		// 슬라이드 데이터
+		var slideLength = $(".slideType2").length;
+		for(var i=0; i<slideLength; i++){
+			var obj2 = new Object();
+			if($(".slideType2").eq(i).prev().data("min") != null || $(".slideType2").eq(i).prev().data("max") != null) {
+				obj2.startValue = $(".slideType2").eq(i).prev().attr("data-min");
+				obj2.endValue = $(".slideType2").eq(i).prev().attr("data-max");
+			} else {
+				obj2.startValue = $(".slideType2").eq(i).next(".min").val();
+				obj2.endValue = $(".slideType2").eq(i).next().next(".max").val();				
+			}
+			obj2.gnbSchSpecCd = $(".slideType2").eq(i).data("gnbschspeccd");
+			newArr.push(obj2);
+		}
+		$.ajax({
+			url: "/ajax/search/selectGnbSchPrdtLIstAjax.do",
+		 	data: {
+						"gnbSchValueList"			: newArr,
+						"schCtgryCd1"				: $("#schCtgryCd1").val(),
+						"gnbSch3DeptType"		: $("#gnbSch3DeptType").val(),
+						"gnbSchSoluType"		: $("#gnbSchSoluType").val(),
+						"gnbSchType"				: "I"
+		 			 },
+		 	type: "post",	
+		 	async: false,
+		 	cache:false,
+		 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+		 	error: function(request, status, error){
+				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+			},
+			success: function(data){
+				console.log(data);
+				var html = "";
+				$("#gnbPrdtList").empty();
+				$('#gnbChuckDataAll').hide();
+				for(var p = 0; p < data.gnbPrdtList.length; p++) {
+					html += 	'<li>';
+					html += 		'<a href="/'+'global'.toLowerCase()+'/product/'+data.gnbPrdtList[p].ctgryPath1+'/'+data.gnbPrdtList[p].ctgryPath2+'/'+data.gnbPrdtList[p].prdtPath+'.do">';
+					html += 			'<figure><img src="https://awsimg.dn-solutions.com'+data.gnbPrdtList[p].imgFileWeb+'" alt=""></figure>';
+					html += 			'<div class="name">'+data.gnbPrdtList[p].prdtNm+'</div>';
+					html += 			'<div class="info">';
+					html += 				'<dl>';
+					if(data.gnbPrdtList[p].prdtSpecList != null) {
+						for(var s = 0; s < data.gnbPrdtList[p].prdtSpecList.length; s++) {
+							html += 					'<dt>'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecNm+'</dt>';
+							html += 					'<dd class="gnbSpecType1" style="display : none;">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit+'</dd>';
+							html += 					'<dd class="gnbSpecType2">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd2+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit2+'</dd>';
+						}
+					}
+					html += 				'</dl>';
+					html += 			'</div>';
+					html += 		'</a>';
+					html += 	'</li>';
+				}
+				if(data.gnbPrdtList.length < 1) {
+					$(".gnbNodata").show();
+					$(".gnbSpecClass").hide();
+				} else {
+					$(".gnbNodata").hide();
+					$(".gnbSpecClass").show();
+					if (Number(data.gnbPrdtList[0].totalCnt) > 5) {
+						$('#gnbChuckDataAll').text(gnbPrdtAddTxt + " (5/" + data.gnbPrdtList[0].totalCnt + ")");
+						$('#gnbChuckDataAll').show();
+					}
+				}
+				$("#gnbPrdtList").append(html);
+			}
+		})
+	});
+	
+	function gnbSrsView(nm, slg, imgUrl, url) {
+		$("#srsGoViewGnb").attr("href", "/" + "global".toLowerCase() + "/" + url + ".do");
+		$("#srsSlgGnb").text(slg);
+		$("#srsNmGnb").text(nm);
+		$("#srsImgGnb").attr("src", "https://awsimg.dn-solutions.com" + imgUrl);
+	}
+	
+	function goSpecView(e) {
+		if($("#schCtgryCd1").val() == 'soft') {
+			return false;
+		}
+		$("input:radio[name='gnbSpecType'][value='A']").prop("checked", true);
+		fn.removeActive($(e).prev());fn.addActive(e);
+		
+		$.ajax({
+			url: "/ajax/gnb/selectSchSpecLIstAjax.do",
+		 	data: {
+						"schCtgryCd1"	: $("#schCtgryCd1").val(),
+						"gnbSchSoluType"		: $("#gnbSchSoluType").val(),
+						"gnbSch3DeptType"		: $("#gnbSch3DeptType").val()
+		 			 },
+		 	type: "post",	
+		 	async: false,
+		 	cache:false,
+		 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+		 	error: function(request, status, error){
+				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+			},
+			success: function(data){
+				console.log(data);
+				html = "";
+				$("#gnbSchBox").empty();
+				if(data.schCtgryCd1 != 'D101') {
+					$("#chuckDiv").css("display", "none");
+					for(var i = 0; i < data.schSpecList.length; i++) {
+						html +=		'<div class="box gnbSpecType1">';
+						html +=			'<div class="form-slider">';
+						html +=				'<strong class="tit">'+data.schSpecList[i].specNm+'<span class="txt-unit">('+data.schSpecList[i].prdtSpecUnit+')</span></strong>'
+						html +=				'<div class="values"></div>';
+						html +=				'<div class="slider spec-slider'+(i+1)+' slideType1" data-gnbschspeccd="'+data.schSpecList[i].prdtSpecNmCd+'"></div>';
+						html +=				'<input type="hidden" title="최소" class="min" value="'+data.schSpecList[i].minStd+'">';
+						html +=				'<input type="hidden" title="최대" class="max" value="'+data.schSpecList[i].maxStd+'">';
+						html +=				'<div class="range">';
+						html +=					'<span class="min-range">'+data.schSpecList[i].minStd+'</span>';
+						html +=					'<span class="max-range">'+data.schSpecList[i].maxStd+'</span>';
+						html +=				'</div>';
+						html +=			'</div>';
+						html +=		'</div>';	
+						html +=		'<div class="box gnbSpecType2" style="display: none;">';
+						html +=			'<div class="form-slider">';
+						html +=				'<strong class="tit">'+data.schSpecList[i].specNm+'<span class="txt-unit">('+data.schSpecList[i].prdtSpecUnit2+')</span></strong>'
+						html +=				'<div class="values"></div>';
+						html +=				'<div class="slider spec-slider-I'+(i+1)+' slideType2" data-gnbschspeccd="'+data.schSpecList[i].prdtSpecNmCd+'"></div>';
+						html +=				'<input type="hidden" title="최소" class="min" value="'+data.schSpecList[i].minStd2+'">';
+						html +=				'<input type="hidden" title="최대" class="max" value="'+data.schSpecList[i].maxStd2+'">';
+						html +=				'<div class="range">';
+						html +=					'<span class="min-range">'+data.schSpecList[i].minStd2+'</span>';
+						html +=					'<span class="max-range">'+data.schSpecList[i].maxStd2+'</span>';
+						html +=				'</div>';
+						html +=			'</div>';
+						html +=		'</div>';	
+					}
+					if(data.schSpecList.length == '2') {
+						html +=		'<div class="box">';
+						html +=		'</div>';
+					}
+				} else {
+					$("#chuckList").empty();
+					$("#chuckDiv").css("display", "");
+					for(var c = 0; c < data.chuckMetList.length; c++) {
+						html += '<label class="gnbSpecType1"><input type="radio" name="gnbChuckData" data-chuckctgry="'+data.chuckMetList[c].prdtSpecNmCd+'" value="'+data.chuckMetList[c].stdCd1+'"><span>'+data.chuckMetList[c].stdCd1+' ' +data.chuckMetList[c].prdtSpecUnit +'</span></label>';
+						
+					}
+					for(var c = 0; c < data.chuckImpList.length; c++) {
+						html += '<label class="gnbSpecType2" style="display : none;"><input type="radio" name="gnbChuckData2" data-chuckctgry="'+data.chuckImpList[c].prdtSpecNmCd+'" value="'+data.chuckImpList[c].stdCd2+'"><span>'+data.chuckImpList[c].stdCd2+' ' +data.chuckImpList[c].prdtSpecUnit2 +'</span></label>';
+					}
+					$("#chuckList").append(html);
+					html = "";
+					
+					for(var i = 0; i < data.schSpecList.length; i++) {
+						html +=		'<div class="box gnbSpecType1">';
+						html +=			'<div class="form-slider">';
+						html +=				'<strong class="tit">'+data.schSpecList[i].specNm+'<span class="txt-unit">('+data.schSpecList[i].prdtSpecUnit+')</span></strong>'
+						html +=				'<div class="values"></div>';
+						html +=				'<div class="slider spec-slider'+(i+1)+' slideType1" data-gnbschspeccd="'+data.schSpecList[i].prdtSpecNmCd+'"></div>';
+						html +=				'<input type="hidden" title="최소" class="min" value="'+data.schSpecList[i].minStd+'">';
+						html +=				'<input type="hidden" title="최대" class="max" value="'+data.schSpecList[i].maxStd+'">';
+						html +=				'<div class="range">';
+						html +=					'<span class="min-range">'+data.schSpecList[i].minStd+'</span>';
+						html +=					'<span class="max-range">'+data.schSpecList[i].maxStd+'</span>';
+						html +=				'</div>';
+						html +=			'</div>';
+						html +=		'</div>';	
+						html +=		'<div class="box gnbSpecType2" style="display: none;">';
+						html +=			'<div class="form-slider">';
+						html +=				'<strong class="tit">'+data.schSpecList[i].specNm+'<span class="txt-unit">('+data.schSpecList[i].prdtSpecUnit2+')</span></strong>'
+						html +=				'<div class="values"></div>';
+						html +=				'<div class="slider spec-slider-I'+(i+1)+' slideType2" data-gnbschspeccd="'+data.schSpecList[i].prdtSpecNmCd+'"></div>';
+						html +=				'<input type="hidden" title="최소" class="min" value="'+data.schSpecList[i].minStd2+'">';
+						html +=				'<input type="hidden" title="최대" class="max" value="'+data.schSpecList[i].maxStd2+'">';
+						html +=				'<div class="range">';
+						html +=					'<span class="min-range">'+data.schSpecList[i].minStd2+'</span>';
+						html +=					'<span class="max-range">'+data.schSpecList[i].maxStd2+'</span>';
+						html +=				'</div>';
+						html +=			'</div>';
+						html +=		'</div>';	
+					}
+					if(data.schSpecList.length == '2') {
+						html +=		'<div class="box">';
+						html +=		'</div>';
+					}
+				}
+				$("#gnbSchBox").append(html).trigger("create");
+				
+				for(var a = 0; a < data.schSpecList.length; a++) {
+					$('#header .spec-slider'+Number(a+1)).slider({
+						range: true,
+						min: data.schSpecList[a].minStd, // 최소
+						max: data.schSpecList[a].maxStd, // 최대
+						values: [data.schSpecList[a].minStd, data.schSpecList[a].maxStd], // 현재값
+						create: function(ui) {
+							$(this).prev('.values').html($(this).slider('values', 0) + ' ~ ' + $(this).slider('values', 1) + '<span class="txt-unit">'+data.schSpecList[a].prdtSpecUnit+'</span>');
+							$(this).prev('.values').attr('data-typeNm', data.schSpecList[a].prdtSpecUnit);
+							$(this).parent('.form-slider').find('.range .min-range').text($(this).slider('option', 'min'));
+							$(this).parent('.form-slider').find('.range .max-range').text($(this).slider('option', 'max'));
+							$(this).siblings('input.min').val($(this).slider('values', 0));
+							$(this).siblings('input.max').val($(this).slider('values', 1));
+						},
+						slide: function(event, ui) {
+							console.log(ui);
+							//$(this).prev('.values').html(ui.values[0] + ' ~ ' + ui.values[1]);
+							$(this).prev('.values').html(ui.values[0] + ' ~ ' + ui.values[1] + '<span class="txt-unit">'+$(this).prev('.values').attr('data-typeNm')+'</span>');
+							$(this).prev('.values').attr('data-min', ui.values[0]);
+							$(this).prev('.values').attr('data-max', ui.values[1]);
+							var newArr = new Array();
+							if(data.schCtgryCd1 == 'D101') {
+								var value = "";
+								var ctgry = "";
+								$("input[name='gnbChuckData']:checked" ).each(function (){
+									value = value + $(this).val()+",";
+									ctgry = $(this).data("chuckctgry");
+								});
+								value = value.substring(0,value.lastIndexOf(","));
+								if(value != '') {
+									// 척사이즈용
+									var chuck = new Object();
+									chuck.chuckValue = value;
+									chuck.gnbSchSpecCd = ctgry;
+									newArr.push(chuck);
+								}
+							}
+							// 슬라이드 데이터
+							var slideLength = $(".slideType1").length;
+							for(var i=0; i<slideLength; i++){
+								var obj2 = new Object();
+								if($(this).data("gnbschspeccd") == $(".slideType1").eq(i).data("gnbschspeccd")) {
+									obj2.startValue = ui.values[0]; 
+									obj2.endValue = ui.values[1];
+									obj2.gnbSchSpecCd = $(this).data("gnbschspeccd");
+								} else {
+									if($(".slideType1").eq(i).prev().data("min") != null || $(".slideType1").eq(i).prev().data("max") != null) {
+										obj2.startValue = $(".slideType1").eq(i).prev().attr("data-min");
+										obj2.endValue = $(".slideType1").eq(i).prev().attr("data-max");
+									} else {
+										obj2.startValue = $(".slideType1").eq(i).next(".min").val();
+										obj2.endValue = $(".slideType1").eq(i).next().next(".max").val();
+									}
+									obj2.gnbSchSpecCd = $(".slideType1").eq(i).data("gnbschspeccd");									
+								}
+								newArr.push(obj2);
+							}
+							$.ajax({
+								url: "/ajax/search/selectGnbSchPrdtLIstAjax.do",
+							 	data: {
+											"gnbSchValueList"			: newArr,
+											"schCtgryCd1"				: $("#schCtgryCd1").val(),
+											"gnbSch3DeptType"		: $("#gnbSch3DeptType").val(),
+											"gnbSchSoluType"		: $("#gnbSchSoluType").val(),
+											"gnbSchType"				: "M"
+							 			 },
+							 	type: "post",	
+							 	async: false,
+							 	cache:false,
+							 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+							 	error: function(request, status, error){
+									alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+								},
+								success: function(data){
+									console.log(data);
+									var html = "";
+									$("#gnbPrdtList").empty();
+									$('#gnbChuckDataAll').hide();
+									for(var p = 0; p < data.gnbPrdtList.length; p++) {
+										html += 	'<li>';
+										html += 		'<a href="/'+'global'.toLowerCase()+'/product/'+data.gnbPrdtList[p].ctgryPath1+'/'+data.gnbPrdtList[p].ctgryPath2+'/'+data.gnbPrdtList[p].prdtPath+'.do">';
+										html += 			'<figure><img src="https://awsimg.dn-solutions.com'+data.gnbPrdtList[p].imgFileWeb+'" alt=""></figure>';
+										html += 			'<div class="name">'+data.gnbPrdtList[p].prdtNm+'</div>';
+										html += 			'<div class="info">';
+										html += 				'<dl>';
+										if(data.gnbPrdtList[p].prdtSpecList != null) {
+											for(var s = 0; s < data.gnbPrdtList[p].prdtSpecList.length; s++) {
+												html += 					'<dt>'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecNm+'</dt>';
+												html += 					'<dd class="gnbSpecType1">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit+'</dd>';
+												html += 					'<dd class="gnbSpecType2" style="display : none;">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd2+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit2+'</dd>';
+											}
+										}
+										html += 				'</dl>';
+										html += 			'</div>';
+										html += 		'</a>';
+										html += 	'</li>';
+									}
+									if(data.gnbPrdtList.length < 1) {
+										$(".gnbNodata").show();
+										$(".gnbSpecClass").hide();
+									} else {
+										$(".gnbNodata").hide();
+										$(".gnbSpecClass").show();
+										if (Number(data.gnbPrdtList[0].totalCnt) > 5) {
+											$('#gnbChuckDataAll').text(gnbPrdtAddTxt + " (5/" + data.gnbPrdtList[0].totalCnt + ")");
+											$('#gnbChuckDataAll').show();
+										}
+									}
+									$("#gnbPrdtList").append(html);
+								}
+							})
+						}
+					});
+				}
+				
+				for(var i = 0; i < data.schSpecList.length; i++) {
+					$('#header .spec-slider-I'+Number(i+1)).slider({
+						range: true,
+						min: data.schSpecList[i].minStd2, // 최소
+						max: data.schSpecList[i].maxStd2, // 최대
+						values: [data.schSpecList[i].minStd2, data.schSpecList[i].maxStd2], // 현재값
+						create: function(ui) {
+							//$(this).prev('.values').html($(this).slider('values', 0) + ' ~ ' + $(this).slider('values', 1));
+							$(this).prev('.values').html($(this).slider('values', 0) + ' ~ ' + $(this).slider('values', 1) + '<span class="txt-unit">'+data.schSpecList[i].prdtSpecUnit2+'</span>');
+							$(this).prev('.values').attr('data-typeNm', data.schSpecList[i].prdtSpecUnit2);
+							$(this).parent('.form-slider').find('.range .min-range').text($(this).slider('option', 'min'));
+							$(this).parent('.form-slider').find('.range .max-range').text($(this).slider('option', 'max'));
+							$(this).siblings('input.min').val($(this).slider('values', 0));
+							$(this).siblings('input.max').val($(this).slider('values', 1));
+						},
+						slide: function(event, ui) {
+							//$(this).prev('.values').html(ui.values[0] + ' ~ ' + ui.values[1]);
+							$(this).prev('.values').html(ui.values[0] + ' ~ ' + ui.values[1] + '<span class="txt-unit">'+$(this).prev('.values').attr('data-typeNm')+'</span>');
+							$(this).prev('.values').attr('data-min', ui.values[0]);
+							$(this).prev('.values').attr('data-max', ui.values[1]);
+							var newArr2 = new Array();
+							if(data.schCtgryCd1 == 'D101') {
+								var value = "";
+								var ctgry = "";
+								$("input[name='gnbChuckData2']:checked" ).each(function (){
+									value = value + $(this).val()+",";
+									ctgry = $(this).data("chuckctgry");
+								});
+								value = value.substring(0,value.lastIndexOf(","));
+								if(value != '') {
+									// 척사이즈용
+									var chuck = new Object();
+									chuck.chuckValue = value;
+									chuck.gnbSchSpecCd = ctgry;
+									newArr2.push(chuck);
+								}
+							}
+							// 슬라이드 데이터
+							var slideLength = $(".slideType2").length;
+							for(var i=0; i<slideLength; i++){
+								var obj2 = new Object();
+								if($(this).data("gnbschspeccd") == $(".slideType2").eq(i).data("gnbschspeccd")) {
+									obj2.startValue = ui.values[0]; 
+									obj2.endValue = ui.values[1];
+									obj2.gnbSchSpecCd = $(this).data("gnbschspeccd");
+								} else {
+									if($(".slideType2").eq(i).prev().data("min") != null || $(".slideType2").eq(i).prev().data("max") != null) {
+										obj2.startValue = $(".slideType2").eq(i).prev().attr("data-min");
+										obj2.endValue = $(".slideType2").eq(i).prev().attr("data-max");
+									} else {
+										obj2.startValue = $(".slideType2").eq(i).next(".min").val();
+										obj2.endValue = $(".slideType2").eq(i).next().next(".max").val();
+									}
+									obj2.gnbSchSpecCd = $(".slideType2").eq(i).data("gnbschspeccd");									
+								}
+								newArr2.push(obj2);
+							}
+							$.ajax({
+								url: "/ajax/search/selectGnbSchPrdtLIstAjax.do",
+							 	data: {
+											"gnbSchValueList"			: newArr2,
+											"schCtgryCd1"				: $("#schCtgryCd1").val(),
+											"gnbSch3DeptType"		: $("#gnbSch3DeptType").val(),
+											"gnbSchSoluType"		: $("#gnbSchSoluType").val(),
+											"gnbSchType"				: "I"
+							 			 },
+							 	type: "post",	
+							 	async: false,
+							 	cache:false,
+							 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+							 	error: function(request, status, error){
+									alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+								},
+								success: function(data){
+									console.log(data);
+									var html = "";
+									$("#gnbPrdtList").empty();
+									$('#gnbChuckDataAll').hide();
+									for(var p = 0; p < data.gnbPrdtList.length; p++) {
+										html += 	'<li>';
+										html += 		'<a href="/'+'global'.toLowerCase()+'/product/'+data.gnbPrdtList[p].ctgryPath1+'/'+data.gnbPrdtList[p].ctgryPath2+'/'+data.gnbPrdtList[p].prdtPath+'.do">';
+										html += 			'<figure><img src="https://awsimg.dn-solutions.com'+data.gnbPrdtList[p].imgFileWeb+'" alt=""></figure>';
+										html += 			'<div class="name">'+data.gnbPrdtList[p].prdtNm+'</div>';
+										html += 			'<div class="info">';
+										html += 				'<dl>';
+										if(data.gnbPrdtList[p].prdtSpecList != null) {
+											for(var s = 0; s < data.gnbPrdtList[p].prdtSpecList.length; s++) {
+												html += 					'<dt>'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecNm+'</dt>';
+												html += 					'<dd class="gnbSpecType1" style="display : none;">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit+'</dd>';
+												html += 					'<dd class="gnbSpecType2">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd2+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit2+'</dd>';
+											}
+										}
+										html += 				'</dl>';
+										html += 			'</div>';
+										html += 		'</a>';
+										html += 	'</li>';
+									}
+									if(data.gnbPrdtList.length < 1) {
+										$(".gnbNodata").show();
+										$(".gnbSpecClass").hide();
+									} else {
+										$(".gnbNodata").hide();
+										$(".gnbSpecClass").show();
+										if (Number(data.gnbPrdtList[0].totalCnt) > 5) {
+											$('#gnbChuckDataAll').text(gnbPrdtAddTxt + " (5/" + data.gnbPrdtList[0].totalCnt + ")");
+											$('#gnbChuckDataAll').show();
+										}
+									}
+									$("#gnbPrdtList").append(html);
+								}
+							})
+						}
+					});
+				}
+				
+				$("#gnbPrdtList").empty();
+				$('#gnbChuckDataAll').hide();
+				html = "";
+				for(var p = 0; p < data.gnbPrdtList.length; p++) {
+					html += 	'<li>';
+					html += 		'<a href="/'+'global'.toLowerCase()+'/product/'+data.gnbPrdtList[p].ctgryPath1+'/'+data.gnbPrdtList[p].ctgryPath2+'/'+data.gnbPrdtList[p].prdtPath+'.do">';
+					html += 			'<figure><img src="https://awsimg.dn-solutions.com'+data.gnbPrdtList[p].imgFileWeb+'" alt=""></figure>';
+					html += 			'<div class="name">'+data.gnbPrdtList[p].prdtNm+'</div>';
+					html += 			'<div class="info">';
+					html += 				'<dl>';
+					if(data.gnbPrdtList[p].prdtSpecList != null) {
+						for(var s = 0; s < data.gnbPrdtList[p].prdtSpecList.length; s++) {
+							html += 					'<dt>'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecNm+'</dt>';
+							html += 					'<dd class="gnbSpecType1">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit+'</dd>';
+							html += 					'<dd class="gnbSpecType2" style="display : none;">'+ data.gnbPrdtList[p].prdtSpecList[s].prdtSpecStd2+ ' ' +data.gnbPrdtList[p].prdtSpecList[s].prdtSpecUnit2+'</dd>';
+						}
+					}
+					html += 				'</dl>';
+					html += 			'</div>';
+					html += 		'</a>';
+					html += 	'</li>';
+				}
+				if(data.gnbPrdtList.length < 1) {
+					$(".gnbNodata").show();
+					$(".gnbSpecClass").hide();
+				} else {
+					$(".gnbNodata").hide();
+					$(".gnbSpecClass").show();
+					if (Number(data.gnbPrdtList[0].totalCnt) > 5) {
+						$('#gnbChuckDataAll').text(gnbPrdtAddTxt + " (5/" + data.gnbPrdtList[0].totalCnt + ")");
+						$('#gnbChuckDataAll').show();
+					}
+				}
+				$("#gnbPrdtList").append(html);
+			}
+		})
+	}
+	function goSpec3Depth(cd) {
+		$("#schCtgryCd1").val(cd);
+	}	
+	
+	function gnb3deptType(type) {
+		$("#gnbSch3DeptType").val(type);
+	}
+	
+	function gnbSoluType(type) {
+		$("#gnbSchSoluType").val(type);
+	}
+	
+	// 시리즈 상세
+	function goSrsDetail(seq) {
+		location.href ='/product/seriesDetail.do?srsSeq='+seq+"&drvSeq=2";
+	}
+
+	// 시리즈 상세 Path version
+	function goSrsDetailPath(path) {
+		location.href = "/"+"global".toLowerCase()+"/"+path+".do";
+	}
+</script>
+<header id="header">
+<div class="inner">
+<div class="logo"><a href="../../../index.html"><span class="blind">ДН-Рус</span></a><span class="dealer-tag">ДН-Рус · официальный дилер в России</span></div>
+<nav class="gnb-list">
+<ul class="dep1">
+<li class="product"> 
+<a href="javascript:;">
+<span>СТАНКИ</span>
+</a>
+<div class="dep2-wrap">
+<div class="inner">
+<ul class="dep2">
+<li>
+<a href="../../../product/summary.html">Модельный ряд</a>
+</li>
+<li>
+<a href="javascript:;"></a>
+<div class="dep3-wrap">
+<ul class="dep3">
+<li class="lineup">
+<a href="javascript:;"><span class="blind">Модели</span></a>
+<div class="dep4-wrap">
+<ul class="dep4">
+<li>
+<a href="javascript:;" onclick="goSpec3Depth('D101')">Токарные центры</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="../../../product/turning-center.html">Токарные центры</a>
+</li>
+<li>
+<a href="javascript:;">Двухосевые горизонтальные</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/2-axis-horizontal.html">Двухосевые горизонтальные</a>
+</li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/leo-1600.html" onmouseover="gnbSrsView('Серия LEO 1600', 'Компактный горизонтальный токарный центр с патроном 6″', '../../../assets/img/dn/f6e325dfc37a6dbd.jpg', '../../../product/turning-center/2-axis-horizontal/leo-1600.html')">Серия LEO 1600</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-805l.html">PUMA 805L</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-805.html">PUMA 805</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-705l.html">PUMA 705L</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-705.html">PUMA 705</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-605l.html">PUMA 605L</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-605.html">PUMA 605</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-4005c.html">PUMA 4005C</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-dnt-3050l.html">PUMA DNT 3050L</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-dnt-3050.html">PUMA DNT 3050</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-dnt-2450b.html">PUMA DNT 2450B</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-dnt-2450.html">PUMA DNT 2450</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/leo-235l.html">Leo 235L</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/leo-235.html">Leo 235</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/leo-225.html">Leo 225</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/lynx-2000-g.html" onmouseover="gnbSrsView('Серия Lynx 2000G/2100G', 'Производительный компактный токарный центр с инструментом гребёнкой', '../../../assets/img/dn/3c934b81d5865de4.jpg', '../../../product/turning-center/2-axis-horizontal/lynx-2000-g.html')">Серия Lynx 2000G/2100G</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/lynx-210-a.html" onmouseover="gnbSrsView('Серия Lynx 210/220/300', 'Производительный компактный токарный центр с патроном 6″–10″', '../../../assets/img/dn/8d2140595fcd6481.jpg', '../../../product/turning-center/2-axis-horizontal/lynx-210-a.html')">Серия Lynx 210/220/300</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/lynx-2100-a.html" onmouseover="gnbSrsView('Серия Lynx 2100/2600', 'Производительный компактный токарный центр с патроном 6″–10″', '../../../assets/img/dn/f9bc3b02455867d0.jpg', '../../../product/turning-center/2-axis-horizontal/lynx-2100-a.html')">Серия Lynx 2100/2600</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/puma-dnt-2100.html" onmouseover="gnbSrsView('Серия PUMA DNT', 'Токарный центр мирового стандарта с патроном 8″/10″', '../../../assets/img/dn/0d8281e4f7d93698.jpg', '../../../product/turning-center/2-axis-horizontal/puma-dnt-2100.html')">Серия PUMA DNT</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/puma-gt-2600-xla.html" onmouseover="gnbSrsView('Серия PUMA GT', 'Токарный центр мирового стандарта с патроном 8″/10″/12″', '../../../assets/img/dn/fae42106c780cac5.jpg', '../../../product/turning-center/2-axis-horizontal/puma-gt-2600-xla.html')">Серия PUMA GT</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/puma-2600.html" onmouseover="gnbSrsView('Серия PUMA 2100/2600/3100', 'Высокопроизводительный горизонтальный токарный центр с осью Y', '../../../assets/img/dn/b7f4dc414ecc66d5.jpg', '../../../product/turning-center/2-axis-horizontal/puma-2600.html')">Серия PUMA 2100/2600/3100</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/puma-4100-a.html" onmouseover="gnbSrsView('Серия PUMA 4100/5100', 'Мощный тяжёлый токарный центр с патроном 12″/15″/21″', '../../../assets/img/dn/2d9df6d32e22e252.jpg', '../../../product/turning-center/2-axis-horizontal/puma-4100-a.html')">Серия PUMA 4100/5100</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/puma-600-ii.html" onmouseover="gnbSrsView('Серия PUMA 600/700/800 II', 'Тяжёлый горизонтальный токарный центр большой мощности', '../../../assets/img/dn/bde82ff1dd8a2ab1.jpg', '../../../product/turning-center/2-axis-horizontal/puma-600-ii.html')">Серия PUMA 600/700/800 II</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/puma-1000-a.html" onmouseover="gnbSrsView('Серия PUMA 1000', 'Крупнейший горизонтальный токарный центр с направляющими скольжения для больших деталей', '../../../assets/img/dn/01a9d5aa2b67b581.jpg', '../../../product/turning-center/2-axis-horizontal/puma-1000-a.html')">Серия PUMA 1000</a></li>
+<li><a href="../../../product/turning-center/2-axis-horizontal/lynx-220-a.html">Серия Lynx 210/220/300</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/lynx-2205-g.html">Серия Lynx</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-2100-l.html">Серия PUMA 2100/2600/3100</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-215-ii.html">Серия PUMA 215Ⅱ</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-2450-m.html">Серия PUMA 2450/3050</a></li><li><a href="../../../product/turning-center/2-axis-horizontal/puma-3550.html">Серия PUMA 3550/4005</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Горизонтальные с фрезерованием</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/mill-with-horizontal.html">Горизонтальные с фрезерованием</a>
+</li>
+<li><a href="../../../product/turning-center/mill-with-horizontal/lynx-2100-ma.html" onmouseover="gnbSrsView('Серия Lynx 2100/2600', 'Производительный компактный токарный центр с патроном 6″–10″', '../../../assets/img/dn/2dc52557414b030e.jpg', '../../../product/turning-center/mill-with-horizontal/lynx-2100-ma.html')">Серия Lynx 2100/2600</a></li><li><a href="../../../product/turning-center/mill-with-horizontal/puma-4005xlm.html">PUMA 4005XLM</a></li><li><a href="../../../product/turning-center/mill-with-horizontal/puma-4005lm.html">PUMA 4005LM</a></li><li><a href="../../../product/turning-center/mill-with-horizontal/puma-4005m.html">PUMA 4005M</a></li><li><a href="../../../product/turning-center/mill-with-horizontal/puma-dnt-3050lm.html">PUMA DNT 3050LM</a></li><li><a href="../../../product/turning-center/mill-with-horizontal/puma-dnt-3050m.html">PUMA DNT 3050M</a></li><li><a href="../../../product/turning-center/mill-with-horizontal/puma-dnt-2450mb.html">PUMA DNT 2450MB</a></li><li><a href="../../../product/turning-center/mill-with-horizontal/puma-dnt-2450m.html">PUMA DNT 2450M</a></li><li><a href="../../../product/turning-center/mill-with-horizontal/lynx-305m.html">Lynx 305M</a></li>
+<li><a href="../../../product/turning-center/mill-with-horizontal/puma-dnt-2100-m.html" onmouseover="gnbSrsView('Серия PUMA DNT', 'Токарный центр мирового стандарта с патроном 8″/10″', '../../../assets/img/dn/26ad69d4348e8be9.jpg', '../../../product/turning-center/mill-with-horizontal/puma-dnt-2100-m.html')">Серия PUMA DNT</a></li>
+<li><a href="../../../product/turning-center/mill-with-horizontal/puma-gt-2600-xlma.html" onmouseover="gnbSrsView('Серия PUMA GT', 'Токарный центр мирового стандарта', '../../../assets/img/dn/fe8fbe65c5054966.jpg', '../../../product/turning-center/mill-with-horizontal/puma-gt-2600-xlma.html')">Серия PUMA GT</a></li>
+<li><a href="../../../product/turning-center/mill-with-horizontal/puma-2100-ms.html" onmouseover="gnbSrsView('Серия PUMA 2100/2600/3100', 'Высокопроизводительный горизонтальный токарный центр с осью Y', '../../../assets/img/dn/f32870bd92b90ea4.jpg', '../../../product/turning-center/mill-with-horizontal/puma-2100-ms.html')">Серия PUMA 2100/2600/3100</a></li>
+<li><a href="../../../product/turning-center/mill-with-horizontal/puma-4100-lma.html" onmouseover="gnbSrsView('Серия PUMA 4100/5100', 'Мощный токарный центр для силового резания', '../../../assets/img/dn/88e11457d610433f.jpg', '../../../product/turning-center/mill-with-horizontal/puma-4100-lma.html')">Серия PUMA 4100/5100</a></li>
+<li><a href="../../../product/turning-center/mill-with-horizontal/puma-600-lm-ii.html" onmouseover="gnbSrsView('Серия PUMA 600/700/800 II', 'Тяжёлый горизонтальный токарный центр большой мощности', '../../../assets/img/dn/fe1395450d9d3e45.jpg', '../../../product/turning-center/mill-with-horizontal/puma-600-lm-ii.html')">Серия PUMA 600/700/800 II</a></li>
+<li><a href="../../../product/turning-center/mill-with-horizontal/puma-1000-ma.html" onmouseover="gnbSrsView('Серия PUMA 1000', 'Крупнейший горизонтальный токарный центр с направляющими скольжения для больших деталей', '../../../assets/img/dn/572a98722a464a3d.jpg', '../../../product/turning-center/mill-with-horizontal/puma-1000-ma.html')">Серия PUMA 1000</a></li>
+<li><a href="../../../product/turning-center/mill-with-horizontal/puma-2100-m.html">Серия PUMA 2100/2600/3100</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Горизонтальные с осью Y</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/y-axis-horizontal.html">Горизонтальные с осью Y</a>
+</li>
+<li><a href="../../../product/turning-center/y-axis-horizontal/lynx-2100-lya.html" onmouseover="gnbSrsView('Серия Lynx 2100/2600', 'Производительный компактный токарный центр с патроном 6″–10″', '../../../assets/img/dn/8c8b94c8174b6484.jpg', '../../../product/turning-center/y-axis-horizontal/lynx-2100-lya.html')">Серия Lynx 2100/2600</a></li><li><a href="../../../product/turning-center/y-axis-horizontal/puma-3100xlyb.html">PUMA 3100XLYB</a></li><li><a href="../../../product/turning-center/y-axis-horizontal/lynx-2605sy.html">Lynx 2605SY</a></li><li><a href="../../../product/turning-center/y-axis-horizontal/lynx-2605y.html">Lynx 2605Y</a></li>
+<li><a href="../../../product/turning-center/y-axis-horizontal/puma-2100-lsy--ii.html" onmouseover="gnbSrsView('Серия PUMA 2100/2600/3100', 'Высокопроизводительный горизонтальный токарный центр с осью Y', '../../../assets/img/dn/dc606df53f39f2de.jpg', '../../../product/turning-center/y-axis-horizontal/puma-2100-lsy--ii.html')">Серия PUMA 2100/2600/3100</a></li>
+<li><a href="../../../product/turning-center/y-axis-horizontal/puma-5100-lya.html" onmouseover="gnbSrsView('Серия PUMA 4100/5100', 'Мощный токарный центр для силового резания', '../../../assets/img/dn/d36e8b6705aed636.jpg', '../../../product/turning-center/y-axis-horizontal/puma-5100-lya.html')">Серия PUMA 4100/5100</a></li>
+<li><a href="../../../product/turning-center/y-axis-horizontal/puma-600-ly-ii.html" onmouseover="gnbSrsView('Серия PUMA 600/700/800 II', 'Тяжёлый горизонтальный токарный центр большой мощности', '../../../assets/img/dn/cd78558fd98bffeb.jpg', '../../../product/turning-center/y-axis-horizontal/puma-600-ly-ii.html')">Серия PUMA 600/700/800 II</a></li>
+<li><a href="../../../product/turning-center/y-axis-horizontal/lynx-2105-lsya.html">Серия Lynx 2105LY/LSY</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Горизонтальные с несколькими револьверными головками</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/multi-turret.html">Горизонтальные с несколькими револьверными головками</a>
+</li>
+<li><a href="../../../product/turning-center/multi-turret/puma-tl-2000.html" onmouseover="gnbSrsView('Серия PUMA TL', 'Производительный токарный центр с верхней и нижней револьверными головками', '../../../assets/img/dn/2828bef28e5fb159.jpg', '../../../product/turning-center/multi-turret/puma-tl-2000.html')">Серия PUMA TL</a></li>
+<li><a href="../../../product/turning-center/multi-turret/puma-tt-1300-sy.html" onmouseover="gnbSrsView('Серия PUMA TT', 'Производительный двухшпиндельный двухревольверный токарный центр с осью Y', '../../../assets/img/dn/f8bb0a4fb1d8847e.jpg', '../../../product/turning-center/multi-turret/puma-tt-1300-sy.html')">Серия PUMA TT</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Для алюминиевых колёсных дисков</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/aluminium-wheel.html">Для алюминиевых колёсных дисков</a>
+</li>
+<li><a href="../../../product/turning-center/aluminium-wheel/puma-vaw-800.html" onmouseover="gnbSrsView('Серия PUMA VAW', 'Производительный вертикальный токарный центр для алюминиевых дисков автомобилей, мотоциклов и другой техники.', '/files/product/product/538/Small/s-1-o-pumavaw6000-acc.jpg', '../../../product/turning-center/aluminium-wheel/puma-vaw-800.html')"> Серия PUMA VAW</a></li>
+<li><a href="../../../product/turning-center/aluminium-wheel/puma-aw-560-ii.html" onmouseover="gnbSrsView('Серия PUMA AW Ⅱ', 'Производительный токарный центр для алюминиевых дисков автомобилей, мотоциклов и другой техники.', '../../../assets/img/dn/70fe15cf92e2431e.jpg', '../../../product/turning-center/aluminium-wheel/puma-aw-560-ii.html')">Серия PUMA AW Ⅱ</a></li>
+<li><a href="../../../product/turning-center/aluminium-wheel/aw-7005.html">Серия AW</a></li><li><a href="../../../product/turning-center/aluminium-wheel/puma-aw-5605-ii.html">Серия PUMA AW560Ⅱ/660Ⅱ</a></li><li><a href="../../../product/turning-center/aluminium-wheel/puma-vaw-7605.html">Серия PUMA VAW</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Двухшпиндельные горизонтальные токарные центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/2-spindle-horizontal.html">Двухшпиндельные горизонтальные токарные центры</a>
+</li>
+<li><a href="../../../product/turning-center/2-spindle-horizontal/puma-tw-2100.html" onmouseover="gnbSrsView('Серия PUMA TW', 'Twin-Turret, Twin-Spindle HTC with Forward-Facing Chucks', '/files/product/product/546/Small/s-3-f-pumatt1300syy.jpg', '../../../product/turning-center/2-spindle-horizontal/puma-tw-2100.html')">Серия PUMA TW</a></li>
+<li><a href="../../../product/turning-center/2-spindle-horizontal/puma-tw-2100-gl.html">Серия PUMA TW</a></li><li><a href="../../../product/turning-center/2-spindle-horizontal/puma-tw-2605-gl.html">Серия PUMA TW</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Вертикальные токарные центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/vertical-turning.html">Вертикальные токарные центры</a>
+</li>
+<li><a href="../../../product/turning-center/vertical-turning/puma-v-400.html" onmouseover="gnbSrsView('Серия PUMA V400', 'Самый компактный производительный вертикальный токарный центр для силового резания', '../../../assets/img/dn/51b8b7d7096c6b69.jpg', '../../../product/turning-center/vertical-turning/puma-v-400.html')"> Серия PUMA V400</a></li><li><a href="../../../product/turning-center/vertical-turning/puma-v8305ml.html">PUMA V8305ML</a></li><li><a href="../../../product/turning-center/vertical-turning/puma-v8305l.html">PUMA V8305L</a></li><li><a href="../../../product/turning-center/vertical-turning/puma-v6305m.html">PUMA V6305M</a></li><li><a href="../../../product/turning-center/vertical-turning/puma-v405ml.html">PUMA V405ML</a></li><li><a href="../../../product/turning-center/vertical-turning/puma-v405m.html">PUMA V405M</a></li><li><a href="../../../product/turning-center/vertical-turning/puma-v405l.html">PUMA V405L</a></li>
+<li><a href="../../../product/turning-center/vertical-turning/puma-vt-1100.html" onmouseover="gnbSrsView('Серия PUMA VT', 'Крупный производительный вертикальный токарный центр для силового резания', '/files/product/product/273/Small/s-3-f-pumavt1100.jpg', '../../../product/turning-center/vertical-turning/puma-vt-1100.html')"> Серия PUMA VT</a></li>
+<li><a href="../../../product/turning-center/vertical-turning/puma-v-8300.html" onmouseover="gnbSrsView('Серия PUMA V8300/9300', 'Средний производительный вертикальный токарный центр для силового резания', '../../../assets/img/dn/8fd94a5712321cc3.jpg', '../../../product/turning-center/vertical-turning/puma-v-8300.html')">Серия PUMA V8300/9300</a></li>
+<li><a href="../../../product/turning-center/vertical-turning/pv-6300.html" onmouseover="gnbSrsView('Серия PV 6300', 'Производительный вертикальный токарный центр среднего класса с патроном 15″/18″', '../../../assets/img/dn/cdb1d6727fa899b6.png', '../../../product/turning-center/vertical-turning/pv-6300.html')">Серия PV 6300</a></li>
+<li><a href="../../../product/turning-center/vertical-turning/puma-v-405.html">Серия PUMA V405</a></li><li><a href="../../../product/turning-center/vertical-turning/puma-v-8305-m.html">Серия PUMA V8305</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Вертикальные токарные центры с ползуном</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/ram-type-vertical.html">Вертикальные токарные центры с ползуном</a>
+</li>
+<li><a href="../../../product/turning-center/ram-type-vertical/puma-vtr-1012f.html" onmouseover="gnbSrsView('Серия PUMA VTR', 'Самый большой вертикальный токарный центр DN Solutions с жёсткими направляющими скольжения', '../../../assets/img/dn/a4413088f06fcff7.jpg', '../../../product/turning-center/ram-type-vertical/puma-vtr-1012f.html')">Серия PUMA VTR</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Горизонтальные для шлифования кварца</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/quartz-grinding.html">Горизонтальные для шлифования кварца</a>
+</li>
+<li><a href="../../../product/turning-center/quartz-grinding/xg-600.html" onmouseover="gnbSrsView('XG 600/800', 'Токарный центр для шлифования кварца и керамики с макс. диаметром обработки 600/800 мм', '../../../assets/img/dn/9bae741c4c0a25b1.jpg', '../../../product/turning-center/quartz-grinding/xg-600.html')">XG 600/800</a></li>
+<li><a href="../../../product/turning-center/quartz-grinding/dnc-8060.html" onmouseover="gnbSrsView('Серия DNC', 'Станок для шлифования керамики и кварца', '../../../assets/img/dn/a3342dbb65537e3f.png', '../../../product/turning-center/quartz-grinding/dnc-8060.html')">Серия DNC</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Токарные автоматы продольного точения</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/turning-center/swissturn.html">Токарные автоматы продольного точения</a>
+</li>
+<li><a href="../../../product/turning-center/swissturn/puma-st-10-gs-ii.html" onmouseover="gnbSrsView('Серия PUMA ST GS II', 'Токарный автомат продольного точения для непрерывной точной обработки', '../../../assets/img/dn/9f6afb3198b9281b.jpg', '../../../product/turning-center/swissturn/puma-st-10-gs-ii.html')">Серия PUMA ST GS II</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="javascript:;" onclick="goSpec3Depth('D102')">Обрабатывающие центры</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="../../../product/machining-center.html">Обрабатывающие центры</a>
+</li>
+<li>
+<a href="javascript:;">Резьбонарезные центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/machining-center/tapping-center.html">Резьбонарезные центры</a>
+</li>
+<li><a href="../../../product/machining-center/tapping-center/t-4000.html" onmouseover="gnbSrsView('Серия T', 'Скоростной производительный резьбонарезной центр', '../../../assets/img/dn/34455aef778d6ac6.jpg', '../../../product/machining-center/tapping-center/t-4000.html')">Серия T</a></li>
+<li><a href="../../../product/machining-center/tapping-center/vc-3600-30.html" onmouseover="gnbSrsView('Серия VC', 'Вертикальный центр с двумя паллетами для крупносерийного производства', '../../../assets/img/dn/e952e8d9b9ed3ea6.jpg', '../../../product/machining-center/tapping-center/vc-3600-30.html')">Серия VC</a></li>
+<li><a href="../../../product/machining-center/tapping-center/t-4005-hp.html">Серия T</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Вертикальные обрабатывающие центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/machining-center/vertical.html">Вертикальные обрабатывающие центры</a>
+</li>
+<li><a href="../../../product/machining-center/vertical/vm-5400.html" onmouseover="gnbSrsView('Серия VM 5400/6500', '중절삭 고성능 금형가공에 적합한 수직형 머시닝센터', '', '../../../product/machining-center/vertical/vm-5400.html')">Серия VM 5400/6500</a></li>
+<li><a href="../../../product/machining-center/vertical/dnm-4500-4th.html" onmouseover="gnbSrsView('DNM 4-го поколения', 'Производительный вертикальный обрабатывающий центр мирового стандарта', '../../../assets/img/dn/e32f14500444e1ae.jpg', '../../../product/machining-center/vertical/dnm-4500-4th.html')">DNM 4-го поколения</a></li>
+<li><a href="../../../product/machining-center/vertical/dnm-4000.html" onmouseover="gnbSrsView('Серия DNM', 'Производительные вертикальные обрабатывающие центры', '../../../assets/img/dn/1d0738ba3bb025b5.jpg', '../../../product/machining-center/vertical/dnm-4000.html')">Серия DNM</a></li>
+<li><a href="../../../product/machining-center/vertical/dem-4000.html" onmouseover="gnbSrsView('Серия DEM', 'Универсальный вертикальный обрабатывающий центр ISO 40', '../../../assets/img/dn/1563bc19b0578e06.jpg', '../../../product/machining-center/vertical/dem-4000.html')">Серия DEM</a></li>
+<li><a href="../../../product/machining-center/vertical/bvm-5700.html" onmouseover="gnbSrsView('Серия BVM', 'Высокоточный вертикальный обрабатывающий центр портальной компоновки', '../../../assets/img/dn/8854dc76587d735a.jpg', '../../../product/machining-center/vertical/bvm-5700.html')">Серия BVM</a></li>
+<li><a href="../../../product/machining-center/vertical/svm-4100.html" onmouseover="gnbSrsView('Серия SVM', 'Вертикальный обрабатывающий центр с ходом по Y 410 мм для роста производительности', '../../../assets/img/dn/a5fa710bb68233de.jpg', '../../../product/machining-center/vertical/svm-4100.html')">Серия SVM</a></li>
+<li><a href="../../../product/machining-center/vertical/mynx-5400-ii.html" onmouseover="gnbSrsView('Серия Mynx Ⅱ', 'Средне- и крупногабаритный обрабатывающий центр для силового резания', '../../../assets/img/dn/d678262d6465edf7.jpg', '../../../product/machining-center/vertical/mynx-5400-ii.html')">Серия Mynx Ⅱ</a></li>
+<li><a href="../../../product/machining-center/vertical/vm-5400.html" onmouseover="gnbSrsView('Серия VM 5400/6500', 'Высокопроизводительные вертикальные обрабатывающие центры для штампов и пресс-форм', '../../../assets/img/dn/ec35cb89c725bac5.png', '../../../product/machining-center/vertical/vm-5400.html')">Серия VM 5400/6500</a></li>
+<li><a href="../../../product/machining-center/vertical/vc-3600.html" onmouseover="gnbSrsView('Серия VC', 'Вертикальный центр с двумя паллетами для крупносерийного производства', '../../../assets/img/dn/3fb32783956f0fbe.jpg', '../../../product/machining-center/vertical/vc-3600.html')">Серия VC</a></li>
+<li><a href="../../../product/machining-center/vertical/vcf-5500-l.html" onmouseover="gnbSrsView('Серия VCF', 'Вертикальный центр с подвижной колонной и несколькими рабочими зонами', '/files/product/product/387/Small/s-3-s-vcf850lsrII.jpg', '../../../product/machining-center/vertical/vcf-5500-l.html')">Серия VCF</a></li>
+<li><a href="../../../product/machining-center/vertical/gvx-2430.html" onmouseover="gnbSrsView('Серия GVX', 'Портальный обрабатывающий центр с ходом по X 3000 мм', '../../../assets/img/dn/3dfd6f85142865e2.jpg', '../../../product/machining-center/vertical/gvx-2430.html')">Серия GVX</a></li>
+<li><a href="../../../product/machining-center/vertical/cmv-920-ii.html">Серия CMV</a></li><li><a href="../../../product/machining-center/vertical/dem-5205.html">Серия DEM</a></li><li><a href="../../../product/machining-center/vertical/dnm-4005.html">Серия DNM 4005</a></li><li><a href="../../../product/machining-center/vertical/dnm-4505.html">DNM 4-го поколения</a></li><li><a href="../../../product/machining-center/vertical/dnm-500-hs.html">Серия DNM HS</a></li><li><a href="../../../product/machining-center/vertical/dnm-515-50.html">Серия DNM #50</a></li><li><a href="../../../product/machining-center/vertical/dnm-5705.html">Серия DNM</a></li><li><a href="../../../product/machining-center/vertical/dnm-650p-ii.html">Серия DNM</a></li><li><a href="../../../product/machining-center/vertical/mynx-5450.html">Mynx</a></li><li><a href="../../../product/machining-center/vertical/svm-4105.html">Серия SVM</a></li><li><a href="../../../product/machining-center/vertical/v-4305.html">Серия V 4305</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Двухшпиндельные обрабатывающие центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/machining-center/2-spindle-vertical.html">Двухшпиндельные обрабатывающие центры</a>
+</li>
+<li><a href="../../../product/machining-center/2-spindle-vertical/xc-4000-da-2sp.html" onmouseover="gnbSrsView('Серия XC 4000-2SP', 'Производительный двухшпиндельный вертикальный центр с подвижной колонной', '../../../assets/img/dn/9cbbebb78d0ffe4b.jpg', '../../../product/machining-center/2-spindle-vertical/xc-4000-da-2sp.html')">Серия XC 4000-2SP</a></li>
+<li><a href="../../../product/machining-center/2-spindle-vertical/vc-4000-d-2sp.html" onmouseover="gnbSrsView('Серия VC', 'Вертикальный центр с двумя паллетами и двумя шпинделями для крупносерийного производства', '../../../assets/img/dn/8b16b9c02050da77.jpg', '../../../product/machining-center/2-spindle-vertical/vc-4000-d-2sp.html')">Серия VC</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Для штампов и пресс-форм</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/machining-center/die-mold.html">Для штампов и пресс-форм</a>
+</li>
+<li><a href="../../../product/machining-center/die-mold/dvm-500-ii.html" onmouseover="gnbSrsView('Серия DVM', 'Высокоточные вертикальные обрабатывающие центры для штампов и пресс-форм', '../../../assets/img/dn/143feedffc498aa4.jpg', '../../../product/machining-center/die-mold/dvm-500-ii.html')">Серия DVM</a></li>
+<li><a href="../../../product/machining-center/die-mold/md-6700.html" onmouseover="gnbSrsView('Серия MD', 'Обрабатывающие центры нового поколения для штампов и пресс-форм', '../../../assets/img/dn/41e93d1d0c968f11.jpg', '../../../product/machining-center/die-mold/md-6700.html')">Серия MD</a></li>
+<li><a href="../../../product/machining-center/die-mold/nx-5500-ii.html" onmouseover="gnbSrsView('Серия NX Ⅱ', 'Средне- и крупногабаритные обрабатывающие центры для силового резания', '../../../assets/img/dn/7adc623bb1c01ab5.jpg', '../../../product/machining-center/die-mold/nx-5500-ii.html')">Серия NX Ⅱ</a></li>
+<li><a href="../../../product/machining-center/die-mold/vm-750.html" onmouseover="gnbSrsView('Серия VM', 'Высокопроизводительные вертикальные обрабатывающие центры для штампов и пресс-форм', '/files/product/product/396/Small/s-4-s-vm750l.jpg', '../../../product/machining-center/die-mold/vm-750.html')">Серия VM</a></li>
+<li><a href="../../../product/machining-center/die-mold/mp-6500.html">Серия MP</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Горизонтальные обрабатывающие центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/machining-center/horizontal.html">Горизонтальные обрабатывающие центры</a>
+</li>
+<li><a href="../../../product/machining-center/horizontal/hc-400-ii.html" onmouseover="gnbSrsView('Серия HC Ⅱ', 'Компактный производительный горизонтальный обрабатывающий центр', '../../../assets/img/dn/ad97f0ea9bd19a46.jpg', '../../../product/machining-center/horizontal/hc-400-ii.html')">Серия HC Ⅱ</a></li><li><a href="../../../product/machining-center/horizontal/hm-1255w.html">HM 1255W</a></li><li><a href="../../../product/machining-center/horizontal/hm-1255.html">HM 1255</a></li><li><a href="../../../product/machining-center/horizontal/hm-1005.html">HM 1005</a></li>
+<li><a href="../../../product/machining-center/horizontal/nhc-4000.html" onmouseover="gnbSrsView('Серия NHC', 'Компактный горизонтальный обрабатывающий центр', '../../../assets/img/dn/9810ccca5309e838.jpg', '../../../product/machining-center/horizontal/nhc-4000.html')">Серия NHC</a></li>
+<li><a href="../../../product/machining-center/horizontal/nhp-4000.html" onmouseover="gnbSrsView('Серия NHP', 'Производительный горизонтальный обрабатывающий центр', '../../../assets/img/dn/1f9933cea94c987e.jpg', '../../../product/machining-center/horizontal/nhp-4000.html')">Серия NHP</a></li>
+<li><a href="../../../product/machining-center/horizontal/nhm-5000.html" onmouseover="gnbSrsView('Серия NHM', 'Средне- и крупногабаритный горизонтальный обрабатывающий центр для силового резания', '../../../assets/img/dn/1371677c7ce75c43.jpg', '../../../product/machining-center/horizontal/nhm-5000.html')">Серия NHM</a></li>
+<li><a href="../../../product/machining-center/horizontal/hm-1000.html" onmouseover="gnbSrsView('Серия HM', 'Горизонтальный обрабатывающий центр с направляющими скольжения для крупных деталей', '../../../assets/img/dn/c27d9643dfabea08.jpg', '../../../product/machining-center/horizontal/hm-1000.html')">Серия HM</a></li>
+<li><a href="../../../product/machining-center/horizontal/nhp-6300-2nd.html" onmouseover="gnbSrsView('NHP 2-го поколения', 'Скоростной производительный горизонтальный обрабатывающий центр', '../../../assets/img/dn/29759263b12237fe.png', '../../../product/machining-center/horizontal/nhp-6300-2nd.html')">NHP 2-го поколения</a></li>
+<li><a href="../../../product/machining-center/horizontal/hm-635-ii.html">Серия HM</a></li><li><a href="../../../product/machining-center/horizontal/nhm-6305.html">Серия NHM</a></li><li><a href="../../../product/machining-center/horizontal/nhp-4005.html">Серия NHP</a></li><li><a href="../../../product/machining-center/horizontal/nhp-6300-2nd-cn.html">NHP второго поколения</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Обрабатывающие центры для неметаллов</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="javascript:void(0);">Обрабатывающие центры для неметаллов</a>
+</li>
+<li><a href="#" onmouseover="gnbSrsView('Серия VX', 'Gantry Machining Center for Semiconductor Material Processing', '/files/product/product/541/Small/s-2-f-vx6500g.jpg', '#')">Серия VX</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="javascript:;" onclick="goSpec3Depth('D103')">Расточные станки</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="../../../product/nc-boring.html">Расточные станки</a>
+</li>
+<li>
+<a href="javascript:;">Расточные станки </a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/nc-boring/boring.html">Расточные станки </a>
+</li>
+<li><a href="../../../product/nc-boring/boring/dbc-110-s.html" onmouseover="gnbSrsView('Серия DBC', 'Горизонтально-расточной станок среднего и крупного класса', '../../../assets/img/dn/7b295930968fbbbe.jpg', '../../../product/nc-boring/boring/dbc-110-s.html')">Серия DBC</a></li>
+<li><a href="../../../product/nc-boring/boring/dbc-135-ii.html">DBC 135II</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Двухсторонние расточные станки</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/nc-boring/duplex-boring.html">Двухсторонние расточные станки</a>
+</li>
+<li><a href="../../../product/nc-boring/duplex-boring/dbd-1270.html" onmouseover="gnbSrsView('Серия DBD', 'Двухсторонний расточной станок для симметричных деталей', '../../../assets/img/dn/f5d69a2124438b9c.jpg', '../../../product/nc-boring/duplex-boring/dbd-1270.html')">Серия DBD</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="javascript:;" onclick="goSpec3Depth('D105')">Портальные обрабатывающие центры</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="../../../product/double-Column.html">Портальные обрабатывающие центры</a>
+</li>
+<li>
+<a href="javascript:;">С неподвижной поперечиной</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/double-Column/fixed-crossrail.html">С неподвижной поперечиной</a>
+</li>
+<li><a href="../../../product/double-Column/fixed-crossrail/bm-1530-m.html" onmouseover="gnbSrsView('Серия BM', 'Точный и жёсткий вертикальный обрабатывающий центр портальной компоновки', '/files/product/product/325/Small/s-2-o-bm1530m.jpg', '../../../product/double-Column/fixed-crossrail/bm-1530-m.html')">Серия BM</a></li>
+<li><a href="../../../product/double-Column/fixed-crossrail/dbm-1525-s.html" onmouseover="gnbSrsView('Серия DBM-s', 'Обрабатывающий центр для средних и крупных пресс-форм', '../../../assets/img/dn/e33297c443a6baff.jpg', '../../../product/double-Column/fixed-crossrail/dbm-1525-s.html')">Серия DBM-s</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">С поперечиной по оси W</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/double-Column/waxis-crossrail.html">С поперечиной по оси W</a>
+</li>
+<li><a href="../../../product/double-Column/waxis-crossrail/dbm-2030.html" onmouseover="gnbSrsView('Серия DBM', 'Универсальный портальный обрабатывающий центр', '../../../assets/img/dn/944e21e7fe4bce10.jpg', '../../../product/double-Column/waxis-crossrail/dbm-2030.html')">Серия DBM</a></li>
+<li><a href="../../../product/double-Column/waxis-crossrail/dcm-2740-f-ii.html" onmouseover="gnbSrsView('Серия DCM F', 'Самые тяжёлые портальные обрабатывающие центры в нашей линейке', '../../../assets/img/dn/7331423010146a36.jpg', '../../../product/double-Column/waxis-crossrail/dcm-2740-f-ii.html')">Серия DCM F</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">5-осевые с поперечиной</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/double-Column/5axis-crossrail.html">5-осевые с поперечиной</a>
+</li>
+<li><a href="#" onmouseover="gnbSrsView('Серия BM U', 'Точный и жёсткий вертикальный обрабатывающий центр портальной компоновки', '../../../assets/img/dn/6a96065c2159bb3e.jpg', '#')">Серия BM U</a></li>
+<li><a href="#" onmouseover="gnbSrsView('Серия DBM U', 'Универсальный портальный обрабатывающий центр', '../../../assets/img/dn/3cea5e2e0e540069.jpg', '#')">Серия DBM U</a></li>
+<li><a href="#" onmouseover="gnbSrsView('Серия DCM U', 'Самые тяжёлые портальные обрабатывающие центры в нашей линейке', '../../../assets/img/dn/9d7aab769721010f.jpg', '#')">Серия DCM U</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="javascript:;" onclick="goSpec3Depth('D106')">5-осевые станки</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="../../../product/5-axis-machining.html">5-осевые станки</a>
+</li>
+<li>
+<a href="javascript:;">5-осевые вертикальные обрабатывающие центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/5-axis-machining/horizontal-machining.html">5-осевые вертикальные обрабатывающие центры</a>
+</li>
+<li><a href="../../../product/5-axis-machining/horizontal-machining/dvf-4000.html" onmouseover="gnbSrsView('Серия DVF', '5-осевой вертикальный обрабатывающий центр', '../../../assets/img/dn/a168afcfc68b71cb.jpg', '../../../product/5-axis-machining/horizontal-machining/dvf-4000.html')">Серия DVF</a></li>
+<li><a href="../../../product/5-axis-machining/horizontal-machining/dnm-200-5ax.html" onmouseover="gnbSrsView('Серия DNM 5AX', 'Производительная полная 5-осевая или 5-сторонняя обработка', '../../../assets/img/dn/dd4e444e2f6925ad.jpg', '../../../product/5-axis-machining/horizontal-machining/dnm-200-5ax.html')">Серия DNM 5AX</a></li>
+<li><a href="../../../product/5-axis-machining/horizontal-machining/fm-200-5ax-linear.html" onmouseover="gnbSrsView('Серия FM 5AX', 'Скоростной 5-осевой обрабатывающий центр портальной компоновки', '../../../assets/img/dn/bb67b24b8870c54a.jpg', '../../../product/5-axis-machining/horizontal-machining/fm-200-5ax-linear.html')">Серия FM 5AX</a></li>
+<li><a href="../../../product/5-axis-machining/horizontal-machining/def-5005.html">Серия DEF</a></li></ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">5-осевые горизонтальные обрабатывающие центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/5-axis-machining/vertical-machining.html">5-осевые горизонтальные обрабатывающие центры</a>
+</li>
+<li><a href="../../../product/5-axis-machining/vertical-machining/dhf-8000.html" onmouseover="gnbSrsView('Серия DHF 8000', '5-осевой горизонтальный центр с двумя паллетами и наклонной осью A', '../../../assets/img/dn/e7c6ef15f46a932c.jpg', '../../../product/5-axis-machining/vertical-machining/dhf-8000.html')">Серия DHF 8000</a></li>
+<li><a href="../../../product/5-axis-machining/vertical-machining/dhf-5500.html" onmouseover="gnbSrsView('Серия DHF 5500', 'Надёжный 5-осевой горизонтальный обрабатывающий центр со стабильной обработкой', '../../../assets/img/dn/90ea0d0e73f8cfa1.png', '../../../product/5-axis-machining/vertical-machining/dhf-5500.html')">Серия DHF 5500</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">5-осевые профилировочные станки</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/5-axis-machining/5-axis-profiler.html">5-осевые профилировочные станки</a>
+</li>
+<li><a href="../../../product/5-axis-machining/5-axis-profiler/hfp-1540.html" onmouseover="gnbSrsView('Серия HFP 1540', 'Горизонтальный обрабатывающий центр для одновременной 5-осевой обработки с крупным наклонным столом', '../../../assets/img/dn/11bf6caf5330f78b.jpg', '../../../product/5-axis-machining/5-axis-profiler/hfp-1540.html')">Серия HFP 1540</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">5-осевые портальные обрабатывающие центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/5-axis-machining/double-column.html">5-осевые портальные обрабатывающие центры</a>
+</li>
+<li><a href="../../../product/5-axis-machining/double-column/bm-2035-u.html" onmouseover="gnbSrsView('Серия BM U', 'Точный и жёсткий вертикальный обрабатывающий центр портальной компоновки', '../../../assets/img/dn/6a96065c2159bb3e.jpg', '../../../product/5-axis-machining/double-column/bm-2035-u.html')">Серия BM U</a></li>
+<li><a href="../../../product/5-axis-machining/double-column/dbm-2030-u.html" onmouseover="gnbSrsView('Серия DBM U', 'Универсальный портальный обрабатывающий центр', '../../../assets/img/dn/3cea5e2e0e540069.jpg', '../../../product/5-axis-machining/double-column/dbm-2030-u.html')">Серия DBM U</a></li>
+<li><a href="../../../product/5-axis-machining/double-column/dcm-2740-u.html" onmouseover="gnbSrsView('Серия DCM U', 'Самые тяжёлые портальные обрабатывающие центры в нашей линейке', '../../../assets/img/dn/9d7aab769721010f.jpg', '../../../product/5-axis-machining/double-column/dcm-2740-u.html')">Серия DCM U</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="javascript:;" onclick="goSpec3Depth('D107')">Многофункциональные станки</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="../../../product/multitasking-turning.html">Многофункциональные станки</a>
+</li>
+<li>
+<a href="javascript:;">Многозадачные токарные центры</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="../../../product/multitasking-turning/multitaskingturning.html">Многозадачные токарные центры</a>
+</li>
+<li><a href="../../../product/multitasking-turning/multitaskingturning/smx-2100.html" onmouseover="gnbSrsView('Серия SMX', 'Высокопроизводительный многоосевой токарно-фрезерный станок', '../../../assets/img/dn/f3a62aff0fb24941.jpg', '../../../product/multitasking-turning/multitaskingturning/smx-2100.html')">Серия SMX</a></li>
+<li><a href="../../../product/multitasking-turning/multitaskingturning/dnx-2100.html" onmouseover="gnbSrsView('Серия DNX', 'Многоосевое решение DN Solutions', '../../../assets/img/dn/7cdbde113a9283aa.jpg', '../../../product/multitasking-turning/multitaskingturning/dnx-2100.html')">Серия DNX</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="javascript:;" onclick="goSpec3Depth('D108')">Аддитивное производство</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="#">Аддитивное производство</a>
+</li>
+<li>
+<a href="javascript:;">PBF</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="#">PBF</a>
+</li>
+<li><a href="#" onmouseover="gnbSrsView('Серия DLX', 'DN Solutions Laser eXecution solution', '/files/product/product/735/Small/DLX150.png', '#')">Серия DLX</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="javascript:;" onclick="goSpec3Depth('D109')">Специальная обработка</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="javascript:void(0);">Специальная обработка</a>
+</li>
+<li>
+<a href="javascript:;">Сварка трением с перемешиванием</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="javascript:void(0);">Сварка трением с перемешиванием</a>
+</li>
+<li><a href="#" onmouseover="gnbSrsView('Серия FSW 2030', 'FSW Solution Based on High‑Rigidity Machine Platform', '/files/product/product/729/Small/FSW 2030TD-측면문닫힘_1.jpg', '#')">Серия FSW 2030</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="javascript:;">Лазер с водяной струёй</a>
+<div class="dep6-wrap">
+<ul class="dep6">
+<li class="btn-category">
+<a href="javascript:void(0);">Лазер с водяной струёй</a>
+</li>
+<li><a href="#" onmouseover="gnbSrsView('FM600/LW', 'Processing Solution Combining the Advantages of Laser and Waterjet', '/files/product/product/736/Small/FM 600 LW-우측 문닫힘_1.png', '#')">FM600/LW</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a data-menu="software" href="javascript:;" onclick="goSpec3Depth('soft')">Программное обеспечение</a>
+<div class="dep5-wrap">
+<div class="pro-line">
+<ul class="dep5">
+<li class="btn-category">
+<a href="../../../software/index.html">Программное обеспечение</a>
+</li>
+<li>
+<a href="../../../software/sketchturn.html">Sketch Turn</a>
+</li>
+<li>
+<a href="../../../software/dpms.html">DPMS</a>
+</li>
+<li>
+<a href="../../../software/cufos.html">CUFOS</a>
+</li>
+<li>
+<a href="../../../software/ez-work.html">EZ WORK</a>
+</li>
+<li>
+<a href="#">iDOO RMS+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li><a href="../../../stock.html">Станки в наличии</a></li><li><a href="../../../product/summary.html">Сводная таблица моделей</a></li></ul>
+</div>
+</li>
+</ul>
+<div class="btns-toggles big gnbSpecBtn">
+<button class="btn-toggle btn-line" onclick="fn.removeActive($(this).next());fn.addActive(this);" type="button"><span>Модели</span></button> <button class="btn-toggle btn-spec" onclick="goSpecView(this)" type="button"><span>По характеристикам</span></button> </div>
+<input id="gnbSchSpecCd" name="gnbSchSpecCd" type="hidden" value=""/>
+<input id="schCtgryCd1" name="schCtgryCd1" type="hidden" value=""/>
+<input id="gnbSch3DeptType" name="gnbSch3DeptType" type="hidden" value=""/>
+<input id="gnbSchSoluType" name="gnbSchSoluType" type="hidden" value=""/>
+<div class="pro-spec">
+<div class="unit gnbSpecClass">
+<label><input checked="" id="gnbSpecType1" name="gnbSpecType" type="radio" value="A"/><span>Метрическая система</span></label><label><input id="gnbSpecType2" name="gnbSpecType" type="radio" value="B"/><span>Дюймовая система</span></label></div>
+<div class="size" id="chuckDiv">
+<strong class="tit">Размер патрона</strong> <div class="list" id="chuckList">
+</div>
+</div>
+<div class="list-slider" id="gnbSchBox">
+</div>
+<div class="list-area">
+<strong class="tit">Подбор по характеристикам</strong> <a class="btn-all" href="#" id="gnbChuckDataAll" style="display: none;"></a>
+<div class="list-product small">
+<ul id="gnbPrdtList">
+</ul>
+</div>
+<div class="infotxt nodata gnbNodata" style="display: none;">
+<p class="txt">No search results found.</p> </div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<div class="pro-banner">
+<a href="../../../product/turning-center/2-axis-horizontal/leo-1600.html" id="srsGoViewGnb">
+<div class="tit">
+<small id="srsSlgGnb">Компактный горизонтальный токарный центр с патроном 6"</small>
+<strong id="srsNmGnb">Серия LEO 1600</strong>
+</div>
+<figure><img loading="lazy" alt="PUMA 600XLM II" id="srsImgGnb" src="../../../assets/img/dn/f6e325dfc37a6dbd.jpg"/></figure>
+</a>
+</div>
+
+</div>
+</div>
+</li>
+
+<li>
+<a href="#" target="">
+<span>РЕШЕНИЯ</span>
+</a>
+<div class="dep2-wrap">
+<div class="inner">
+<ul class="dep2">
+<li>
+<a href="../../../solution/overview.html" target="_self">ОБЗОР РЕШЕНИЙ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../solution/industry.html" target="_self">ОТРАСЛЕВЫЕ РЕШЕНИЯ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+<li><a href="../../../solution/industry.html" target="_self">Автомобилестроение</a></li>
+<li><a href="../../../solution/industry.html" target="_self">Авиакосмическая отрасль</a></li>
+<li><a href="../../../solution/industry.html" target="_self">Энергетика</a></li>
+<li><a href="../../../solution/industry.html" target="_self">Пресс-формы и штампы</a></li>
+<li><a href="../../../solution/industry.html" target="_self">Медицина</a></li>
+<li><a href="../../../solution/industry.html" target="_self">Полупроводники</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../solution/machining.html" target="_self">РЕШЕНИЯ ДЛЯ ОБРАБОТКИ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../solution/automation.html" target="_self">АВТОМАТИЗАЦИЯ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../solution/chip-free.html" target="_self">Удаление стружки</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+<li>
+<a href="#" target="_blank">DNVP</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<a href="#" target="">
+<span>СЕРВИС</span>
+</a>
+<div class="dep2-wrap">
+<div class="inner">
+<ul class="dep2">
+<li>
+<a href="../../../service/policy.html" target="_self">СЕРВИСНАЯ ПОЛИТИКА</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+
+
+
+</ul>
+</div>
+</div>
+</li>
+
+<li>
+<a href="#" target="">
+<span>КОМПАНИЯ</span>
+</a>
+<div class="dep2-wrap">
+<div class="inner">
+<ul class="dep2">
+<li>
+<a href="../../../company/about.html" target="_self">О DN SOLUTIONS</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+<li><a href="../../../company/about.html" target="_self">DN Solutions</a></li>
+<li><a href="../../../company/about.html" target="_self">Почему DN Solutions?</a></li>
+<li><a href="../../../company/about.html" target="_self">DN Solutions Legacy</a></li>
+<li><a href="../../../company/about.html" target="_self">CI</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="#" target="_self">ОБЪЯВЛЕНИЯ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../company/about.html" target="_self">УСТОЙЧИВОЕ РАЗВИТИЕ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+<li><a href="../../../company/about.html" target="_self">ESG</a></li>
+<li><a href="../../../company/about.html" target="_self">Экология</a></li>
+<li><a href="../../../company/about.html" target="_self">Социальная ответственность</a></li>
+<li><a href="../../../company/about.html" target="_self">Корпоративное управление</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../company/about.html" target="_self">ГЛОБАЛЬНАЯ СЕТЬ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+<li><a href="../../../company/dealer.html" target="_self">Дилеры</a></li>
+<li><a href="../../../company/about.html" target="_self">Сервисный центр</a></li>
+<li><a href="../../../company/about.html" target="_self">Офисы DN Solutions</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../company/about.html" target="_self">ПРОЕКТЫ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../company/about.html" target="_self">УПРАВЛЕНИЕ ЗАПЧАСТЯМИ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+<li><a href="../../../company/about.html" target="_self">Voluntary Export Management Message</a></li>
+<li><a href="../../../company/about.html" target="_self">Declaration of Voluntary Export Implementation</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="../../../company/about.html" target="_self">ПЛОЩАДКИ</a>
+<div class="dep3-wrap">
+<ul class="dep3">
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+
+</ul>
+</nav>
+<div class="util"><a class="dealer-phone" href="tel:+78005053295">8 (800) 505-32-95</a>
+
+ <button class="btn-gnb" type="button"><span></span><span></span><span></span><span class="blind">Меню</span></button> </div>
+</div>
+
+<div class="dimmed"></div>
+
+</header><script>
+        window.addEventListener('load', () => {
+            // GNB > 제품 > 제품 선택 > 3 depth 라인업 별 / 솔루션 별 > 하위 메뉴 active reset 함수 fn.headerGnb('reset'); 개발 작업 시 참고
+            // GNB > 제품 > 제품 선택 > 3 depth 라인업 별 / 솔루션 별 > 사양 slider 샘플 (class='spec-slider1' 클래스명은 개발시 변경 가능)
+            $('#header .spec-slider1').slider({
+                range: true,
+                min: 170, // 최소
+                max: 2500, // 최대
+                values: [170, 2500], // 현재값
+                create: function (ui) {
+                    $(this).prev('.values').html($(this).slider('values', 0) + ' ~ ' + $(this).slider('values', 1) + '<span class="txt-unit">mm</span>');
+                    $(this).parent('.form-slider').find('.range .min-range').text($(this).slider('option', 'min'));
+                    $(this).parent('.form-slider').find('.range .max-range').text($(this).slider('option', 'max'));
+                    $(this).siblings('input.min').val($(this).slider('values', 0));
+                    $(this).siblings('input.max').val($(this).slider('values', 1));
+                },
+                slide: function (event, ui) {
+                    $(this).prev('.values').html(ui.values[0] + ' ~ ' + ui.values[1] + '<span class="txt-unit">mm</span>');
+                }
+            });
+
+            $('#header .spec-slider2').slider({
+                range: true,
+                min: 120,
+                max: 5050,
+                values: [120, 5050],
+                create: function (ui) {
+                    $(this).prev('.values').html($(this).slider('values', 0) + ' ~ ' + $(this).slider('values', 1) + '<span class="txt-unit">mm</span>');
+                    $(this).parent('.form-slider').find('.range .min-range').text($(this).slider('option', 'min'));
+                    $(this).parent('.form-slider').find('.range .max-range').text($(this).slider('option', 'max'));
+                    $(this).siblings('input.min').val($(this).slider('values', 0));
+                    $(this).siblings('input.max').val($(this).slider('values', 1));
+                },
+                slide: function (event, ui) {
+                    $(this).prev('.values').html(ui.values[0] + ' ~ ' + ui.values[1] + '<span class="txt-unit">mm</span>');
+                }
+            });
+        });
+    </script>
+
+<script>
+	function cms(menuCd, cssName){
+		$("#menuCd").val(menuCd);
+		$("#cssName").val(cssName);
+		
+		var frm = document.cmsForm;
+		frm.action="/contents.do";
+		frm.submit();
+	}
+</script>
+<form id="cmsForm" method="post" name="cmsForm" onsubmit="return false;">
+<input id="menuCd" name="menuCd" type="hidden" value=""/>
+<input id="cssName" name="cssName" type="hidden" value=""/>
+<input name="drvSeq" type="hidden" value="2"/>
+</form>
+<article class="popup popupallmenu" id="popupAllMenu">
+<div class="inner">
+<header class="header disabled">
+<h2 class="tit">Меню</h2> 
+</header>
+<div class="contents scrollbar">
+<div class="scroll-content">
+<div class="menu-list inner">
+<ul class="dep1">
+<li>
+<a href="javascript:">Станки</a> 
+<ul class="dep2">
+<li><a href="../../../product/summary.html">Модельный ряд</a></li> 
+<li><a href="#">Подбор станка</a></li> 
+</ul>
+</li>
+
+<li>
+<a href="#" target=""> РЕШЕНИЯ</a>
+<ul class="dep2">
+<li>
+<a href="../../../solution/overview.html">ОБЗОР РЕШЕНИЙ</a>
+</li>
+<li>
+<a href="../../../solution/industry.html">ОТРАСЛЕВЫЕ РЕШЕНИЯ</a>
+</li>
+<li>
+<a href="../../../solution/machining.html">РЕШЕНИЯ ДЛЯ ОБРАБОТКИ</a>
+</li>
+<li>
+<a href="../../../solution/automation.html">АВТОМАТИЗАЦИЯ</a>
+</li>
+<li>
+<a href="../../../solution/chip-free.html">Удаление стружки</a>
+</li>
+
+</ul>
+</li>
+<li>
+<a href="#" target=""> СЕРВИС</a>
+<ul class="dep2">
+<li>
+<a href="../../../service/policy.html">СЕРВИСНАЯ ПОЛИТИКА</a>
+</li>
+
+
+
+</ul>
+</li>
+
+<li>
+<a href="#" target=""> КОМПАНИЯ</a>
+<ul class="dep2">
+<li>
+<a href="../../../company/about.html">О DN SOLUTIONS</a>
+</li>
+<li>
+<a href="#">ОБЪЯВЛЕНИЯ</a>
+</li>
+<li>
+<a href="../../../company/about.html">УСТОЙЧИВОЕ РАЗВИТИЕ</a>
+</li>
+<li>
+<a href="../../../company/about.html">ГЛОБАЛЬНАЯ СЕТЬ</a>
+</li>
+<li>
+<a href="../../../company/about.html">ПРОЕКТЫ</a>
+</li>
+<li>
+<a href="../../../company/about.html">УПРАВЛЕНИЕ ЗАПЧАСТЯМИ</a>
+</li>
+<li>
+<a href="../../../company/about.html">ПЛОЩАДКИ</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href="../../../contacts.html" target="_self"> СВЯЗАТЬСЯ С НАМИ</a>
+<ul class="dep2">
+</ul>
+</li>
+
+</ul>
+</div>
+<div class="footer">
+<div class="inner">
+
+
+<div class="util">
+
+<a href="../../../contacts.html">Связаться с нами</a> <a href="../../../company/privacy.html"><strong>Политика конфиденциальности</strong></a> 
+</div>
+</div>
+</div>
+</div>
+</div>
+<button class="btn-close" onclick="fn.popup('close', this);" type="button"><span class="blind">Закрыть</span></button>
+</div>
+</article>
+<hr id="popupAllMenu_end"/>
+<form id="productForm" method="post" name="productForm" onsubmit="return false;">
+<input id="prdtSeq" name="prdtSeq" type="hidden" value="307"/>
+<input id="srsSeq" name="srsSeq" type="hidden" value="205"/>
+<main id="container">
+<div class="product series" id="contents">
+<section class="visual-area inner">
+<div class="propic">
+
+<div class="prolist-swiper">
+<div class="swiper">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide"><button class="btn-pro" id="actClass303" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-600-lm-ii.html'" type="button">PUMA 600LM II</button></div> 
+<div class="swiper-slide"><button class="btn-pro" id="actClass305" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-600-m-ii.html'" type="button">PUMA 600M II</button></div> 
+<div class="swiper-slide"><button class="btn-pro active" id="actClass307" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-600-xlm-ii.html'" type="button">PUMA 600XLM II</button></div> 
+<div class="swiper-slide"><button class="btn-pro" id="actClass311" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-700-lm-ii.html'" type="button">PUMA 700LM II</button></div> 
+<div class="swiper-slide"><button class="btn-pro" id="actClass89" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-700-m-ii.html'" type="button">PUMA 700M II</button></div> 
+<div class="swiper-slide"><button class="btn-pro" id="actClass99" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-700-xlm-ii.html'" type="button">PUMA 700XLM II</button></div> 
+<div class="swiper-slide"><button class="btn-pro" id="actClass112" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-800-lm-ii.html'" type="button">PUMA 800LM II</button></div> 
+<div class="swiper-slide"><button class="btn-pro" id="actClass115" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-800-m-ii.html'" type="button">PUMA 800M II</button></div> 
+<div class="swiper-slide"><button class="btn-pro" id="actClass118" onclick="location.href='../../../product/turning-center/mill-with-horizontal/puma-800-xlm-ii.html'" type="button">PUMA 800XLM II</button></div> 
+</div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+
+
+<div class="propic-swiper">
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<figure><img loading="lazy" alt="cccc" data-url="../../../assets/img/dn/227357d5b76a6793.jpg" src="../../../assets/img/dn/227357d5b76a6793.jpg"/></figure>
+<div class="plus-area">
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+
+</div>
+<div class="proinfo"><nav class="dn-crumbs" aria-label="Навигация"><a href="../../../index.html">Главная</a> / <a href="../../../product/summary.html">Станки</a> / Токарные центры<br>Токарно-фрезерные</nav>
+
+<h1 class="tit" id="prdtNm">PUMA 600XLM II</h1>
+<div class="spec">
+<label><input checked="" name="specType" type="radio" value="A"/><span>Метрическая система</span></label><label><input name="specType" type="radio" value="B"/><span>Дюймовая система</span></label><dl>
+<dt>Размер патрона</dt>
+<dd class="specType1"> 18″</dd>
+<dd class="specType2" style="display: none;">18″</dd>
+</dl>
+<dl>
+<dt>Макс. диаметр точения</dt>
+<dd class="specType1"> 900 мм</dd>
+<dd class="specType2" style="display: none;">35″</dd>
+</dl>
+<dl>
+<dt>Макс. длина точения</dt>
+<dd class="specType1"> 5050 мм</dd>
+<dd class="specType2" style="display: none;">199″</dd>
+</dl>
+</div>
+<div class="btns">
+ <button class="btn big" onclick="location.href='#request'" type="button">Запросить КП на PUMA 600XLM II</button> <button class="btn blue big" onclick="location.href='#request'" type="button">Запросить буклет</button> </div>
+<div class="dn-offer"><p class="dn-price">Цена по запросу</p></div></div>
+</section>
+<section class="info-area inner">
+<h2 class="tit">Серия PUMA 600/700/800 II</h2>
+<div class="txt">
+<strong class="slogan">Тяжёлый горизонтальный токарный центр большой мощности</strong>
+<p>Горизонтальные токарные центры PUMA 600/700/800 II с самой большой в классе рабочей зоной подходят для крупных и сложных деталей нефтегазовой, строительной, аэрокосмической, судостроительной и других отраслей.</p>
+</div>
+</section>
+<section class="feature-area inner">
+<div class="feature-swiper outside-swiper">
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<figure>
+<img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/c9f61a45ad252f38.png"/>
+</figure>
+<div class="txt">
+<small></small>
+<strong>Надёжность</strong>
+</div>
+</div>
+<div class="swiper-slide">
+<figure>
+<img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/cc371fa42e43cdd2.png"/>
+</figure>
+<div class="txt">
+<small></small>
+<strong>Высокие технологические возможности</strong>
+</div>
+</div>
+<div class="swiper-slide">
+<figure>
+<img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/5236dddcc6fae4db.png"/>
+</figure>
+<div class="txt">
+<small></small>
+<strong>Удобная смена инструмента</strong>
+</div>
+</div>
+<div class="swiper-slide">
+<figure>
+<img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/36ca6797e3be2680.png"/>
+</figure>
+<div class="txt">
+<small></small>
+<strong>Широкий спектр задач</strong>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="highlight-area inner type2">
+<h3 class="tit">Особенности</h3> <div class="box">
+
+<div class="list scrollMotion"><div class="imgCont"><div class="img"><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/32feb8a037e23f7f.jpg"/></div></div><div class="txtCont"><div class="posTxt"><p class="subj">Обработка крупных сложных деталей за один установ</p><p class="dotTxt"><span>Ход по оси Y 200 мм для максимальной производительности</span></p></div></div></div><div class="list scrollMotion"><div class="txtCont"><div class="posTxt"><p class="subj">Самая большая рабочая зона и лучшие в классе характеристики делают PUMA 600/700/800 отличным выбором для крупных деталей</p><p class="dotTxt"><span>Макс. длина точения: 5 м</span></p><p class="dotTxt"><span>Макс. диаметр точения: 900 мм</span></p><p class="dotTxt"><span>Идеален для силового резания крупных деталей</span></p></div></div><div class="imgCont"><div class="img"><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/c2389367e6faa3bf.jpg"/></div></div></div><div class="list scrollMotion"><div class="imgCont"><div class="img"><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/3ca07a5c99067022.jpg"/></div></div><div class="txtCont"><div class="posTxt"><p class="subj">Решение для обработки труб разных размеров</p><p class="dotTxt"><span>Решения для более качественного нарезания резьбы и снижения брака</span></p><p class="dotTxt"><span>Отверстие шпинделя до Ø375 мм — идеально для точения труб большого диаметра</span></p></div></div></div>￿
+</div>
+</section>
+<section class="spec-area inner">
+<h3 class="tit">Технические характеристики</h3> <div class="guidetxt dot">
+ <ul>
+<li>Характеристики соответствуют глобальному стандарту; в разных регионах комплектация может отличаться.</li> </ul>
+</div>
+<div class="spec-table">
+<div class="fixed-con">
+<div class="header">
+<label><input checked="checked" name="specListType" type="radio" value="A"/><span>Метрическая система</span></label><label><input name="specListType" type="radio" value="B"/><span>Дюймовая система</span></label></div>
+<div class="package">
+<strong class="tit">Рабочая зона</strong>
+<div class="group">
+<span>Размер патрона</span>
+<span>Макс. диаметр точения</span>
+<span>Макс. длина точения</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit">Перемещения</strong>
+<div class="group">
+<span>Ускоренный ход по оси X</span>
+<span>Ускоренный ход по оси Z</span>
+<span>Ход по оси X</span>
+<span>Ход по оси Z</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit">Главный шпиндель</strong>
+<div class="group">
+<span>Макс. частота вращения шпинделя</span>
+<span>Макс. мощность шпинделя</span>
+<span>Макс. крутящий момент шпинделя</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit">Револьверная головка</strong>
+<div class="group">
+<span>Количество инструментальных позиций</span>
+<span>Частота вращения приводного инструмента</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit">Габариты и масса</strong>
+<div class="group">
+<span>Длина</span>
+<span>Высота</span>
+<span>Ширина</span>
+<span>Масса</span>
+</div>
+</div>
+</div>
+<div class="scroll-con">
+<div class="scroll-swiper">
+<div class="swiper">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/fe1395450d9d3e45.jpg"/></figure>
+</div>
+<strong class="name">PUMA 600LM II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 18″</span>
+<span> 900 мм</span>
+<span> 3200 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 18″</span>
+<span> 35″</span>
+<span> 126″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 10 м/мин</span>
+<span> 470 мм</span>
+<span> 3235 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					394 ipm</span>
+<span> 19″</span>
+<span> 127″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 1 800 об/мин</span>
+<span> 55 кВт</span>
+<span> 6622 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 1 800 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					4884 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 7354 мм</span>
+<span> 2590 мм</span>
+<span> 2713,5 мм</span>
+<span> 22000 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 290″</span>
+<span> 102″</span>
+<span> 107″</span>
+<span>
+																					48502 lb</span>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/5964ce3afb0047a8.jpg"/></figure>
+</div>
+<strong class="name">PUMA 600M II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 18″</span>
+<span> 900 мм</span>
+<span> 1600 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 18″</span>
+<span> 35″</span>
+<span> 63″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 16 м/мин</span>
+<span> 470 мм</span>
+<span> 1650 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					630 ipm</span>
+<span> 19″</span>
+<span> 65″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 1 800 об/мин</span>
+<span> 55 кВт</span>
+<span> 6622 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 1 800 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					4884 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 5756 мм</span>
+<span> 2800 мм</span>
+<span> 3160 мм</span>
+<span> 16500 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 227″</span>
+<span> 110″</span>
+<span> 124″</span>
+<span>
+																					36376 lb</span>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/a610292f7a51c8aa.jpg"/></figure>
+</div>
+<strong class="name">PUMA 600XLM II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 18″</span>
+<span> 900 мм</span>
+<span> 5050 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 18″</span>
+<span> 35″</span>
+<span> 199″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 10 м/мин</span>
+<span> 470 мм</span>
+<span> 5100 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					394 ipm</span>
+<span> 19″</span>
+<span> 201″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 1 800 об/мин</span>
+<span> 55 кВт</span>
+<span> 6622 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 1 800 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					4884 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 9904 мм</span>
+<span> 2855 мм</span>
+<span> 2955 мм</span>
+<span> 26000 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 390″</span>
+<span> 112″</span>
+<span> 116″</span>
+<span>
+																					57320 lb</span>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/6978a0e60086f1e5.jpg"/></figure>
+</div>
+<strong class="name">PUMA 700LM II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 24″</span>
+<span> 900 мм</span>
+<span> 3200 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 24″</span>
+<span> 35″</span>
+<span> 126″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 10 м/мин</span>
+<span> 470 мм</span>
+<span> 3235 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					394 ipm</span>
+<span> 19″</span>
+<span> 127″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 1 500 об/мин</span>
+<span> 55 кВт</span>
+<span> 8076 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 1 500 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					5957 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 7354 мм</span>
+<span> 2590 мм</span>
+<span> 2713,5 мм</span>
+<span> 22000 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 290″</span>
+<span> 102″</span>
+<span> 107″</span>
+<span>
+																					48502 lb</span>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/1ec6b27850b0fef4.jpg"/></figure>
+</div>
+<strong class="name">PUMA 700M II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 24″</span>
+<span> 900 мм</span>
+<span> 1600 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 24″</span>
+<span> 35″</span>
+<span> 63″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 16 м/мин</span>
+<span> 470 мм</span>
+<span> 1650 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					630 ipm</span>
+<span> 19″</span>
+<span> 65″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 1 500 об/мин</span>
+<span> 55 кВт</span>
+<span> 8076 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 1 500 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					5957 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 5756 мм</span>
+<span> 2800 мм</span>
+<span> 3160 мм</span>
+<span> 16500 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 227″</span>
+<span> 110″</span>
+<span> 124″</span>
+<span>
+																					36376 lb</span>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/8b26b74b8bd52c5a.jpg"/></figure>
+</div>
+<strong class="name">PUMA 700XLM II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 24″</span>
+<span> 900 мм</span>
+<span> 5050 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 24″</span>
+<span> 35″</span>
+<span> 199″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 10 м/мин</span>
+<span> 470 мм</span>
+<span> 5100 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					394 ipm</span>
+<span> 19″</span>
+<span> 201″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 1 500 об/мин</span>
+<span> 55 кВт</span>
+<span> 8076 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 1 500 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					5957 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 9904 мм</span>
+<span> 2855 мм</span>
+<span> 2955 мм</span>
+<span> 26000 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 390″</span>
+<span> 112″</span>
+<span> 116″</span>
+<span>
+																					57320 lb</span>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/82d328e47b693621.jpg"/></figure>
+</div>
+<strong class="name">PUMA 800LM II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 32″</span>
+<span> 900 мм</span>
+<span> 3200 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 32″</span>
+<span> 35″</span>
+<span> 126″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 10 м/мин</span>
+<span> 470 мм</span>
+<span> 3235 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					394 ipm</span>
+<span> 19″</span>
+<span> 127″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 750 об/мин</span>
+<span> 55 кВт</span>
+<span> 8076 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 750 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					5957 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 7354 мм</span>
+<span> 2590 мм</span>
+<span> 2713,5 мм</span>
+<span> 22000 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 290″</span>
+<span> 102″</span>
+<span> 107″</span>
+<span>
+																					48502 lb</span>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/8c9061ff27119b53.jpg"/></figure>
+</div>
+<strong class="name">PUMA 800M II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 32″</span>
+<span> 900 мм</span>
+<span> 1600 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 32″</span>
+<span> 35″</span>
+<span> 63″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 16 м/мин</span>
+<span> 470 мм</span>
+<span> 1650 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					630 ipm</span>
+<span> 19″</span>
+<span> 65″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 750 об/мин</span>
+<span> 55 кВт</span>
+<span> 8076 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 750 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					5957 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 5756 мм</span>
+<span> 2800 мм</span>
+<span> 3160 мм</span>
+<span> 16500 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 227″</span>
+<span> 110″</span>
+<span> 124″</span>
+<span>
+																					36376 lb</span>
+</div>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="product">
+<div class="header">
+<div class="img">
+<figure><img loading="lazy" alt="PUMA 600XLM II" src="../../../assets/img/dn/2697ffb59deb1422.jpg"/></figure>
+</div>
+<strong class="name">PUMA 800XLM II</strong>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 32″</span>
+<span> 900 мм</span>
+<span> 5050 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 32″</span>
+<span> 35″</span>
+<span> 199″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 12 м/мин</span>
+<span> 10 м/мин</span>
+<span> 470 мм</span>
+<span> 5100 мм</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span>
+																					472 ipm</span>
+<span>
+																					394 ipm</span>
+<span> 19″</span>
+<span> 201″</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 750 об/мин</span>
+<span> 55 кВт</span>
+<span> 8076 Н·м</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 750 об/мин</span>
+<span>
+																					74 hp</span>
+<span>
+																					5957 ft-lb</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span>
+																					12 шт.</span>
+<span> 3 000 об/мин</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 12″</span>
+<span> 3 000 об/мин</span>
+</div>
+</div>
+<div class="package">
+<strong class="tit"></strong>
+<div class="group specListType1">
+<span> 9904 мм</span>
+<span> 2855 мм</span>
+<span> 2955 мм</span>
+<span> 26000 кг</span>
+</div>
+<div class="group specListType2" style="display: none;">
+<span> 390″</span>
+<span> 112″</span>
+<span> 116″</span>
+<span>
+																					57320 lb</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="swiper-scrollbar"></div>
+</div>
+</div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="qna-area">
+<div class="inner"><strong class="tit">Нужна консультация?</strong> <p class="txt">ДН-Рус — официальный дилер DN Solutions в России. Подберём станок под вашу деталь, подготовим коммерческое предложение и организуем поставку, пусконаладку и сервис.</p> <a class="btn big" href="#request">Отправить запрос</a> <a class="btn big" href="tel:+78005053295">8 (800) 505-32-95</a></div>
+</section>
+
+<div class="dealer-block dealer-page"><section class="gray" id="request"><div class="wrap split"><div><h2>Запросить коммерческое предложение</h2><p class="lead">Пришлите чертёж или опишите задачу — подберём модель и комплектацию, сообщим сроки и условия поставки.</p><p>Телефон: <a href="tel:+78005053295">8 (800) 505-32-95</a><br/>Почта: <a href="mailto:info@dn-russia.ru">info@dn-russia.ru</a></p></div><form class="req"><input name="Имя" placeholder="Ваше имя" required=""/><input name="Телефон" placeholder="Телефон" required=""/><input name="Email" placeholder="E-mail" type="email"/><input name="Модель" placeholder="Модель станка (если известна)" value="PUMA 600XLM II"/><textarea name="Задача" placeholder="Опишите деталь, материал, программу выпуска" rows="4"></textarea><button class="btn">Отправить заявку</button><span class="note">Форма открывает почтовую программу и формирует письмо на info@dn-russia.ru. Нажимая кнопку, вы соглашаетесь на обработку персональных данных. </span></form></div></section></div></div>
+
+</main>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="popup alert" id="popupAlert">
+<div class="inner">
+<div class="contents scrollbar">
+<div class="scroll-content">
+<p class="txt" id="alertText"></p>
+
+
+<div class="btns">
+<button class="btn big" onclick="fn.popup('close', this);fn.popup('close', '#popupShare');" type="button">Закрыть</button> </div>
+</div>
+</div>
+<button class="btn-close" onclick="fn.popup('close', this);fn.popup('close', '#popupShare');" type="button"><span class="blind">Закрыть</span></button> </div>
+</article>
+<hr id="popupAlert_end"/>
+
+
+
+
+
+
+<script>
+var bookCount = 0;
+$(document).ready(function(){
+	
+	$(document).on("change", "input[name='specPopType']:radio", function(){
+		var type = $(this).val();
+		if(type == 'A'){
+			$(".specPopType1").css("display", "");
+			$(".specPopType2").css("display", "none");
+		}else if(type == 'B'){ 
+			$(".specPopType1").css("display", "none");
+			$(".specPopType2").css("display", "");
+		}
+		fn.specTableActive('.popupcompare .spec-table');
+	});
+	
+	$(document).on("click", "input[name='chkPrdt']", function(){
+		if ($("input[name=chkPrdt]:checked").length > 0) {
+	    	$('.btn-bookCompare').attr("disabled", false);
+	    	fn.addActive($(".cancel-Bookbtn"));
+	    } else {
+			$('.btn-bookCompare').attr("disabled", true);
+			$('.cancel-Bookbtn').removeClass("active");
+	    }
+	});
+	
+});
+
+function goBookMarkList() {
+	$.ajax({
+		url: "/ajax/bookmark/selectBookmarkAjax.do",
+	 	type: "post",	
+	 	data: {
+			"bookCtgryCd"	:	$("#bookCtgryCd").val(),
+			"bookPageNo"	: $("#bookPageNo").val()
+			 },
+	 	async: false,
+	 	cache:false,
+	 	contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+	 	error: function(request, status, error){
+			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);	
+		},
+		success: function(data){
+			var html = "";
+			$(".bookCheck").html("");
+			$("#bookPageNo").val(parseInt(data.bookPageNo));
+			if(data.bookCtgryCd != '' && data.bookCtgryCd != 'soft' && data.bookCtgryCd != 'solu') {
+				html +=		"<button type='button' class='btn gray line small btn-cancel cancel-Bookbtn' onclick='bookSpecCancel(this)'>Unselect</button>";
+				html +=		"<button type='button' class='btn gray line small btn-check' onclick='bookSpecAll(this)'>Select all</button>"; 
+				html +=		"<button type='button' class='btn blue small btn-compare btn-bookCompare' onclick='goBookCompare()' disabled>Compare specifications</button>"; 
+				$(".bookCheck").append(html);
+			}
+			bookCount = data.totalCount;
+			$(".bookTotal").html("Total "+bookCount+"Products"); 
+			
+			html = "";
+			if(data.list != null && data.list.length > 0) {
+				$(".bookList").css('display', 'block');
+				$(".bookNoData").css('display', 'none');
+				$(".bookProduct").html('');
+				for(var l = 0; l < data.list.length; l++) {
+					html +=		"<li>";
+					if(data.list[l].type == 'PRDT') {
+						html +=		"	<a href='/"+'global'.toLowerCase()+"/product/"+data.list[l].ctgryPath1+"/"+data.list[l].ctgryPath2+"/"+data.list[l].path+".do'>";
+					} else if(data.list[l].type == 'SOLU') {
+						html +=		"	<a href='/solution/solutionDetail.do?soluSeq="+data.list[l].soluSeq+"&drvSeq=2'>";
+					} else if(data.list[l].type == 'SOFT') {
+						html +=		"	<a href='/software/softwareDetail.do?softSeq="+data.list[l].softSeq+"&drvSeq=2'>";
+					}
+					 if(data.list[l].type == 'SOFT') {
+						 html +=		"		<figure><img src='/resources/w/images/common/thumb_software.jpg' alt=''></figure>";
+					 } else {
+							html +=		"		<figure><img src='https://awsimg.dn-solutions.com"+data.list[l].imgFileWeb+"' alt=''></figure>";						 
+					 }
+					
+					html +=		"		<div class='name'>"+data.list[l].prdtNm+"</div>";
+					if(data.list[l].prdtSpecList != null && data.list[l].prdtSpecList.length > 0) {
+						html +=		"		<div class='info'>";
+						html +=		"			<dl>";
+						for(var d = 0; d < data.list[l].prdtSpecList.length; d++) {
+							html +=		"				<dt>"+data.list[l].prdtSpecList[d].prdtSpecNm+"</dt>";
+							html +=		"				<dd>"+data.list[l].prdtSpecList[d].prdtSpecStd + data.list[l].prdtSpecList[d].prdtSpecUnit+"</dd>";
+						}
+						html +=		"			</dl>";
+						html +=		"		</div>";
+					}
+					html +=		"	</a>";
+		
+					html +=		"	<div class='bottom'>";
+					if(data.bookCtgryCd != '' && data.list[l].type == 'PRDT') {
+						html +=		"		<label><input type='checkbox' name='chkPrdt' id='chkPrdt' value='"+data.list[l].prdtSeq+"'><span>Compare</span></label>"; 
+					}
+					if(data.list[l].type == 'PRDT') {
+						html += '<button type="button" class="btn-bookmark prdtFav'+data.list[l].prdtSeq;
+						var items = uiGetCookie('prdtFav');
+						if (items) {
+							var itemArray = items.split(',');
+							for(var  i = 0; i < itemArray.length; i++) {
+								if(itemArray[i] == data.list[l].prdtSeq) {
+									html +=	' active';							
+								}						
+							}
+						}
+						html += ' " onclick="delBookMark(\''+data.list[l].type+'\', '+data.list[l].prdtSeq+', event)"><span class="blind">Избранное</span></button>'; 
+					} else if(data.list[l].type == 'SOLU') {
+						html += '<button type="button" class="btn-bookmark soluFav'+data.list[l].soluSeq;
+						var items = uiGetCookie('soluFav');
+						if (items) {
+							var itemArray = items.split(',');
+							for(var  i = 0; i < itemArray.length; i++) {
+								if(itemArray[i] == data.list[l].soluSeq) {
+									html +=	' active';							
+								}						
+							}
+						}
+						html += ' " onclick="delBookMark(\''+data.list[l].type+'\', '+data.list[l].soluSeq+', event)"><span class="blind">Избранное</span></button>'; 
+					} else if(data.list[l].type == 'SOFT') {
+						html += '<button type="button" class="btn-bookmark softFav'+data.list[l].softSeq;
+						var items = uiGetCookie('softFav');
+						if (items) {
+							var itemArray = items.split(',');
+							for(var  i = 0; i < itemArray.length; i++) {
+								if(itemArray[i] == data.list[l].softSeq) {
+									html +=	' active';							
+								}						
+							}
+						}
+						html += ' " onclick="delBookMark(\''+data.list[l].type+'\', '+data.list[l].softSeq+', event)"><span class="blind">Избранное</span></button>'; 
+					}
+					html +=		"	</div>";
+					html +=		"</li>";
+				}
+				$(".bookProduct").append(html);
+				if(data.moreType == 'N') {
+					$(".bookMore").css('display', 'none');
+				}
+			} else {
+				$(".bookList").css('display', 'none');
+				$(".bookNoData").css('display', 'block');
+			}
+		}
+	})
+	fn.popup('open', '#popupBookmark');
+}
+
+function delBookMark(type, seq, event) {
+	var items = ""; 
+	var typeNm = "";
+	if(type == 'PRDT') {
+		typeNm = 'prdtFav';
+		items = uiGetCookie(typeNm);
+	} else if(type == 'SOFT') {
+		typeNm = 'softFav';
+		items = uiGetCookie(typeNm);
+	} else if(type == 'SOLU') {
+		typeNm = 'soluFav';
+		items = uiGetCookie(typeNm);
+	}
+	if (items) {
+		var itemArray = items.split(',');
+		for(var i = 0; i < itemArray.length; i++) {
+			if(itemArray[i] == seq) {
+				itemArray.splice(i, 1);
+			}
+		}
+		if(itemArray.length < 1) {
+			document.cookie = typeNm+" = ; path=/; expires=Thu, 01 Jan 1999 00:00:10 GMT;";					
+		} else {
+			uiSetCookie(typeNm, itemArray, '60');					
+		}
+	}
+	var classList = event.target.classList+"";
+	if(classList.indexOf('active') != -1) {
+		$('.'+typeNm+seq).removeClass('active');
+	} else {
+		$('.'+typeNm+seq).addClass('active');
+	}
+	event.target.parentElement.closest('li').remove();
+	bookCount = bookCount-1;
+	$(".bookTotal").html("Total "+bookCount+"Products"); 
+	if(bookCount == 0){
+		$(".bookList").css('display', 'none');
+		$(".bookNoData").css('display', 'block');
+	}
+}
+
+function bookMore() {
+	$("#bookPageNo").val(parseInt($("#bookPageNo").val())+1);
+	goBookMarkList();
+}
+
+function goBookCompare() {
+	var checkRow = "";
+	 
+	$("input[name='chkPrdt']:checked" ).each(function (){
+		checkRow = checkRow + $(this).val()+",";
+	});
+	checkRow = checkRow.substring(0,checkRow.lastIndexOf(","));
+	$.ajax({
+		url: "/ajax/product/selectProductSpecListViewAjax.do",
+		data : {
+			"prdtList" 			: checkRow,
+			"bookSpecYn" 	: "Y"
+		},
+		type: "POST",
+		dataType: "html",
+		async: false,
+		contentType: "application/x-www-form-urlencoded; charset=UTF-8",  
+		error: function(request, status, error){ 
+			alert("An error occurred during processing.");
+			document.location.reload();			
+		 },
+		success: function(responseData){
+			$("#popupCompare").empty();
+			$("#popupCompare").append(responseData).trigger("create");
+		 }
+	});
+	
+	fn.popup('open', '#popupCompare');fn.specTableSwiper('.popupcompare .spec-table');fn.specTableActive('.popupcompare .spec-table');
+}
+
+//제품시방 비교하기 show hide
+$(document).on("change", "input[name='specCompare']:checkbox", function(){
+	var seq = $(this).attr('id').replace('specCompare', '');
+	if ( $(this).prop('checked') ) {
+		$('.popupcompare .swiper-slide.temp'+seq).show();
+	} else {
+		$('.popupcompare .swiper-slide.temp'+seq).hide();
+	}
+	fn.specTableActive();
+});
+
+// 제품비교 전체 선택
+function bookSpecAll(e) {
+	$("input[name=chkPrdt]").prop("checked", true);
+	fn.addActive($(e).prev());$(e).parent().find(".btn-compare").attr("disabled", false);
+}
+
+// 제품비교 선택취소
+function bookSpecCancel(e) {
+	$("input[name=chkPrdt]").prop("checked", false);
+	fn.removeActive(e);$(e).parent().find('.btn-compare').attr("disabled", true);
+}
+</script>
+<aside id="aside">
+<button class="btn-help" type="button"><span class="blind">Задать вопрос</span></button>
+<button class="btn-bookmark" onclick="goBookMarkList();" type="button"><span class="blind">Избранное</span></button><button class="btn-top" onclick="fn.top();" type="button"><span class="blind">Наверх</span></button>
+<input id="bookPageNo" name="bookPageNo" type="hidden" value="1"/>
+<div class="link">
+<a href="../../../company/about.html">Офис продаж</a> <a href="../../../service/center.html">Сервис</a> <a href="../../../contacts.html">Связаться с нами</a> </div>
+</aside>
+<footer id="footer"><div class="inner"><a class="logo" href="../../../index.html"><span class="blind">ДН-Рус</span></a>
+<div class="util"><a href="../../../contacts.html">Контакты</a><a href="../../../stock.html">Станки в наличии</a><a href="../../../service/policy.html">Сервис</a><a href="../../../company/dealer.html">О дилере</a></div>
+<p class="copyright">ДН-Рус (dn-russia.ru) — официальный дилер DN Solutions в России · Нижний Новгород · <a href="tel:+78005053295">8 (800) 505-32-95</a> · <a href="mailto:info@dn-russia.ru">info@dn-russia.ru</a><br/>DN Solutions, PUMA, Lynx, DVF и другие названия — товарные знаки DN Solutions Co., Ltd. Материалы используются с разрешения правообладателя. Характеристики — по данным dn-solutions.com. </p></div></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<script src="../../../assets/js/dealer.js?v=9"></script><script type="application/ld+json">[{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "ДН-Рус", "url": "https://dn-russia.ru/", "telephone": "+7-800-505-32-95", "email": "info@dn-russia.ru", "address": {"@type": "PostalAddress", "postalCode": "603001", "addressLocality": "Нижний Новгород", "streetAddress": "ул. Рождественская, 43, офис 1", "addressCountry": "RU"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://dn-russia.ru/"}, {"@type": "ListItem", "position": 2, "name": "Станки", "item": "https://dn-russia.ru/product/"}, {"@type": "ListItem", "position": 3, "name": "Токарные центры", "item": "https://dn-russia.ru/product/turning-center/"}, {"@type": "ListItem", "position": 4, "name": "Токарно-фрезерные", "item": "https://dn-russia.ru/product/turning-center/mill-with-horizontal/"}, {"@type": "ListItem", "position": 5, "name": "PUMA 600XLM II — Токарно-фрезерные"}]}, {"@context": "https://schema.org", "@type": "Product", "name": "PUMA 600XLM II", "brand": {"@type": "Brand", "name": "DN Solutions"}, "description": "PUMA 600XLM II — Токарно-фрезерные DN Solutions. '+data.prdtSpecList[i].prdtSpecStd + ' '+ (data.prdtSpecList[i].prdtSpecUnit || '')+', '+data.prdtSpecList[i…"}]</script>
+</body>
+</html>
